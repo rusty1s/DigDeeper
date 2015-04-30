@@ -1,3 +1,9 @@
-# DigDeeper
+Dig Deeper
+=======
+Crafting/Trading/Agility
+------------------------
 
-Test
+by:
+**rusty1s**
+*Matthias Fey*
+matthias.fey@tu-dortmund.de
