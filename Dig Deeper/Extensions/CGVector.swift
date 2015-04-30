@@ -10,6 +10,11 @@ import UIKit
 
 extension CGVector {
 
+    init(point: CGPoint) {
+        dx = point.x
+        dy = point.y
+    }
+    
     func isParallelToVector(vector: CGVector) -> Bool {
         assert(hasLength, "vector nas no length")
         assert(vector.hasLength, "vector nas no length")

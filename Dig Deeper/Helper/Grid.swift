@@ -155,11 +155,11 @@ class Grid {
         
         // MARK: Points
         
-        private var topLeftPoint: CGPoint { return position+Edge.topLeftPoint }
-        private var topRightPoint: CGPoint { return position+Edge.topRightPoint }
-        private var bottomLeftPoint: CGPoint { return position+Edge.bottomLeftPoint }
-        private var bottomRightPoint: CGPoint { return position+Edge.bottomRightPoint }
-        private var middlePoint: CGPoint { return position+Edge.middlePoint }
+        private var topLeftPoint: CGPoint { return position+CGVector(point: Edge.topLeftPoint) }
+        private var topRightPoint: CGPoint { return position+CGVector(point: Edge.topRightPoint) }
+        private var bottomLeftPoint: CGPoint { return position+CGVector(point: Edge.bottomLeftPoint) }
+        private var bottomRightPoint: CGPoint { return position+CGVector(point: Edge.bottomRightPoint) }
+        private var middlePoint: CGPoint { return position+CGVector(point: Edge.middlePoint) }
         
         func pointsOfEdges(edges: Set<Edge>) -> [CGPoint] {
             switch edges.count {

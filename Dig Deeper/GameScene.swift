@@ -113,7 +113,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate, GridContactDelegate {
         let camera = childNodeWithName("//camera")!
         
         camera.position = node.position
-        camera.parent?.position = camera.parent!.position - camera.scene!.convertPoint(camera.position, fromNode: camera.parent!)
+        camera.parent?.position = camera.parent!.position - CGVector(point: camera.scene!.convertPoint(camera.position, fromNode: camera.parent!))
     }
     
     // MARK: Grid management

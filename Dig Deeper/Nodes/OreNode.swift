@@ -21,7 +21,7 @@ class OreNode : SKNode, ContactNode {
     private var polygonSet: PolygonSet
     
     private let vertices_: [CGPoint]
-    var vertices: [CGPoint] { return vertices_.map { $0+self.position } }
+    var vertices: [CGPoint] { return vertices_.map { $0+CGVector(point: self.position) } }
     
     override var frame: CGRect {
         var minX = CGFloat.max
@@ -102,7 +102,7 @@ class OreNode : SKNode, ContactNode {
     private var subtractPolygonSet = PolygonSet()
     
     func addSegmentToSubtraction(segment: Grid.Segment) {
-        subtractPolygonSet.addPolygon(Polygon(points: segment.pointsOfContactedEdges.map { $0-self.position }))
+        subtractPolygonSet.addPolygon(Polygon(points: segment.pointsOfContactedEdges.map { $0-CGVector(point: self.position) }))
     }
     
     func subtractAddedSegments() {
