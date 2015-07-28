@@ -1,0 +1,19 @@
+PODS:
+  - RSContactGrid (1.0)
+
+DEPENDENCIES:
+  - RSContactGrid (from `https://github.com/rusty1s/RSContactGrid.git`)
+
+EXTERNAL SOURCES:
+  RSContactGrid:
+    :git: https://github.com/rusty1s/RSContactGrid.git
+
+CHECKOUT OPTIONS:
+  RSContactGrid:
+    :commit: f4afdee605fb50521fefaec6ffb550d89bfa460d
+    :git: https://github.com/rusty1s/RSContactGrid.git
+
+SPEC CHECKSUMS:
+  RSContactGrid: 8d5eff8a802d7c8adc4d3854795b63cc7135d5a7
+
+COCOAPODS: 0.37.1

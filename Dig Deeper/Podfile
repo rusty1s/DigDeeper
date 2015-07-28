@@ -1,0 +1,3 @@
+use_frameworks!
+
+pod 'RSContactGrid', :git => 'https://github.com/rusty1s/RSContactGrid.git'

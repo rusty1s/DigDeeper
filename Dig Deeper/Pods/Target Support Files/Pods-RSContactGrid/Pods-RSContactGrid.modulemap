@@ -1,0 +1,6 @@
+framework module RSContactGrid {
+  umbrella header "Pods-RSContactGrid-umbrella.h"
+
+  export *
+  module * { export * }
+}
