@@ -2,11 +2,10 @@
 //  Dig_DeeperTests.swift
 //  Dig DeeperTests
 //
-//  Created by Matthias Fey on 30.04.15.
-//  Copyright (c) 2015 Matthias Fey. All rights reserved.
+//  Created by Matthias Fey on 28.07.15.
+//  Copyright © 2015 Matthias Fey. All rights reserved.
 //
 
-import UIKit
 import XCTest
 
 class Dig_DeeperTests: XCTestCase {
@@ -23,7 +22,7 @@ class Dig_DeeperTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {

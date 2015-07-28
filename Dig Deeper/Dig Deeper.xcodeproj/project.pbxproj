@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		616F289F1B67D6BF0070215F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F289E1B67D6BF0070215F /* AppDelegate.swift */; };
+		616F28A11B67D6BF0070215F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F28A01B67D6BF0070215F /* ViewController.swift */; };
+		616F28A41B67D6BF0070215F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616F28A21B67D6BF0070215F /* Main.storyboard */; };
+		616F28A71B67D6BF0070215F /* Dig_Deeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 616F28A51B67D6BF0070215F /* Dig_Deeper.xcdatamodeld */; };
+		616F28A91B67D6BF0070215F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616F28A81B67D6BF0070215F /* Assets.xcassets */; };
+		616F28AC1B67D6BF0070215F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616F28AA1B67D6BF0070215F /* LaunchScreen.storyboard */; };
+		616F28B71B67D6BF0070215F /* Dig_DeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F28B61B67D6BF0070215F /* Dig_DeeperTests.swift */; };
+		616F28C21B67D6BF0070215F /* Dig_DeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F28C11B67D6BF0070215F /* Dig_DeeperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		616F28B31B67D6BF0070215F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 616F28931B67D6BF0070215F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 616F289A1B67D6BF0070215F;
+			remoteInfo = "Dig Deeper";
+		};
+		616F28BE1B67D6BF0070215F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 616F28931B67D6BF0070215F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 616F289A1B67D6BF0070215F;
+			remoteInfo = "Dig Deeper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		616F289B1B67D6BF0070215F /* Dig Deeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dig Deeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		616F289E1B67D6BF0070215F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		616F28A01B67D6BF0070215F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		616F28A31B67D6BF0070215F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		616F28A61B67D6BF0070215F /* Dig_Deeper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dig_Deeper.xcdatamodel; sourceTree = "<group>"; };
+		616F28A81B67D6BF0070215F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		616F28AB1B67D6BF0070215F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		616F28AD1B67D6BF0070215F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		616F28B21B67D6BF0070215F /* Dig DeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dig DeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		616F28B61B67D6BF0070215F /* Dig_DeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dig_DeeperTests.swift; sourceTree = "<group>"; };
+		616F28B81B67D6BF0070215F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		616F28BD1B67D6BF0070215F /* Dig DeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dig DeeperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		616F28C11B67D6BF0070215F /* Dig_DeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dig_DeeperUITests.swift; sourceTree = "<group>"; };
+		616F28C31B67D6BF0070215F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		616F28981B67D6BF0070215F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616F28AF1B67D6BF0070215F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616F28BA1B67D6BF0070215F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		616F28921B67D6BF0070215F = {
+			isa = PBXGroup;
+			children = (
+				616F289D1B67D6BF0070215F /* Dig Deeper */,
+				616F28B51B67D6BF0070215F /* Dig DeeperTests */,
+				616F28C01B67D6BF0070215F /* Dig DeeperUITests */,
+				616F289C1B67D6BF0070215F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		616F289C1B67D6BF0070215F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				616F289B1B67D6BF0070215F /* Dig Deeper.app */,
+				616F28B21B67D6BF0070215F /* Dig DeeperTests.xctest */,
+				616F28BD1B67D6BF0070215F /* Dig DeeperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		616F289D1B67D6BF0070215F /* Dig Deeper */ = {
+			isa = PBXGroup;
+			children = (
+				616F289E1B67D6BF0070215F /* AppDelegate.swift */,
+				616F28A01B67D6BF0070215F /* ViewController.swift */,
+				616F28A21B67D6BF0070215F /* Main.storyboard */,
+				616F28A81B67D6BF0070215F /* Assets.xcassets */,
+				616F28AA1B67D6BF0070215F /* LaunchScreen.storyboard */,
+				616F28AD1B67D6BF0070215F /* Info.plist */,
+				616F28A51B67D6BF0070215F /* Dig_Deeper.xcdatamodeld */,
+			);
+			path = "Dig Deeper";
+			sourceTree = "<group>";
+		};
+		616F28B51B67D6BF0070215F /* Dig DeeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				616F28B61B67D6BF0070215F /* Dig_DeeperTests.swift */,
+				616F28B81B67D6BF0070215F /* Info.plist */,
+			);
+			path = "Dig DeeperTests";
+			sourceTree = "<group>";
+		};
+		616F28C01B67D6BF0070215F /* Dig DeeperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				616F28C11B67D6BF0070215F /* Dig_DeeperUITests.swift */,
+				616F28C31B67D6BF0070215F /* Info.plist */,
+			);
+			path = "Dig DeeperUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		616F289A1B67D6BF0070215F /* Dig Deeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616F28C61B67D6BF0070215F /* Build configuration list for PBXNativeTarget "Dig Deeper" */;
+			buildPhases = (
+				616F28971B67D6BF0070215F /* Sources */,
+				616F28981B67D6BF0070215F /* Frameworks */,
+				616F28991B67D6BF0070215F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dig Deeper";
+			productName = "Dig Deeper";
+			productReference = 616F289B1B67D6BF0070215F /* Dig Deeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		616F28B11B67D6BF0070215F /* Dig DeeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616F28C91B67D6BF0070215F /* Build configuration list for PBXNativeTarget "Dig DeeperTests" */;
+			buildPhases = (
+				616F28AE1B67D6BF0070215F /* Sources */,
+				616F28AF1B67D6BF0070215F /* Frameworks */,
+				616F28B01B67D6BF0070215F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				616F28B41B67D6BF0070215F /* PBXTargetDependency */,
+			);
+			name = "Dig DeeperTests";
+			productName = "Dig DeeperTests";
+			productReference = 616F28B21B67D6BF0070215F /* Dig DeeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		616F28BC1B67D6BF0070215F /* Dig DeeperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616F28CC1B67D6BF0070215F /* Build configuration list for PBXNativeTarget "Dig DeeperUITests" */;
+			buildPhases = (
+				616F28B91B67D6BF0070215F /* Sources */,
+				616F28BA1B67D6BF0070215F /* Frameworks */,
+				616F28BB1B67D6BF0070215F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				616F28BF1B67D6BF0070215F /* PBXTargetDependency */,
+			);
+			name = "Dig DeeperUITests";
+			productName = "Dig DeeperUITests";
+			productReference = 616F28BD1B67D6BF0070215F /* Dig DeeperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		616F28931B67D6BF0070215F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Matthias Fey";
+				TargetAttributes = {
+					616F289A1B67D6BF0070215F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					616F28B11B67D6BF0070215F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 616F289A1B67D6BF0070215F;
+					};
+					616F28BC1B67D6BF0070215F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 616F289A1B67D6BF0070215F;
+					};
+				};
+			};
+			buildConfigurationList = 616F28961B67D6BF0070215F /* Build configuration list for PBXProject "Dig Deeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 616F28921B67D6BF0070215F;
+			productRefGroup = 616F289C1B67D6BF0070215F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				616F289A1B67D6BF0070215F /* Dig Deeper */,
+				616F28B11B67D6BF0070215F /* Dig DeeperTests */,
+				616F28BC1B67D6BF0070215F /* Dig DeeperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		616F28991B67D6BF0070215F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616F28AC1B67D6BF0070215F /* LaunchScreen.storyboard in Resources */,
+				616F28A91B67D6BF0070215F /* Assets.xcassets in Resources */,
+				616F28A41B67D6BF0070215F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616F28B01B67D6BF0070215F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616F28BB1B67D6BF0070215F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		616F28971B67D6BF0070215F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616F28A11B67D6BF0070215F /* ViewController.swift in Sources */,
+				616F28A71B67D6BF0070215F /* Dig_Deeper.xcdatamodeld in Sources */,
+				616F289F1B67D6BF0070215F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616F28AE1B67D6BF0070215F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616F28B71B67D6BF0070215F /* Dig_DeeperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616F28B91B67D6BF0070215F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616F28C21B67D6BF0070215F /* Dig_DeeperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		616F28B41B67D6BF0070215F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 616F289A1B67D6BF0070215F /* Dig Deeper */;
+			targetProxy = 616F28B31B67D6BF0070215F /* PBXContainerItemProxy */;
+		};
+		616F28BF1B67D6BF0070215F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 616F289A1B67D6BF0070215F /* Dig Deeper */;
+			targetProxy = 616F28BE1B67D6BF0070215F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		616F28A21B67D6BF0070215F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				616F28A31B67D6BF0070215F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		616F28AA1B67D6BF0070215F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				616F28AB1B67D6BF0070215F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		616F28C41B67D6BF0070215F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		616F28C51B67D6BF0070215F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		616F28C71B67D6BF0070215F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dig Deeper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rusty1s.Dig-Deeper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		616F28C81B67D6BF0070215F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dig Deeper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rusty1s.Dig-Deeper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		616F28CA1B67D6BF0070215F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Dig DeeperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rusty1s.Dig-DeeperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dig Deeper.app/Dig Deeper";
+			};
+			name = Debug;
+		};
+		616F28CB1B67D6BF0070215F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Dig DeeperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rusty1s.Dig-DeeperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dig Deeper.app/Dig Deeper";
+			};
+			name = Release;
+		};
+		616F28CD1B67D6BF0070215F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Dig DeeperUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rusty1s.Dig-DeeperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Dig Deeper";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		616F28CE1B67D6BF0070215F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Dig DeeperUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rusty1s.Dig-DeeperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Dig Deeper";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		616F28961B67D6BF0070215F /* Build configuration list for PBXProject "Dig Deeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616F28C41B67D6BF0070215F /* Debug */,
+				616F28C51B67D6BF0070215F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		616F28C61B67D6BF0070215F /* Build configuration list for PBXNativeTarget "Dig Deeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616F28C71B67D6BF0070215F /* Debug */,
+				616F28C81B67D6BF0070215F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		616F28C91B67D6BF0070215F /* Build configuration list for PBXNativeTarget "Dig DeeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616F28CA1B67D6BF0070215F /* Debug */,
+				616F28CB1B67D6BF0070215F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		616F28CC1B67D6BF0070215F /* Build configuration list for PBXNativeTarget "Dig DeeperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616F28CD1B67D6BF0070215F /* Debug */,
+				616F28CE1B67D6BF0070215F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		616F28A51B67D6BF0070215F /* Dig_Deeper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				616F28A61B67D6BF0070215F /* Dig_Deeper.xcdatamodel */,
+			);
+			currentVersion = 616F28A61B67D6BF0070215F /* Dig_Deeper.xcdatamodel */;
+			path = Dig_Deeper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 616F28931B67D6BF0070215F /* Project object */;
+}
