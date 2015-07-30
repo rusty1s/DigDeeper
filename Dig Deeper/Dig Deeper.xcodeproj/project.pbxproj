@@ -13,7 +13,6 @@
 		616F28A41B67D6BF0070215F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616F28A21B67D6BF0070215F /* Main.storyboard */; };
 		616F28A71B67D6BF0070215F /* Dig_Deeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 616F28A51B67D6BF0070215F /* Dig_Deeper.xcdatamodeld */; };
 		616F28A91B67D6BF0070215F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616F28A81B67D6BF0070215F /* Assets.xcassets */; };
-		616F28AC1B67D6BF0070215F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616F28AA1B67D6BF0070215F /* LaunchScreen.storyboard */; };
 		616F28B71B67D6BF0070215F /* Dig_DeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F28B61B67D6BF0070215F /* Dig_DeeperTests.swift */; };
 		616F28C21B67D6BF0070215F /* Dig_DeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F28C11B67D6BF0070215F /* Dig_DeeperUITests.swift */; };
 /* End PBXBuildFile section */
@@ -44,7 +43,6 @@
 		616F28A31B67D6BF0070215F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		616F28A61B67D6BF0070215F /* Dig_Deeper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dig_Deeper.xcdatamodel; sourceTree = "<group>"; };
 		616F28A81B67D6BF0070215F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		616F28AB1B67D6BF0070215F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		616F28AD1B67D6BF0070215F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		616F28B21B67D6BF0070215F /* Dig DeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dig DeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		616F28B61B67D6BF0070215F /* Dig_DeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dig_DeeperTests.swift; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				616F28A01B67D6BF0070215F /* ViewController.swift */,
 				616F28A21B67D6BF0070215F /* Main.storyboard */,
 				616F28A81B67D6BF0070215F /* Assets.xcassets */,
-				616F28AA1B67D6BF0070215F /* LaunchScreen.storyboard */,
 				616F28AD1B67D6BF0070215F /* Info.plist */,
 				616F28A51B67D6BF0070215F /* Dig_Deeper.xcdatamodeld */,
 			);
@@ -259,7 +256,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				616F28AC1B67D6BF0070215F /* LaunchScreen.storyboard in Resources */,
 				616F28A91B67D6BF0070215F /* Assets.xcassets in Resources */,
 				616F28A41B67D6BF0070215F /* Main.storyboard in Resources */,
 			);
@@ -378,14 +374,6 @@
 				616F28A31B67D6BF0070215F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		616F28AA1B67D6BF0070215F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				616F28AB1B67D6BF0070215F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

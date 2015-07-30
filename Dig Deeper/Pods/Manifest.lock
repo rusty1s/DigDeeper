@@ -1,19 +1,27 @@
 PODS:
   - RSContactGrid (1.0)
+  - RSScene (1.0)
 
 DEPENDENCIES:
   - RSContactGrid (from `https://github.com/rusty1s/RSContactGrid.git`)
+  - RSScene (from `https://github.com/rusty1s/RSScene.git`)
 
 EXTERNAL SOURCES:
   RSContactGrid:
     :git: https://github.com/rusty1s/RSContactGrid.git
+  RSScene:
+    :git: https://github.com/rusty1s/RSScene.git
 
 CHECKOUT OPTIONS:
   RSContactGrid:
     :commit: f4afdee605fb50521fefaec6ffb550d89bfa460d
     :git: https://github.com/rusty1s/RSContactGrid.git
+  RSScene:
+    :commit: f275e3156a87a3897cae7ef489e794e7c9d68fbc
+    :git: https://github.com/rusty1s/RSScene.git
 
 SPEC CHECKSUMS:
   RSContactGrid: 8d5eff8a802d7c8adc4d3854795b63cc7135d5a7
+  RSScene: 081b8fb0194b74275b1ef117d15360be1623498a
 
 COCOAPODS: 0.37.1

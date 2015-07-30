@@ -1,0 +1,21 @@
+{
+  "name": "RSScene",
+  "version": "1.0",
+  "summary": "An inheritance of SKScene that adds a game logic loop to the runtime of a scene",
+  "description": "\t\t\t\t\tRSScene inherits SKScene by adding a game logic loop to the runtime of a scene implemented in Swift. RSScene distinguishs between a rendering loop (fps) and a loop, that calls game update logic. The logic loop typically runs much slower than the rendering loop, because games don't need to update its logic that often. This guarantees great performance for all kind of games!\n",
+  "homepage": "https://github.com/rusty1s/RSScene",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Rusty1s": "matthias.fey@tu-dortmund.de"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/rusty1s/RSScene.git"
+  },
+  "source_files": "RSContactGrid/RSContactGrid/*.swift"
+}
