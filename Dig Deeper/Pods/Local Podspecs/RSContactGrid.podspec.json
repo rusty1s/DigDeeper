@@ -4,20 +4,16 @@
   "summary": "A triangular/square/rotated square/hexagonal grid datastructure with contact detection for any polygon",
   "description": "\t\t\t\t\tRSContactGrid is a grid datastructure for holding elements that can be addressed by coordinates implemented in Swift 2.0. Actual there are four different grid types to choose from (triangular, square, rotated square and hexagonal).\n\n\t\t\t\t\tRSContactGrid also implements a contact detection for all four different grid types, that means the framework detects the elements in the grid which are overlayed by any polygon defined over a finite sequence of CGPoint.\n",
   "homepage": "https://github.com/rusty1s/RSContactGrid",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
   "screenshots": [
     "https://raw.githubusercontent.com/rusty1s/RSContactGrid/master/triangular-grid.png",
     "https://raw.githubusercontent.com/rusty1s/RSContactGrid/master/square-grid.png",
     "https://raw.githubusercontent.com/rusty1s/RSContactGrid/master/rotated-square-grid.png",
-    "https://raw.githubusercontent.com/rusty1s/RSContactGrid/master/hexagonal-grid.png",
-    {
-      "type": "MIT",
-      "file": "LICENSE"
-    }
+    "https://raw.githubusercontent.com/rusty1s/RSContactGrid/master/hexagonal-grid.png"
   ],
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   "authors": {
     "Rusty1s": "matthias.fey@tu-dortmund.de"
   },

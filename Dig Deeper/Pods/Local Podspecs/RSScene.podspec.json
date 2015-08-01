@@ -17,5 +17,5 @@
   "source": {
     "git": "https://github.com/rusty1s/RSScene.git"
   },
-  "source_files": "RSContactGrid/RSContactGrid/*.swift"
+  "source_files": "RSScene/RSScene/*.swift"
 }

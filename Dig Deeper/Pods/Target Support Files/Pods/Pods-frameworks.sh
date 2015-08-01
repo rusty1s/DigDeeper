@@ -49,7 +49,9 @@ code_sign() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'RSContactGrid.framework'
+  install_framework 'RSScene.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'RSContactGrid.framework'
+  install_framework 'RSScene.framework'
 fi

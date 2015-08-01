@@ -7,194 +7,243 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		058BC19C7B1D7BDFDC2DF28B /* HexagonalElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DB1FA03EE7A93F43A195CF /* HexagonalElement.swift */; };
-		0DB1D86F55D761D2FC948B88 /* GridDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58618FF000DBE69A6A7F6C80 /* GridDelegate.swift */; };
-		234142F3A4B74953EF2B372F /* RotatedSquareElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C639AF406F5152C3DD7BB830 /* RotatedSquareElement.swift */; };
-		50AAD75771FF44B211784858 /* SquareElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED1D63BFAADB00FC42CF0F0 /* SquareElement.swift */; };
-		712473F2A5EC17C0EE8F0C82 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AA83F8930EA36E08194E51 /* Pods-dummy.m */; };
-		9D4C7898ABBA679C9595E75F /* Pods-RSContactGrid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9923A8E799C8ECFE4CC72459 /* Pods-RSContactGrid-dummy.m */; };
-		9DC999400499BDC309008276 /* GridElementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C46620D43944E31918921B /* GridElementType.swift */; };
-		A05F040820D44F459A290392 /* GridContactDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD86FC717E4441625A46012 /* GridContactDetection.swift */; };
-		B86825AB5F25BEDE33DFEFF0 /* GridType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3984EAB098CD49C3AD8766 /* GridType.swift */; };
-		C698A7A48F351FE73CF9F35F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2084DAB2399FAC4CD524AD /* Foundation.framework */; };
-		D1CD99C3BC88B56D0C28F19F /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 465F0A83C99153ED33EBB506 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D91058D9EEEDB94275BF71BD /* TriangularElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FA21326B61473AF96191E /* TriangularElement.swift */; };
-		E05251C45026A1939F38328F /* Pods-RSContactGrid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1366E4852A0B07FBEF2D8364 /* Pods-RSContactGrid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA6D8B96DE4FA2B13809A53C /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C62024892A161BF670945F /* Grid.swift */; };
-		F927A4B5CC7FA017FC4F2B6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2084DAB2399FAC4CD524AD /* Foundation.framework */; };
+		048D22CE4F6BB26288E783FF /* TriangularElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE934049165F878A7004CF8B /* TriangularElement.swift */; };
+		0FF4BD1903339F6BF4C89361 /* HexagonalElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8795E051D6C814D3E3D7038 /* HexagonalElement.swift */; };
+		19506E7EA8495735FBAF939F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D73FE86F2D9B3232EC4FDD7 /* Foundation.framework */; };
+		21594BD1D9D0F23AAF4D284A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D73FE86F2D9B3232EC4FDD7 /* Foundation.framework */; };
+		42AE348447F0E336ADC131A8 /* GridDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F8B7C0A0EF99EDC2BAD98 /* GridDelegate.swift */; };
+		4B6D5E1DDAFD3CA49BB23F44 /* Pods-RSScene-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1583EE4A8DCA0E5A5B990BC3 /* Pods-RSScene-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53C4DF1E8FC9B463535B96CA /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D9041983C0773E307A918C /* Grid.swift */; };
+		5B2C9D03A6065852DF232970 /* RSSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C462E4458BF9168287F758DD /* RSSceneDelegate.swift */; };
+		66F7344818690E1E1FA4C1EC /* GridContactDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90935613940CB414014D3E9 /* GridContactDetection.swift */; };
+		82613FEA7910F58AD44E0CED /* Pods-RSContactGrid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30BAD267E930A8B7A664BEB6 /* Pods-RSContactGrid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B23A3028D188E22E2923881C /* Pods-RSScene-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB489E559147EC9EF5DC159 /* Pods-RSScene-dummy.m */; };
+		C3FD4754D939994C4F47915D /* GridType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2693C4DF76F5D06500D127DD /* GridType.swift */; };
+		CF435FBB70D9372CB90C00EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D73FE86F2D9B3232EC4FDD7 /* Foundation.framework */; };
+		CFD105642A6A6F7CCDCA0C5B /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6375C2AB3DA7D5911DBF21 /* Pods-dummy.m */; };
+		DD1479DA65254FB69AF713B5 /* Pods-RSContactGrid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A46BA5689C10C5A1B60CC5E9 /* Pods-RSContactGrid-dummy.m */; };
+		E0BE0286882CE4DDF650A260 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC4B975796B149CF203C1EBC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC8AB9A8483D702859AACE61 /* RotatedSquareElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DABC1AD2D88BF35E42F6B7C /* RotatedSquareElement.swift */; };
+		F15618A9DF1A3E5702236BF7 /* GridElementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E77CA0D01DD474BD673DBB /* GridElementType.swift */; };
+		F9AFFFC94A144651642DB5DF /* SquareElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB1DDB63AD1C74DC3A4AF54 /* SquareElement.swift */; };
+		FD3E3341D50C9244C703EA19 /* RSScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214557FBF5326A68BEDBA8E /* RSScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D32FCBF607BF493B24C28BED /* PBXContainerItemProxy */ = {
+		41614431D450DBC42C1C147E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 036A3CACD63D1443C5D39F6E /* Project object */;
+			containerPortal = D6997FDA2CDCE449DFD9935C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 69471422C9CDD859AE20BB23;
+			remoteGlobalIDString = B086C38162F4ED28AE3A7BC6;
 			remoteInfo = "Pods-RSContactGrid";
+		};
+		F03B71118058DF44657EC66C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6997FDA2CDCE449DFD9935C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7DDD6C63BCBBD9359D56D00;
+			remoteInfo = "Pods-RSScene";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00576348FD7466F71D2A8194 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		01C46620D43944E31918921B /* GridElementType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridElementType.swift; path = RSContactGrid/RSContactGrid/Protocols/GridElementType.swift; sourceTree = "<group>"; };
-		102456996865C5BADA940142 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		1366E4852A0B07FBEF2D8364 /* Pods-RSContactGrid-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RSContactGrid-umbrella.h"; sourceTree = "<group>"; };
-		2705C1AAA0085047B22492CD /* Pods-RSContactGrid-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RSContactGrid-prefix.pch"; sourceTree = "<group>"; };
-		2ED1D63BFAADB00FC42CF0F0 /* SquareElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SquareElement.swift; path = RSContactGrid/RSContactGrid/Implementation/SquareElement.swift; sourceTree = "<group>"; };
-		2FED1E8CDB5FBD41D773F865 /* Pods-RSContactGrid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RSContactGrid.modulemap"; sourceTree = "<group>"; };
-		465F0A83C99153ED33EBB506 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		58618FF000DBE69A6A7F6C80 /* GridDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridDelegate.swift; path = RSContactGrid/RSContactGrid/Protocols/GridDelegate.swift; sourceTree = "<group>"; };
-		6CD258F3E2808358166913CE /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		73CF88C985F84B78B25350F9 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		84024CC6DC03746A1D1DB568 /* RSContactGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSContactGrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		841A5D19B57543921B87FAE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85DB1FA03EE7A93F43A195CF /* HexagonalElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalElement.swift; path = RSContactGrid/RSContactGrid/Implementation/HexagonalElement.swift; sourceTree = "<group>"; };
-		9923A8E799C8ECFE4CC72459 /* Pods-RSContactGrid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RSContactGrid-dummy.m"; sourceTree = "<group>"; };
-		A38ADAC9EFB3379AC325B856 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5AA83F8930EA36E08194E51 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		AB3984EAB098CD49C3AD8766 /* GridType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridType.swift; path = RSContactGrid/RSContactGrid/Protocols/GridType.swift; sourceTree = "<group>"; };
-		B08BC677E22A299075BF1B2F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B23F0210DCBAD2A3C60DFC0F /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		BA86CE841B65A3B929C2F9CF /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		BBF1155BD485A94B02A2F4AB /* Pods-RSContactGrid.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSContactGrid.xcconfig"; sourceTree = "<group>"; };
-		C639AF406F5152C3DD7BB830 /* RotatedSquareElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotatedSquareElement.swift; path = RSContactGrid/RSContactGrid/Implementation/RotatedSquareElement.swift; sourceTree = "<group>"; };
-		CB93B280C37208CEA2AF801C /* Pods-RSContactGrid-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSContactGrid-Private.xcconfig"; sourceTree = "<group>"; };
-		CDD86FC717E4441625A46012 /* GridContactDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridContactDetection.swift; path = RSContactGrid/RSContactGrid/Protocols/GridContactDetection.swift; sourceTree = "<group>"; };
-		D06921EBD4C1C9AF1B0FD08C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		D7C62024892A161BF670945F /* Grid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = RSContactGrid/RSContactGrid/Implementation/Grid.swift; sourceTree = "<group>"; };
-		E214121EC0660892B6C91B03 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		ED2084DAB2399FAC4CD524AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F35FA21326B61473AF96191E /* TriangularElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TriangularElement.swift; path = RSContactGrid/RSContactGrid/Implementation/TriangularElement.swift; sourceTree = "<group>"; };
-		FF30A7315405E58E76588D4F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024C3E2B1F6B5A7B5641EF94 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		1583EE4A8DCA0E5A5B990BC3 /* Pods-RSScene-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RSScene-umbrella.h"; sourceTree = "<group>"; };
+		1DABC1AD2D88BF35E42F6B7C /* RotatedSquareElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotatedSquareElement.swift; path = RSContactGrid/RSContactGrid/Implementation/RotatedSquareElement.swift; sourceTree = "<group>"; };
+		22E77CA0D01DD474BD673DBB /* GridElementType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridElementType.swift; path = RSContactGrid/RSContactGrid/Protocols/GridElementType.swift; sourceTree = "<group>"; };
+		2693C4DF76F5D06500D127DD /* GridType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridType.swift; path = RSContactGrid/RSContactGrid/Protocols/GridType.swift; sourceTree = "<group>"; };
+		26F8EBAFE40E8B3527DD45D4 /* Pods-RSScene.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RSScene.modulemap"; sourceTree = "<group>"; };
+		30BAD267E930A8B7A664BEB6 /* Pods-RSContactGrid-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RSContactGrid-umbrella.h"; sourceTree = "<group>"; };
+		35556AD44D155CD685457BDB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4394AE53B566DFB98740DC79 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4A70A0FE96AB349EE5CC2118 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C9D2D1057D8E424E22A9E00 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		6049503190471EF9A2E83BA8 /* Pods-RSContactGrid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RSContactGrid.modulemap"; sourceTree = "<group>"; };
+		61E0367583BB2CC4E61BB45F /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		647E29D88E104817A706931B /* RSScene.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSScene.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		655D75AEDE645568B1C1BD28 /* Pods-RSScene-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RSScene-prefix.pch"; sourceTree = "<group>"; };
+		6D73FE86F2D9B3232EC4FDD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		767DE91BFED2C2FB561C8C09 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		79AA81BB7BBC01E66B7EB6EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F6375C2AB3DA7D5911DBF21 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		922EB8A1640EDF62FE31B34B /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		947ED05B207764655B94F8DD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		A3151CF92E27E6D5A6A0664E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A46BA5689C10C5A1B60CC5E9 /* Pods-RSContactGrid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RSContactGrid-dummy.m"; sourceTree = "<group>"; };
+		AFC26729960270358CC95B69 /* Pods-RSContactGrid.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSContactGrid.xcconfig"; sourceTree = "<group>"; };
+		B214557FBF5326A68BEDBA8E /* RSScene.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSScene.swift; path = RSScene/RSScene/RSScene.swift; sourceTree = "<group>"; };
+		B4D9041983C0773E307A918C /* Grid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = RSContactGrid/RSContactGrid/Implementation/Grid.swift; sourceTree = "<group>"; };
+		C168EDBFEBFD28F494FF6B68 /* Pods-RSScene.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSScene.xcconfig"; sourceTree = "<group>"; };
+		C462E4458BF9168287F758DD /* RSSceneDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSceneDelegate.swift; path = RSScene/RSScene/RSSceneDelegate.swift; sourceTree = "<group>"; };
+		C8795E051D6C814D3E3D7038 /* HexagonalElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalElement.swift; path = RSContactGrid/RSContactGrid/Implementation/HexagonalElement.swift; sourceTree = "<group>"; };
+		D90935613940CB414014D3E9 /* GridContactDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridContactDetection.swift; path = RSContactGrid/RSContactGrid/Protocols/GridContactDetection.swift; sourceTree = "<group>"; };
+		DC4B975796B149CF203C1EBC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		DE934049165F878A7004CF8B /* TriangularElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TriangularElement.swift; path = RSContactGrid/RSContactGrid/Implementation/TriangularElement.swift; sourceTree = "<group>"; };
+		EB82F55A1E05EBE7A16B795E /* RSContactGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSContactGrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBDB1F280600C5EE27ADB93A /* Pods-RSContactGrid-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RSContactGrid-prefix.pch"; sourceTree = "<group>"; };
+		ED5960C9ECACA6E6729E1803 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED65FB49394578683E436400 /* Pods-RSScene-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSScene-Private.xcconfig"; sourceTree = "<group>"; };
+		EEB489E559147EC9EF5DC159 /* Pods-RSScene-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RSScene-dummy.m"; sourceTree = "<group>"; };
+		F63F8B7C0A0EF99EDC2BAD98 /* GridDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridDelegate.swift; path = RSContactGrid/RSContactGrid/Protocols/GridDelegate.swift; sourceTree = "<group>"; };
+		FABFD8A01ACC21FA21222538 /* Pods-RSContactGrid-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSContactGrid-Private.xcconfig"; sourceTree = "<group>"; };
+		FCB1DDB63AD1C74DC3A4AF54 /* SquareElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SquareElement.swift; path = RSContactGrid/RSContactGrid/Implementation/SquareElement.swift; sourceTree = "<group>"; };
+		FEC4536D817070723CC7E99C /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		04668778BE09CA157991B880 /* Frameworks */ = {
+		140A81B18A128C90E9519187 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F927A4B5CC7FA017FC4F2B6D /* Foundation.framework in Frameworks */,
+				CF435FBB70D9372CB90C00EC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1760D2A5F684B2FB9D879D3F /* Frameworks */ = {
+		54BC20D548CF556982ABED42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C698A7A48F351FE73CF9F35F /* Foundation.framework in Frameworks */,
+				19506E7EA8495735FBAF939F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFFCDAD5282DAD5DB640F0C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21594BD1D9D0F23AAF4D284A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		145D2ECCB232511BE39BAA40 /* Pods */ = {
+		0F632459C8250F56936B081A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6870C8BAC0609A927AD2A690 /* RSContactGrid */,
-				A5830CFDD21FA1159B6B3CDD /* RSScene */,
+				6D73FE86F2D9B3232EC4FDD7 /* Foundation.framework */,
 			);
-			name = Pods;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		3CF444C8F08C74A067BF6C06 /* Targets Support Files */ = {
+		5604411012BD5D2D2B28A119 /* RSScene */ = {
 			isa = PBXGroup;
 			children = (
-				74D0F61E873CBE61A882D87A /* Pods */,
+				B214557FBF5326A68BEDBA8E /* RSScene.swift */,
+				C462E4458BF9168287F758DD /* RSSceneDelegate.swift */,
+				71667B60CE91126DB5891C06 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			path = RSScene;
 			sourceTree = "<group>";
 		};
-		3F28C49ABD79F096FF8AB10B /* Products */ = {
+		5AC2FF2BB9D1D538161532BA /* RSContactGrid */ = {
 			isa = PBXGroup;
 			children = (
-				B08BC677E22A299075BF1B2F /* Pods.framework */,
-				84024CC6DC03746A1D1DB568 /* RSContactGrid.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		53F87C818C1B0798077299A3 = {
-			isa = PBXGroup;
-			children = (
-				A38ADAC9EFB3379AC325B856 /* Podfile */,
-				C584345ABE427B2E0AC959A5 /* Frameworks */,
-				145D2ECCB232511BE39BAA40 /* Pods */,
-				3F28C49ABD79F096FF8AB10B /* Products */,
-				3CF444C8F08C74A067BF6C06 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		6464060ABD0E1D10A41B91D9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				841A5D19B57543921B87FAE0 /* Info.plist */,
-				2FED1E8CDB5FBD41D773F865 /* Pods-RSContactGrid.modulemap */,
-				BBF1155BD485A94B02A2F4AB /* Pods-RSContactGrid.xcconfig */,
-				CB93B280C37208CEA2AF801C /* Pods-RSContactGrid-Private.xcconfig */,
-				9923A8E799C8ECFE4CC72459 /* Pods-RSContactGrid-dummy.m */,
-				2705C1AAA0085047B22492CD /* Pods-RSContactGrid-prefix.pch */,
-				1366E4852A0B07FBEF2D8364 /* Pods-RSContactGrid-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-RSContactGrid";
-			sourceTree = "<group>";
-		};
-		6870C8BAC0609A927AD2A690 /* RSContactGrid */ = {
-			isa = PBXGroup;
-			children = (
-				D7C62024892A161BF670945F /* Grid.swift */,
-				CDD86FC717E4441625A46012 /* GridContactDetection.swift */,
-				58618FF000DBE69A6A7F6C80 /* GridDelegate.swift */,
-				01C46620D43944E31918921B /* GridElementType.swift */,
-				AB3984EAB098CD49C3AD8766 /* GridType.swift */,
-				85DB1FA03EE7A93F43A195CF /* HexagonalElement.swift */,
-				C639AF406F5152C3DD7BB830 /* RotatedSquareElement.swift */,
-				2ED1D63BFAADB00FC42CF0F0 /* SquareElement.swift */,
-				F35FA21326B61473AF96191E /* TriangularElement.swift */,
-				6464060ABD0E1D10A41B91D9 /* Support Files */,
+				B4D9041983C0773E307A918C /* Grid.swift */,
+				D90935613940CB414014D3E9 /* GridContactDetection.swift */,
+				F63F8B7C0A0EF99EDC2BAD98 /* GridDelegate.swift */,
+				22E77CA0D01DD474BD673DBB /* GridElementType.swift */,
+				2693C4DF76F5D06500D127DD /* GridType.swift */,
+				C8795E051D6C814D3E3D7038 /* HexagonalElement.swift */,
+				1DABC1AD2D88BF35E42F6B7C /* RotatedSquareElement.swift */,
+				FCB1DDB63AD1C74DC3A4AF54 /* SquareElement.swift */,
+				DE934049165F878A7004CF8B /* TriangularElement.swift */,
+				E3C8E683675A2540DB2802D9 /* Support Files */,
 			);
 			path = RSContactGrid;
 			sourceTree = "<group>";
 		};
-		74D0F61E873CBE61A882D87A /* Pods */ = {
+		63CF13999427559881F421D0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FF30A7315405E58E76588D4F /* Info.plist */,
-				B23F0210DCBAD2A3C60DFC0F /* Pods.modulemap */,
-				E214121EC0660892B6C91B03 /* Pods-acknowledgements.markdown */,
-				BA86CE841B65A3B929C2F9CF /* Pods-acknowledgements.plist */,
-				A5AA83F8930EA36E08194E51 /* Pods-dummy.m */,
-				73CF88C985F84B78B25350F9 /* Pods-environment.h */,
-				6CD258F3E2808358166913CE /* Pods-frameworks.sh */,
-				102456996865C5BADA940142 /* Pods-resources.sh */,
-				465F0A83C99153ED33EBB506 /* Pods-umbrella.h */,
-				00576348FD7466F71D2A8194 /* Pods.debug.xcconfig */,
-				D06921EBD4C1C9AF1B0FD08C /* Pods.release.xcconfig */,
+				4A70A0FE96AB349EE5CC2118 /* Info.plist */,
+				024C3E2B1F6B5A7B5641EF94 /* Pods.modulemap */,
+				A3151CF92E27E6D5A6A0664E /* Pods-acknowledgements.markdown */,
+				61E0367583BB2CC4E61BB45F /* Pods-acknowledgements.plist */,
+				8F6375C2AB3DA7D5911DBF21 /* Pods-dummy.m */,
+				922EB8A1640EDF62FE31B34B /* Pods-environment.h */,
+				FEC4536D817070723CC7E99C /* Pods-frameworks.sh */,
+				767DE91BFED2C2FB561C8C09 /* Pods-resources.sh */,
+				DC4B975796B149CF203C1EBC /* Pods-umbrella.h */,
+				947ED05B207764655B94F8DD /* Pods.debug.xcconfig */,
+				4C9D2D1057D8E424E22A9E00 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		920B27780FB9B94EF4C8C69C /* iOS */ = {
+		71667B60CE91126DB5891C06 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				ED2084DAB2399FAC4CD524AD /* Foundation.framework */,
+				ED5960C9ECACA6E6729E1803 /* Info.plist */,
+				26F8EBAFE40E8B3527DD45D4 /* Pods-RSScene.modulemap */,
+				C168EDBFEBFD28F494FF6B68 /* Pods-RSScene.xcconfig */,
+				ED65FB49394578683E436400 /* Pods-RSScene-Private.xcconfig */,
+				EEB489E559147EC9EF5DC159 /* Pods-RSScene-dummy.m */,
+				655D75AEDE645568B1C1BD28 /* Pods-RSScene-prefix.pch */,
+				1583EE4A8DCA0E5A5B990BC3 /* Pods-RSScene-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-RSScene";
 			sourceTree = "<group>";
 		};
-		A5830CFDD21FA1159B6B3CDD /* RSScene */ = {
+		9BB268A569AC66D649EFF052 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				5AC2FF2BB9D1D538161532BA /* RSContactGrid */,
+				5604411012BD5D2D2B28A119 /* RSScene */,
 			);
-			path = RSScene;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		C584345ABE427B2E0AC959A5 /* Frameworks */ = {
+		C6E8140E230CA58BDB8C2FE4 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				920B27780FB9B94EF4C8C69C /* iOS */,
+				63CF13999427559881F421D0 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D605B45498983E8D47FFBCA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35556AD44D155CD685457BDB /* Pods.framework */,
+				EB82F55A1E05EBE7A16B795E /* RSContactGrid.framework */,
+				647E29D88E104817A706931B /* RSScene.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8AEB10FD3ED787AA7554047 = {
+			isa = PBXGroup;
+			children = (
+				4394AE53B566DFB98740DC79 /* Podfile */,
+				F39EA91D0ECA4B224A9F2D0E /* Frameworks */,
+				9BB268A569AC66D649EFF052 /* Pods */,
+				D605B45498983E8D47FFBCA0 /* Products */,
+				C6E8140E230CA58BDB8C2FE4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E3C8E683675A2540DB2802D9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				79AA81BB7BBC01E66B7EB6EE /* Info.plist */,
+				6049503190471EF9A2E83BA8 /* Pods-RSContactGrid.modulemap */,
+				AFC26729960270358CC95B69 /* Pods-RSContactGrid.xcconfig */,
+				FABFD8A01ACC21FA21222538 /* Pods-RSContactGrid-Private.xcconfig */,
+				A46BA5689C10C5A1B60CC5E9 /* Pods-RSContactGrid-dummy.m */,
+				EBDB1F280600C5EE27ADB93A /* Pods-RSContactGrid-prefix.pch */,
+				30BAD267E930A8B7A664BEB6 /* Pods-RSContactGrid-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-RSContactGrid";
+			sourceTree = "<group>";
+		};
+		F39EA91D0ECA4B224A9F2D0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F632459C8250F56936B081A /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,32 +251,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		93E3C1375181914A5DC40616 /* Headers */ = {
+		015AE779CB25F6AB093F4928 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E05251C45026A1939F38328F /* Pods-RSContactGrid-umbrella.h in Headers */,
+				82613FEA7910F58AD44E0CED /* Pods-RSContactGrid-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B25BC5EE41769B51B9082FB4 /* Headers */ = {
+		3B4916436B4CDD2A8BB57F31 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1CD99C3BC88B56D0C28F19F /* Pods-umbrella.h in Headers */,
+				4B6D5E1DDAFD3CA49BB23F44 /* Pods-RSScene-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99A4976AEF1C829E1F78408 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BE0286882CE4DDF650A260 /* Pods-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		69471422C9CDD859AE20BB23 /* Pods-RSContactGrid */ = {
+		B086C38162F4ED28AE3A7BC6 /* Pods-RSContactGrid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9845E80B108F2AC4A356302 /* Build configuration list for PBXNativeTarget "Pods-RSContactGrid" */;
+			buildConfigurationList = CCB15FCAB3C4AC814C79AB8D /* Build configuration list for PBXNativeTarget "Pods-RSContactGrid" */;
 			buildPhases = (
-				79CA416D798A484F53033915 /* Sources */,
-				04668778BE09CA157991B880 /* Frameworks */,
-				93E3C1375181914A5DC40616 /* Headers */,
+				06F3376564B3781491402D93 /* Sources */,
+				CFFCDAD5282DAD5DB640F0C7 /* Frameworks */,
+				015AE779CB25F6AB093F4928 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -235,150 +292,128 @@
 			);
 			name = "Pods-RSContactGrid";
 			productName = "Pods-RSContactGrid";
-			productReference = 84024CC6DC03746A1D1DB568 /* RSContactGrid.framework */;
+			productReference = EB82F55A1E05EBE7A16B795E /* RSContactGrid.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		97A4EAA357E6608FB13E4833 /* Pods */ = {
+		C69C79D69AABCBFD065BB61C /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A51241A482469238193BA2F7 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 58B1682D1A9697BCF1CAA85E /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				B7A76EF87BA3793FEFD75AC5 /* Sources */,
-				1760D2A5F684B2FB9D879D3F /* Frameworks */,
-				B25BC5EE41769B51B9082FB4 /* Headers */,
+				0A297B0DA2B351BD0DF38F88 /* Sources */,
+				140A81B18A128C90E9519187 /* Frameworks */,
+				F99A4976AEF1C829E1F78408 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AC8D80742F7FD1A3AEBD6FE8 /* PBXTargetDependency */,
+				4D97196B2D490270DCBD4C1D /* PBXTargetDependency */,
+				5FC9FC7E9456CA8F91575FF5 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = B08BC677E22A299075BF1B2F /* Pods.framework */;
+			productReference = 35556AD44D155CD685457BDB /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7DDD6C63BCBBD9359D56D00 /* Pods-RSScene */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F6E5D23403B443CE8AC8D99 /* Build configuration list for PBXNativeTarget "Pods-RSScene" */;
+			buildPhases = (
+				3ED6089BC2A4C9DEA49197FB /* Sources */,
+				54BC20D548CF556982ABED42 /* Frameworks */,
+				3B4916436B4CDD2A8BB57F31 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RSScene";
+			productName = "Pods-RSScene";
+			productReference = 647E29D88E104817A706931B /* RSScene.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		036A3CACD63D1443C5D39F6E /* Project object */ = {
+		D6997FDA2CDCE449DFD9935C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = E8785F8CD82339BA1CC5B6D9 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 9691E99FB44C0AA80119D7D1 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 53F87C818C1B0798077299A3;
-			productRefGroup = 3F28C49ABD79F096FF8AB10B /* Products */;
+			mainGroup = D8AEB10FD3ED787AA7554047;
+			productRefGroup = D605B45498983E8D47FFBCA0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				97A4EAA357E6608FB13E4833 /* Pods */,
-				69471422C9CDD859AE20BB23 /* Pods-RSContactGrid */,
+				C69C79D69AABCBFD065BB61C /* Pods */,
+				B086C38162F4ED28AE3A7BC6 /* Pods-RSContactGrid */,
+				D7DDD6C63BCBBD9359D56D00 /* Pods-RSScene */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		79CA416D798A484F53033915 /* Sources */ = {
+		06F3376564B3781491402D93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA6D8B96DE4FA2B13809A53C /* Grid.swift in Sources */,
-				A05F040820D44F459A290392 /* GridContactDetection.swift in Sources */,
-				0DB1D86F55D761D2FC948B88 /* GridDelegate.swift in Sources */,
-				9DC999400499BDC309008276 /* GridElementType.swift in Sources */,
-				B86825AB5F25BEDE33DFEFF0 /* GridType.swift in Sources */,
-				058BC19C7B1D7BDFDC2DF28B /* HexagonalElement.swift in Sources */,
-				9D4C7898ABBA679C9595E75F /* Pods-RSContactGrid-dummy.m in Sources */,
-				234142F3A4B74953EF2B372F /* RotatedSquareElement.swift in Sources */,
-				50AAD75771FF44B211784858 /* SquareElement.swift in Sources */,
-				D91058D9EEEDB94275BF71BD /* TriangularElement.swift in Sources */,
+				53C4DF1E8FC9B463535B96CA /* Grid.swift in Sources */,
+				66F7344818690E1E1FA4C1EC /* GridContactDetection.swift in Sources */,
+				42AE348447F0E336ADC131A8 /* GridDelegate.swift in Sources */,
+				F15618A9DF1A3E5702236BF7 /* GridElementType.swift in Sources */,
+				C3FD4754D939994C4F47915D /* GridType.swift in Sources */,
+				0FF4BD1903339F6BF4C89361 /* HexagonalElement.swift in Sources */,
+				DD1479DA65254FB69AF713B5 /* Pods-RSContactGrid-dummy.m in Sources */,
+				EC8AB9A8483D702859AACE61 /* RotatedSquareElement.swift in Sources */,
+				F9AFFFC94A144651642DB5DF /* SquareElement.swift in Sources */,
+				048D22CE4F6BB26288E783FF /* TriangularElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7A76EF87BA3793FEFD75AC5 /* Sources */ = {
+		0A297B0DA2B351BD0DF38F88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				712473F2A5EC17C0EE8F0C82 /* Pods-dummy.m in Sources */,
+				CFD105642A6A6F7CCDCA0C5B /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED6089BC2A4C9DEA49197FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23A3028D188E22E2923881C /* Pods-RSScene-dummy.m in Sources */,
+				FD3E3341D50C9244C703EA19 /* RSScene.swift in Sources */,
+				5B2C9D03A6065852DF232970 /* RSSceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AC8D80742F7FD1A3AEBD6FE8 /* PBXTargetDependency */ = {
+		4D97196B2D490270DCBD4C1D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-RSContactGrid";
-			target = 69471422C9CDD859AE20BB23 /* Pods-RSContactGrid */;
-			targetProxy = D32FCBF607BF493B24C28BED /* PBXContainerItemProxy */;
+			target = B086C38162F4ED28AE3A7BC6 /* Pods-RSContactGrid */;
+			targetProxy = 41614431D450DBC42C1C147E /* PBXContainerItemProxy */;
+		};
+		5FC9FC7E9456CA8F91575FF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RSScene";
+			target = D7DDD6C63BCBBD9359D56D00 /* Pods-RSScene */;
+			targetProxy = F03B71118058DF44657EC66C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1480238CDD384B03344F4B96 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00576348FD7466F71D2A8194 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2932406268544DF2978362A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB93B280C37208CEA2AF801C /* Pods-RSContactGrid-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-RSContactGrid/Pods-RSContactGrid-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-RSContactGrid/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RSContactGrid/Pods-RSContactGrid.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RSContactGrid;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7BAADB3CC503809AAB1C64CC /* Debug */ = {
+		1C485CC847C8A7D527F9B43E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -417,9 +452,150 @@
 			};
 			name = Debug;
 		};
-		AEB831BCBD3B2A5F86CEB6AD /* Debug */ = {
+		300B58E1E51EA132CE781858 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB93B280C37208CEA2AF801C /* Pods-RSContactGrid-Private.xcconfig */;
+			baseConfigurationReference = ED65FB49394578683E436400 /* Pods-RSScene-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RSScene/Pods-RSScene-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RSScene/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RSScene/Pods-RSScene.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RSScene;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5FEDDAC75850D12C8531AD24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 947ED05B207764655B94F8DD /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7FDEB3615A00986409368ACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9D2D1057D8E424E22A9E00 /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84F3822146F7834FD19A3C2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED65FB49394578683E436400 /* Pods-RSScene-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RSScene/Pods-RSScene-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RSScene/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RSScene/Pods-RSScene.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RSScene;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		96DC9D2F6D14581D274E1C50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABFD8A01ACC21FA21222538 /* Pods-RSContactGrid-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RSContactGrid/Pods-RSContactGrid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RSContactGrid/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RSContactGrid/Pods-RSContactGrid.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RSContactGrid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF9D5B4ADF00FB95F67DE2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABFD8A01ACC21FA21222538 /* Pods-RSContactGrid-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -445,7 +621,7 @@
 			};
 			name = Debug;
 		};
-		CAB701A423267B42F4FD60A6 /* Release */ = {
+		DF3FB3C8A793B82AAA700945 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -479,66 +655,46 @@
 			};
 			name = Release;
 		};
-		D0E267E5B89A644A155FFE4C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D06921EBD4C1C9AF1B0FD08C /* Pods.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A51241A482469238193BA2F7 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		4F6E5D23403B443CE8AC8D99 /* Build configuration list for PBXNativeTarget "Pods-RSScene" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1480238CDD384B03344F4B96 /* Debug */,
-				D0E267E5B89A644A155FFE4C /* Release */,
+				84F3822146F7834FD19A3C2E /* Debug */,
+				300B58E1E51EA132CE781858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9845E80B108F2AC4A356302 /* Build configuration list for PBXNativeTarget "Pods-RSContactGrid" */ = {
+		58B1682D1A9697BCF1CAA85E /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AEB831BCBD3B2A5F86CEB6AD /* Debug */,
-				2932406268544DF2978362A0 /* Release */,
+				5FEDDAC75850D12C8531AD24 /* Debug */,
+				7FDEB3615A00986409368ACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E8785F8CD82339BA1CC5B6D9 /* Build configuration list for PBXProject "Pods" */ = {
+		9691E99FB44C0AA80119D7D1 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7BAADB3CC503809AAB1C64CC /* Debug */,
-				CAB701A423267B42F4FD60A6 /* Release */,
+				1C485CC847C8A7D527F9B43E /* Debug */,
+				DF3FB3C8A793B82AAA700945 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCB15FCAB3C4AC814C79AB8D /* Build configuration list for PBXNativeTarget "Pods-RSContactGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF9D5B4ADF00FB95F67DE2BE /* Debug */,
+				96DC9D2F6D14581D274E1C50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 036A3CACD63D1443C5D39F6E /* Project object */;
+	rootObject = D6997FDA2CDCE449DFD9935C /* Project object */;
 }

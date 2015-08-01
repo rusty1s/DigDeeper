@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		21B8AF3F1349FF07C8169B3F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D97A93AF05C13031AF2F6A /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		615201C41B6BA29200358E7D /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615201C31B6BA29200358E7D /* PlayerNode.swift */; };
+		615201C61B6BA2B300358E7D /* MovingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615201C51B6BA2B300358E7D /* MovingNode.swift */; };
+		615201CD1B6D1C7200358E7D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615201CC1B6D1C7200358E7D /* Extensions.swift */; };
 		616F289F1B67D6BF0070215F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F289E1B67D6BF0070215F /* AppDelegate.swift */; };
-		616F28A11B67D6BF0070215F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F28A01B67D6BF0070215F /* ViewController.swift */; };
+		616F28A11B67D6BF0070215F /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F28A01B67D6BF0070215F /* GameController.swift */; };
 		616F28A41B67D6BF0070215F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616F28A21B67D6BF0070215F /* Main.storyboard */; };
 		616F28A71B67D6BF0070215F /* Dig_Deeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 616F28A51B67D6BF0070215F /* Dig_Deeper.xcdatamodeld */; };
 		616F28A91B67D6BF0070215F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616F28A81B67D6BF0070215F /* Assets.xcassets */; };
 		616F28B71B67D6BF0070215F /* Dig_DeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F28B61B67D6BF0070215F /* Dig_DeeperTests.swift */; };
 		616F28C21B67D6BF0070215F /* Dig_DeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F28C11B67D6BF0070215F /* Dig_DeeperUITests.swift */; };
+		61E1D4C81B6B9CEF009C14CD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E1D4C71B6B9CEF009C14CD /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +41,12 @@
 /* Begin PBXFileReference section */
 		0DFE3407EA73DC3F0B510FD6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		195D4B5A20593EF6CD4F161F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		615201C31B6BA29200358E7D /* PlayerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
+		615201C51B6BA2B300358E7D /* MovingNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingNode.swift; sourceTree = "<group>"; };
+		615201CC1B6D1C7200358E7D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		616F289B1B67D6BF0070215F /* Dig Deeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dig Deeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		616F289E1B67D6BF0070215F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		616F28A01B67D6BF0070215F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		616F28A01B67D6BF0070215F /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		616F28A31B67D6BF0070215F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		616F28A61B67D6BF0070215F /* Dig_Deeper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dig_Deeper.xcdatamodel; sourceTree = "<group>"; };
 		616F28A81B67D6BF0070215F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +57,7 @@
 		616F28BD1B67D6BF0070215F /* Dig DeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dig DeeperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		616F28C11B67D6BF0070215F /* Dig_DeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dig_DeeperUITests.swift; sourceTree = "<group>"; };
 		616F28C31B67D6BF0070215F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61E1D4C71B6B9CEF009C14CD /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		C2D97A93AF05C13031AF2F6A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		615201CB1B6D147C00358E7D /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				615201C51B6BA2B300358E7D /* MovingNode.swift */,
+				615201C31B6BA29200358E7D /* PlayerNode.swift */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
 		616F28921B67D6BF0070215F = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +122,10 @@
 			isa = PBXGroup;
 			children = (
 				616F289E1B67D6BF0070215F /* AppDelegate.swift */,
-				616F28A01B67D6BF0070215F /* ViewController.swift */,
+				616F28A01B67D6BF0070215F /* GameController.swift */,
+				61E1D4C71B6B9CEF009C14CD /* GameScene.swift */,
+				615201CB1B6D147C00358E7D /* Nodes */,
+				615201CC1B6D1C7200358E7D /* Extensions.swift */,
 				616F28A21B67D6BF0070215F /* Main.storyboard */,
 				616F28A81B67D6BF0070215F /* Assets.xcassets */,
 				616F28AD1B67D6BF0070215F /* Info.plist */,
@@ -330,9 +350,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				616F28A11B67D6BF0070215F /* ViewController.swift in Sources */,
+				616F28A11B67D6BF0070215F /* GameController.swift in Sources */,
 				616F28A71B67D6BF0070215F /* Dig_Deeper.xcdatamodeld in Sources */,
+				61E1D4C81B6B9CEF009C14CD /* GameScene.swift in Sources */,
 				616F289F1B67D6BF0070215F /* AppDelegate.swift in Sources */,
+				615201C41B6BA29200358E7D /* PlayerNode.swift in Sources */,
+				615201C61B6BA2B300358E7D /* MovingNode.swift in Sources */,
+				615201CD1B6D1C7200358E7D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

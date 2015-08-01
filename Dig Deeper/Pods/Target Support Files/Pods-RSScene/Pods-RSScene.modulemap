@@ -1,0 +1,6 @@
+framework module RSScene {
+  umbrella header "Pods-RSScene-umbrella.h"
+
+  export *
+  module * { export * }
+}

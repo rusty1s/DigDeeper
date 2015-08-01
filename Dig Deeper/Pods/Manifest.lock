@@ -14,14 +14,14 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   RSContactGrid:
-    :commit: f4afdee605fb50521fefaec6ffb550d89bfa460d
+    :commit: 1176d382cb8299c822030bd829f72ebc995b95cb
     :git: https://github.com/rusty1s/RSContactGrid.git
   RSScene:
-    :commit: f275e3156a87a3897cae7ef489e794e7c9d68fbc
+    :commit: 53672817e236c6b15e18dc990da6dde73358fd6d
     :git: https://github.com/rusty1s/RSScene.git
 
 SPEC CHECKSUMS:
-  RSContactGrid: 8d5eff8a802d7c8adc4d3854795b63cc7135d5a7
-  RSScene: 081b8fb0194b74275b1ef117d15360be1623498a
+  RSContactGrid: f64cfbc04c43d55b4a44fb9ab0eaf482a432ec67
+  RSScene: 4d4a274a220c6b2b59f1936bd98a2b8cbbde4084
 
 COCOAPODS: 0.37.1
