@@ -16,11 +16,11 @@ class GameController: UIViewController {
         
         let skView = self.view as! SKView
         let scene = GameScene(size: view.bounds.size)
+        scene.scaleMode = .AspectFill
+        skView.presentScene(scene)
         
         skView.showsFPS = true
+        //skView.showsPhysics = true
         scene.showsTPS = true
-        scene.scaleMode = .AspectFill
-        
-        skView.presentScene(scene)
     }
 }

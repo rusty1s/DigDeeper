@@ -2,3 +2,4 @@ use_frameworks!
 
 pod 'RSScene', :git => 'https://github.com/rusty1s/RSScene.git'
 pod 'RSContactGrid', :git => 'https://github.com/rusty1s/RSContactGrid.git'
+pod 'RSClipperWrapper', :git => 'https://github.com/rusty1s/RSClipperWrapper.git'

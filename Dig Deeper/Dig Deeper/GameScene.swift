@@ -17,7 +17,9 @@ enum AccelerometerDirection : CGFloat {
     case Inverted = -1
 }
 
-class GameScene : RSScene, GridDelegate {
+typealias GridElementType = RotatedSquareElement<SKNode, SKNode>
+
+class GameScene : RSScene, SKPhysicsContactDelegate {
     
     // MARK: Initializers
     
@@ -25,8 +27,13 @@ class GameScene : RSScene, GridDelegate {
         super.init(size: size)
         
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        tps = 10
-        grid.delegate = self
+        tps = 15
+        
+        GridElementType.height = 30
+        GridElementType.width = 30
+        
+        physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+        physicsWorld.contactDelegate = self
         
         setupNodes()
     }
@@ -44,15 +51,37 @@ class GameScene : RSScene, GridDelegate {
     // MARK: Nodes
     
     let playerNode = PlayerNode()
+    let pathNode = PathNode()
     
     // MARK: Setup
     
     private func setupNodes() {
-        let world = SKNode()
-        world.name = "world"
-        addChild(world)
+        // camera
+        let camera = SKCameraNode()
+        addChild(camera)
+        self.camera = camera
         
-        world.addChild(playerNode)
+        // player
+        addChild(pathNode)
+        addChild(playerNode)
+        
+        // material
+        addMaterialNodeWithVertices([CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], position: CGPoint(x: -20, y: -200), destroyable: true)
+        addMaterialNodeWithVertices([CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], position: CGPoint(x: 0, y: -500), destroyable: true)
+        addMaterialNodeWithVertices([CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], position: CGPoint(x: -50, y: -800), destroyable: true)
+    }
+    
+    private func addMaterialNodeWithVertices(vertices: [CGPoint], position: CGPoint, destroyable: Bool) {
+        
+        let materialNode = MaterialNode(vertices: vertices, destroyable: destroyable)
+        materialNode.position = position
+        addChild(materialNode)
+        
+        grid.addPolygon(materialNode.currentVertices) {
+            var element = $0
+            element.content = materialNode
+            return element
+        }
     }
     
     // MARK: Presenting a scene
@@ -86,20 +115,28 @@ class GameScene : RSScene, GridDelegate {
     
     // MARK: Executing the Game Logic Loop
     
-    private var grid = Grid<HexagonalElement<SKNode, SKNode>>()
+    private var grid = Grid<GridElementType>()
     
     override func updateGameLogic(currentTime: NSTimeInterval) {
-    
+
         grid.addPolygon(playerNode.currentVertices) {
             var element = $0
-            element.contact = playerNode
+       
+            if let content = element.content as? MaterialNode {
+                if element.contact == nil && content.destroyable {
+                    element.contact = playerNode
+                    content.subtractElement(element)
+                }
+            }
+            else { element.contact = playerNode }
+            
+            if $0.contact == nil { pathNode.addElement(element) }
+            
             return element
         }
-        
-        print(grid.count)
     }
 
-    // MARK: Executing the Animation Loop
+    // MARK: Executing the Rendering Loop
     
     private var currentPlayerDegree: CGFloat { return max(min(accelX*0.5*CGFloat.π, playerNode.maxDegree), -playerNode.maxDegree) }
     private var currentPlayerSpeed: CGVector { return CGVector(dx: sin(currentPlayerDegree)*playerNode.currentSpeed, dy: -cos(currentPlayerDegree)*playerNode.currentSpeed) }
@@ -111,15 +148,23 @@ class GameScene : RSScene, GridDelegate {
             accelX = (CGFloat(accelerometerData.acceleration.x) + calibration) * direction.rawValue * highPassFilterFactor + accelX * (1.0 - highPassFilterFactor)
         }
         
+        playerNode.physicsBody?.applyImpulse(currentPlayerSpeed)
         playerNode.zRotation = currentPlayerDegree
-        playerNode.position = playerNode.position+currentPlayerSpeed
+
+        camera?.runAction(SKAction.moveTo(CGPoint(x: playerNode.position.x, y: playerNode.position.y-playerNode.size.height/2), duration: 5/60))
     }
     
-    // MARK: Grid delegate
+    override func didSimulatePhysics() {
+        var velocity = playerNode.physicsBody!.velocity
+        if currentPlayerSpeed.dx >= 0 { velocity.dx = min(velocity.dx, currentPlayerSpeed.dx) }
+        if currentPlayerSpeed.dx <= 0 { velocity.dx = max(velocity.dx, currentPlayerSpeed.dx) }
+        if currentPlayerSpeed.dy >= 0 { velocity.dy = min(velocity.dy, currentPlayerSpeed.dy) }
+        if currentPlayerSpeed.dy <= 0 { velocity.dy = max(velocity.dy, currentPlayerSpeed.dy) }
+        playerNode.physicsBody?.velocity = velocity
+    }
     
-    func didBeginResolveContacts() {}
+    // MARK: Physics contact delegate
     
-    func didResolveContactInElement(element: Any) {}
-    
-    func didEndResolveContacts() {}
+    func didBeginContact(contact: SKPhysicsContact) {
+    }
 }

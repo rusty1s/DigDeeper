@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "779D22F23B20271D0328E717D6E918607B7A0B28",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0D595D7A98B01D02DBB8D03ABF4966D9C457F233" : 0,
+    "779D22F23B20271D0328E717D6E918607B7A0B28" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BF5E5432-52FB-4BF4-9D93-1F26EC552A70",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0D595D7A98B01D02DBB8D03ABF4966D9C457F233" : "RSClipperWrapper\/",
+    "779D22F23B20271D0328E717D6E918607B7A0B28" : "DigDeeper\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Dig Deeper",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Dig Deeper\/Dig Deeper.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rusty1s\/RSClipperWrapper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0D595D7A98B01D02DBB8D03ABF4966D9C457F233"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rusty1s\/DigDeeper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "779D22F23B20271D0328E717D6E918607B7A0B28"
+    }
+  ]
+}

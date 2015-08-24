@@ -17,9 +17,21 @@ class PlayerNode : MovingNode {
         
         name = "player"
         
-        maxSpeed = 20
-        currentSpeed = 0.5
+        maxSpeed = CGFloat.max
+        currentSpeed = 150
         maxDegree = 0.25*CGFloat.π
+        
+        physicsBody = SKPhysicsBody(rectangleOfSize: CGSize(width: 50, height: 100))
+        physicsBody?.allowsRotation = false
+        physicsBody?.mass = 1
+        physicsBody?.friction = 0
+        physicsBody?.restitution = 2
+        physicsBody?.angularDamping = 0
+        physicsBody?.linearDamping = 1
+        
+        physicsBody?.categoryBitMask = 0x1 << 1
+        physicsBody?.contactTestBitMask = 0x1 << 2
+        physicsBody?.collisionBitMask = 0x1 << 2
     }
 
     required init?(coder aDecoder: NSCoder) {

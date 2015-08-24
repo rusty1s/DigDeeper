@@ -1,0 +1,1 @@
+../../../RSClipperWrapper/RSClipperWrapper/RSClipperWrapper/Clipper 6.2.1/clipper.hpp

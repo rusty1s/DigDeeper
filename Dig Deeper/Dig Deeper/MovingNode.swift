@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-class MovingNode : SKSpriteNode {
+class MovingNode : SKSpriteNode, ContactNodeType {
     
     // MARK: Instance variables
     
@@ -30,12 +30,11 @@ class MovingNode : SKSpriteNode {
     var vertices: [CGPoint] { return [] }
     
     final var currentVertices: [CGPoint] {
-        let offset = CGPoint(x: position.x+anchorPoint.x*size.width, y: position.y+anchorPoint.y*size.height)
         let currentSin = sin(zRotation)
         let currentCos = cos(zRotation)
         return vertices.map {
-            CGPoint(x: offset.x+$0.x*currentCos-$0.y*currentSin,
-                y: offset.y+$0.x*currentSin+$0.y*currentCos)
+            CGPoint(x: position.x+$0.x*currentCos-$0.y*currentSin,
+                y: position.y+$0.x*currentSin+$0.y*currentCos)
         }
     }
 }

@@ -1,18 +1,25 @@
 PODS:
+  - RSClipperWrapper (1.0)
   - RSContactGrid (1.0)
   - RSScene (1.0)
 
 DEPENDENCIES:
+  - RSClipperWrapper (from `https://github.com/rusty1s/RSClipperWrapper.git`)
   - RSContactGrid (from `https://github.com/rusty1s/RSContactGrid.git`)
   - RSScene (from `https://github.com/rusty1s/RSScene.git`)
 
 EXTERNAL SOURCES:
+  RSClipperWrapper:
+    :git: https://github.com/rusty1s/RSClipperWrapper.git
   RSContactGrid:
     :git: https://github.com/rusty1s/RSContactGrid.git
   RSScene:
     :git: https://github.com/rusty1s/RSScene.git
 
 CHECKOUT OPTIONS:
+  RSClipperWrapper:
+    :commit: 96a7564c1479b1a3b6cd7f78729172ed114a309a
+    :git: https://github.com/rusty1s/RSClipperWrapper.git
   RSContactGrid:
     :commit: 1176d382cb8299c822030bd829f72ebc995b95cb
     :git: https://github.com/rusty1s/RSContactGrid.git
@@ -21,7 +28,8 @@ CHECKOUT OPTIONS:
     :git: https://github.com/rusty1s/RSScene.git
 
 SPEC CHECKSUMS:
+  RSClipperWrapper: 3364f13bfc821c1ceb853ed270eb625cf8187ff7
   RSContactGrid: f64cfbc04c43d55b4a44fb9ab0eaf482a432ec67
   RSScene: 4d4a274a220c6b2b59f1936bd98a2b8cbbde4084
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.38.2
