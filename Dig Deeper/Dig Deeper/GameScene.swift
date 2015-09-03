@@ -7,10 +7,9 @@
 //
 
 import SpriteKit
+import CoreMotion
 import RSScene
 import RSContactGrid
-
-import CoreMotion
 
 enum AccelerometerDirection : CGFloat {
     case Default = 1
@@ -21,16 +20,27 @@ typealias GridElementType = RotatedSquareElement<SKNode, SKNode>
 
 class GameScene : RSScene, SKPhysicsContactDelegate {
     
+    // MARK: Bit masks
+    
+    struct BitMask {
+        static let nothing: UInt32 = 0x1 << 0
+        static let player: UInt32 = 0x1 << 1
+        static let enemy: UInt32 = 0x1 << 2
+        static let material: UInt32 = 0x1 << 3
+    }
+    
     // MARK: Initializers
     
     override init(size: CGSize) {
         super.init(size: size)
         
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        tps = 15
+        tps = 20
         
         GridElementType.height = 30
         GridElementType.width = 30
+        
+        maxGridElements = (GridElementType.elementsInRect(CGRect(origin: CGPointZero, size: size)) as Set<GridElementType>).count*2
         
         physicsWorld.gravity = CGVector(dx: 0, dy: 0)
         physicsWorld.contactDelegate = self
@@ -50,8 +60,10 @@ class GameScene : RSScene, SKPhysicsContactDelegate {
     
     // MARK: Nodes
     
-    let playerNode = PlayerNode()
-    let pathNode = PathNode()
+    private let playerNode = PlayerNode()
+    private let pathNode = PathNode()
+    
+    private var enemyNodes: [BaseEnemyNode] = []
     
     // MARK: Setup
     
@@ -64,26 +76,8 @@ class GameScene : RSScene, SKPhysicsContactDelegate {
         // player
         addChild(pathNode)
         addChild(playerNode)
-        
-        // material
-        addMaterialNodeWithVertices([CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], position: CGPoint(x: -20, y: -200), destroyable: true)
-        addMaterialNodeWithVertices([CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], position: CGPoint(x: 0, y: -500), destroyable: true)
-        addMaterialNodeWithVertices([CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], position: CGPoint(x: -50, y: -800), destroyable: true)
     }
-    
-    private func addMaterialNodeWithVertices(vertices: [CGPoint], position: CGPoint, destroyable: Bool) {
         
-        let materialNode = MaterialNode(vertices: vertices, destroyable: destroyable)
-        materialNode.position = position
-        addChild(materialNode)
-        
-        grid.addPolygon(materialNode.currentVertices) {
-            var element = $0
-            element.content = materialNode
-            return element
-        }
-    }
-    
     // MARK: Presenting a scene
     
     override func didMoveToView(view: SKView) {
@@ -117,22 +111,38 @@ class GameScene : RSScene, SKPhysicsContactDelegate {
     
     private var grid = Grid<GridElementType>()
     
+    private var maxGridElements = 0
+    
     override func updateGameLogic(currentTime: NSTimeInterval) {
 
         grid.addPolygon(playerNode.currentVertices) {
             var element = $0
        
-            if let content = element.content as? MaterialNode {
-                if element.contact == nil && content.destroyable {
-                    element.contact = playerNode
-                    content.subtractElement(element)
+            if element.contact == nil {
+                element.contact = playerNode
+                let vertices = element.randomVertices
+                
+                pathNode.addElement(element, withVertices: vertices)
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    Particle.runEarthAtPosition(element.center, withAngle: self.playerNode.zPosition, inView: self)
+                }
+                
+                if let content = element.content as? MaterialNode {
+                    if content.destroyable {
+                        content.subtractElement(element, withVertices: vertices)
+                    }
+                    else {
+                        element.contact = nil
+                    }
                 }
             }
-            else { element.contact = playerNode }
-            
-            if $0.contact == nil { pathNode.addElement(element) }
             
             return element
+        }
+        
+        if grid.count > maxGridElements {
+            grid = Grid(grid.filter { $0.center.y <= playerNode.position.y+size.height })
         }
     }
 
@@ -166,5 +176,25 @@ class GameScene : RSScene, SKPhysicsContactDelegate {
     // MARK: Physics contact delegate
     
     func didBeginContact(contact: SKPhysicsContact) {
+    }
+    
+    // MARK: Adding material
+    
+    func addMaterial(material: MaterialNode, atPosition position: CGPoint) {
+        material.position = position
+        addChild(material)
+        
+        grid.addPolygon(material.currentVertices) {
+            var element = $0
+            element.content = material
+            return element
+        }
+    }
+    
+    // MARK: Adding enemies
+    
+    func addEnemy(enemy: BaseEnemyNode, atPosition position: CGPoint) {
+        enemy.position = position
+        addChild(enemy)
     }
 }

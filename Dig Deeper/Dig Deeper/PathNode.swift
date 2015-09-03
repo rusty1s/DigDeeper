@@ -9,15 +9,12 @@
 import SpriteKit
 import RSClipperWrapper
 
-class PathNode : SKShapeNode {
+class PathNode : SKNode {
     
     // MARK: Initializers
     
     override init() {
         super.init()
-        
-        strokeColor = SKColor.purpleColor()
-        lineWidth = 1
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,13 +27,26 @@ class PathNode : SKShapeNode {
     
     // MARK: Instance functions
     
-    func addElement(element: GridElementType) {
-        let polygon = element.randomVertices
-        polygons = Clipper.unionPolygons(polygons, withPolygons: [polygon])
+    func addElement(element: GridElementType, withVertices vertices: [CGPoint]) {
         
-        let origin = element.frame.origin
+        polygons = Clipper.unionPolygons(polygons, subjFillType: .Positive, withPolygons: [vertices], clipFillType: .EvenOdd)
         
-        polygons = Clipper.differencePolygons(polygons, fromPolygons: [[CGPoint(x: origin.x-200, y: origin.y+500), CGPoint(x: origin.x-200, y: origin.y+600), CGPoint(x: origin.x+200, y: origin.y+600), CGPoint(x: origin.x+200, y: origin.y+500)]])
-        path = CGPath.pathOfPolygons(polygons)
+        if let position = scene?.camera?.position {
+            polygons = Clipper.differencePolygons(polygons, subjFillType: .Positive, fromPolygons: [[CGPoint(x: position.x-1000, y: position.y+350), CGPoint(x: position.x-1000, y: position.y+1000), CGPoint(x: position.x+1000, y: position.y+1000), CGPoint(x: position.x+1000, y: position.y+350)]], clipFillType: .EvenOdd)
+        }
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            for child in self.children { (child as? SKShapeNode)?.path = nil }
+            self.removeAllChildren()
+            for polygon in self.polygons { self.addChildWithVertices(polygon) }
+        }
+    }
+    
+    private func addChildWithVertices(vertices: [CGPoint]) {
+        let node = SKShapeNode()
+        node.lineWidth = 1
+        node.strokeColor = SKColor.redColor()
+        node.path = CGPath.pathOfVertices(vertices)
+        addChild(node)
     }
 }

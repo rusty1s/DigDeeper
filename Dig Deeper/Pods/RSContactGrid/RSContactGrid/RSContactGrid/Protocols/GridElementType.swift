@@ -78,10 +78,14 @@ public protocol GridElementType : Hashable, Comparable, CustomStringConvertible,
 extension GridElementType {
     
     public var frame: CGRect {
-        var minX = CGFloat.max
-        var maxX = CGFloat.min
-        var minY = CGFloat.max
-        var maxY = CGFloat.min
+        let vertices = self.vertices
+        if vertices.isEmpty { return CGRectZero }
+        
+        let firstVertex = vertices[0]
+        var minX = firstVertex.x
+        var maxX = firstVertex.x
+        var minY = firstVertex.y
+        var maxY = firstVertex.y
         
         for vertex in vertices {
             minX = min(minX, vertex.x)

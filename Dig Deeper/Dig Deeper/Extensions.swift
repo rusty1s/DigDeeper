@@ -23,30 +23,31 @@ extension CGFloat {
 
 extension CGPath {
     
-    class func pathOfVertices(vertices: [CGPoint]) -> CGPath {
+    class func pathOfVertices(vertices: [CGPoint]) -> CGPath? {
+        if vertices.count < 3 { return nil }
+        
         let path = CGPathCreateMutable()
         for (index, vertex) in vertices.enumerate() {
             if index == 0 { CGPathMoveToPoint(path, nil, vertex.x, vertex.y) }
             else { CGPathAddLineToPoint(path, nil, vertex.x, vertex.y) }
         }
-        if vertices.count > 2 { CGPathCloseSubpath(path) }
+        CGPathCloseSubpath(path)
         
         return path
     }
+}
+
+// MARK: CGVector
+
+extension CGVector {
     
-    class func pathOfPolygons(polygons: [[CGPoint]]) -> CGPath {
-        let path = CGPathCreateMutable()
-        for polygon in polygons {
-            if polygon.count > 2 {
-                for (index, vertex) in polygon.enumerate() {
-                    if index == 0 { CGPathMoveToPoint(path, nil, vertex.x, vertex.y) }
-                    else { CGPathAddLineToPoint(path, nil, vertex.x, vertex.y) }
-                }
-                CGPathCloseSubpath(path)
-            }
-        }
-        
-        return path
+    var length: CGFloat {
+        return sqrt(dx*dx+dy*dy)
+    }
+    
+    func toLength(length: CGFloat) -> CGVector {
+        let actLength = self.length
+        return CGVector(dx: length*dx/actLength, dy: length*dy/actLength)
     }
 }
 
@@ -68,13 +69,44 @@ func -= (inout point: CGPoint, vector: CGVector) {
     point = point - vector
 }
 
+func * (scalar: CGFloat, vector: CGVector) -> CGVector {
+    return CGVector(dx: scalar*vector.dx, dy: scalar*vector.dy)
+}
+
 // MARK: RotatedSquareElement
 
 extension RotatedSquareElement {
     
     var randomVertices: [CGPoint] {
+        
+        func randomPointInTriangle(point1 point1: CGPoint, point2: CGPoint, point3: CGPoint) -> CGPoint {
+            
+            var random1 = CGFloat(arc4random())/CGFloat(UInt32.max)
+            var random2 = CGFloat(arc4random())/CGFloat(UInt32.max)
+            
+            if random1+random2 > 1 {
+                random1 = 1 - random1
+                random2 = 1 - random2
+            }
+            
+            return point1 + random1 * CGVector(dx: point2.x-point1.x, dy: point2.y-point1.y) + random2 * CGVector(dx: point3.x-point1.x, dy: point3.y-point1.y)
+        }
+        
+        let offset: CGFloat = 10
+        
+        let topRight = CGVector(dx: RotatedSquareElement<T, S>.width, dy: RotatedSquareElement<T, S>.height).toLength(offset)
+        let topLeft = CGVector(dx: -topRight.dx, dy: topRight.dy)
+        let bottomRight = CGVector(dx: topRight.dx, dy: -topRight.dy)
+        let bottomLeft = CGVector(dx: -topRight.dx, dy: -topRight.dy)
+        
         let vertices = self.vertices
-        //return vertices
-        return [CGPoint(x: vertices[0].x-1, y: vertices[0].y), CGPoint(x: vertices[1].x, y: vertices[1].y+1), CGPoint(x: vertices[2].x+1, y: vertices[2].y), CGPoint(x: vertices[3].x, y: vertices[3].y-1)]
+        var randomVertices: [CGPoint] = []
+        
+        randomVertices.append(randomPointInTriangle(point1: vertices[0], point2: vertices[0]+bottomLeft, point3: vertices[0]+topLeft))
+        randomVertices.append(randomPointInTriangle(point1: vertices[1], point2: vertices[1]+topLeft, point3: vertices[1]+topRight))
+        randomVertices.append(randomPointInTriangle(point1: vertices[2], point2: vertices[2]+topRight, point3: vertices[2]+bottomRight))
+        randomVertices.append(randomPointInTriangle(point1: vertices[3], point2: vertices[3]+bottomRight, point3: vertices[3]+bottomLeft))
+        
+        return randomVertices
     }
 }

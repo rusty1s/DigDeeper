@@ -7,34 +7,31 @@
 //
 
 import SpriteKit
-import RSContactGrid
 import RSClipperWrapper
 
-class MaterialNode : SKShapeNode, ContactNodeType {
+class MaterialNode : SKNode, ContactNodeType {
     
     // MARK: Initializers
     
-    init(vertices: [CGPoint], destroyable: Bool) {
+    init(item: Item, vertices: [CGPoint], destroyable: Bool) {
+        self.item = item
         self.vertices = vertices
-        polygons = [vertices]
         self.destroyable = destroyable
+        self.polygons = [vertices]
         
         super.init()
         
         name = "material"
         
-        path = CGPath.pathOfVertices(vertices)
-        lineWidth = 1
-        strokeColor = SKColor.whiteColor()
+        addChildWithVertices(vertices)
         
         if !destroyable {
-            physicsBody = SKPhysicsBody(polygonFromPath: path!)
-            physicsBody?.dynamic = false
-            physicsBody?.categoryBitMask = 0x1 << 2
-            physicsBody?.contactTestBitMask = 0x1 << 1
-            physicsBody?.collisionBitMask = 0x1 << 1
+            physicsBody = SKPhysicsBody(polygonFromPath: CGPath.pathOfVertices(vertices)!)
+            physicsBody?.categoryBitMask = GameScene.BitMask.material
+            physicsBody?.contactTestBitMask = GameScene.BitMask.nothing
+            physicsBody?.collisionBitMask = GameScene.BitMask.player
             
-            strokeColor = SKColor.redColor()
+            physicsBody?.dynamic = false
         }
     }
 
@@ -44,21 +41,36 @@ class MaterialNode : SKShapeNode, ContactNodeType {
     
     // MARK: Instance variables
     
-    let destroyable: Bool
-    
-    private var polygons: [[CGPoint]]
+    let item: Item
     
     let vertices: [CGPoint]
+    
+    let destroyable: Bool
     
     final var currentVertices: [CGPoint] {
         return vertices.map { CGPoint(x: $0.x+position.x, y: $0.y+position.y) }
     }
     
+    private var polygons: [[CGPoint]]
+    
     // MARK: Instance functions
     
-    func subtractElement(element: GridElementType) {
-        let polygon = element.randomVertices.map { CGPoint(x: $0.x-self.position.x, y: $0.y-self.position.y) }
+    func subtractElement(element: GridElementType, withVertices vertices: [CGPoint]) {
+        let polygon = vertices.map { CGPoint(x: $0.x-self.position.x, y: $0.y-self.position.y) }
         polygons = Clipper.differencePolygons(polygons, fromPolygons: [polygon])
-        path = CGPath.pathOfPolygons(polygons)
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            self.removeAllChildren()
+            for polygon in self.polygons { self.addChildWithVertices(polygon) }
+        }
+    }
+    
+    private func addChildWithVertices(vertices: [CGPoint]) {
+        let node = SKShapeNode()
+        node.lineWidth = 1
+        node.strokeColor = destroyable ? SKColor.whiteColor() : SKColor.redColor()
+        node.fillColor = SKColor.grayColor()
+        node.path = CGPath.pathOfVertices(vertices)
+        addChild(node)
     }
 }

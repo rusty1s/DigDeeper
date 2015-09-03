@@ -1,5 +1,5 @@
 //
-//  MovingNode.swift
+//  BaseMovingNode.swift
 //  Dig Deeper
 //
 //  Created by Matthias Fey on 31.07.15.
@@ -8,26 +8,32 @@
 
 import SpriteKit
 
-class MovingNode : SKSpriteNode, ContactNodeType {
+class BaseMovingNode : SKNode, MovingNodeType, ContactNodeType {
+    
+    // MARK: Initializers
+    
+    init(vertices: [CGPoint], maxSpeed: CGFloat) {
+        self.vertices = vertices
+        self.maxSpeed = abs(maxSpeed)
+        
+        super.init()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: Instance variables
     
-    final var maxSpeed: CGFloat {
-        set {
-            _maxSpeed = abs(newValue)
-            currentSpeed = _currentSpeed
-        }
-        get { return _maxSpeed }
-    }
-    private var _maxSpeed: CGFloat = CGFloat.max
+    let maxSpeed: CGFloat
     
     final var currentSpeed: CGFloat {
-        set { _currentSpeed = max(min(newValue, maxSpeed), -maxSpeed) }
+        set { _currentSpeed = max(min(newValue, maxSpeed), 0) }
         get { return _currentSpeed }
     }
     private var _currentSpeed: CGFloat = 0
     
-    var vertices: [CGPoint] { return [] }
+    let vertices: [CGPoint]
     
     final var currentVertices: [CGPoint] {
         let currentSin = sin(zRotation)

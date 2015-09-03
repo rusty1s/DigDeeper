@@ -39,21 +39,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		47D516509D26EA95CA31203BAC6A4437 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8949C5CF8B60FBCE08502C20785CB1B6;
-			remoteInfo = RSContactGrid;
-		};
-		80686BE6082DD351FCAB531A672161B9 /* PBXContainerItemProxy */ = {
+		7E5E3EEF98FDA5580E891A6EC674E509 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5258C32BFA7B6C7372C9136E288E1455;
 			remoteInfo = RSScene;
 		};
-		D75508710504BA94528CA4937719AA4B /* PBXContainerItemProxy */ = {
+		8F08670E997A5AF18ED7745CDD2AEBB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8949C5CF8B60FBCE08502C20785CB1B6;
+			remoteInfo = RSContactGrid;
+		};
+		D5279FA21D9EDE42F61DC9E08F53A7C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -71,18 +71,18 @@
 		1D90B7E6AE4E4583B767D0A29D627287 /* RSClipperWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSClipperWrapper.h; path = RSClipperWrapper/RSClipperWrapper/RSClipperWrapper.h; sourceTree = "<group>"; };
 		3147E197416625DC2036A7E0EB1A4272 /* RotatedSquareElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotatedSquareElement.swift; path = RSContactGrid/RSContactGrid/Implementation/RotatedSquareElement.swift; sourceTree = "<group>"; };
 		32732197737D7360C5936C7D0DCDBD39 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		34623AAD904DA5CA28283BF7F3FBF412 /* RSClipperWrapper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RSClipperWrapper-Private.xcconfig"; sourceTree = "<group>"; };
 		38E3F3D912924CF8C9205B1126F06FAB /* RSScene-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSScene-prefix.pch"; sourceTree = "<group>"; };
 		3BB55D119912C1568A5CE34E2305FDD1 /* Clipper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Clipper.swift; path = RSClipperWrapper/RSClipperWrapper/Clipper.swift; sourceTree = "<group>"; };
 		3E7FF5659F112983CDB3BAD147A28A97 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41D04BE4F478F2F4488714F3067154F5 /* RSSceneDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSceneDelegate.swift; path = RSScene/RSScene/RSSceneDelegate.swift; sourceTree = "<group>"; };
 		4428D3FAC22B152E3E18B862D1542AFF /* RSContactGrid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSContactGrid-dummy.m"; sourceTree = "<group>"; };
-		47E011DC4A29273CE6F53D086691FD7A /* RSContactGrid-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RSContactGrid-Private.xcconfig"; sourceTree = "<group>"; };
 		49A8B48E0C11779669D573A0DC1E4D2D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		56F1A0CCBCD558FB1756528AE2DCFD85 /* RSContactGrid-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RSContactGrid-Private.xcconfig"; sourceTree = "<group>"; };
 		5D8F273B4DBD1BA18499283F510CDB29 /* RSClipperWrapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSClipperWrapper.modulemap; sourceTree = "<group>"; };
 		648EAA6C6FC733CC1E17F204E1252470 /* RSContactGrid.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSContactGrid.xcconfig; sourceTree = "<group>"; };
 		6DEDBB449E330F941BFB218FA6871E23 /* RSClipperWrapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSClipperWrapper.xcconfig; sourceTree = "<group>"; };
 		711A47AA83E0A7F55411680B86CE3D09 /* RSClipperWrapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSClipperWrapper-prefix.pch"; sourceTree = "<group>"; };
-		71FF1218C8D114B3409446469C160AD5 /* RSClipperWrapper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RSClipperWrapper-Private.xcconfig"; sourceTree = "<group>"; };
 		7422977B0B1F2F8E98CC3E3B40A8C83A /* RSContactGrid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSContactGrid.modulemap; sourceTree = "<group>"; };
 		7626C30EAD03E85F83164E4714291202 /* RSScene-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSScene-dummy.m"; sourceTree = "<group>"; };
 		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 				3E7FF5659F112983CDB3BAD147A28A97 /* Info.plist */,
 				7422977B0B1F2F8E98CC3E3B40A8C83A /* RSContactGrid.modulemap */,
 				648EAA6C6FC733CC1E17F204E1252470 /* RSContactGrid.xcconfig */,
-				47E011DC4A29273CE6F53D086691FD7A /* RSContactGrid-Private.xcconfig */,
+				56F1A0CCBCD558FB1756528AE2DCFD85 /* RSContactGrid-Private.xcconfig */,
 				4428D3FAC22B152E3E18B862D1542AFF /* RSContactGrid-dummy.m */,
 				829B1524D9DA852CB2FF68444E342265 /* RSContactGrid-prefix.pch */,
 				FA0927034E0BFD5B857158AFE016BF82 /* RSContactGrid-umbrella.h */,
@@ -306,7 +306,7 @@
 				8D94412032C110450BD97F55FF2B1E30 /* Info.plist */,
 				5D8F273B4DBD1BA18499283F510CDB29 /* RSClipperWrapper.modulemap */,
 				6DEDBB449E330F941BFB218FA6871E23 /* RSClipperWrapper.xcconfig */,
-				71FF1218C8D114B3409446469C160AD5 /* RSClipperWrapper-Private.xcconfig */,
+				34623AAD904DA5CA28283BF7F3FBF412 /* RSClipperWrapper-Private.xcconfig */,
 				8344B78251EB12A0E9C33F601B552F42 /* RSClipperWrapper-dummy.m */,
 				711A47AA83E0A7F55411680B86CE3D09 /* RSClipperWrapper-prefix.pch */,
 				028A7618C47CB9487F3A88CC00740A68 /* RSClipperWrapper-umbrella.h */,
@@ -384,9 +384,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				90DD7C1A4589317593099B7E4C010AC0 /* PBXTargetDependency */,
-				3C7D6ED13EBAFE81A5601B18ADDD7F42 /* PBXTargetDependency */,
-				5969A3CD589AD9959E583F5E4E9E21DE /* PBXTargetDependency */,
+				53AFC4550B09BAA8B094B6116EC8581E /* PBXTargetDependency */,
+				3A44CB19890552A2D719807EF7AC758A /* PBXTargetDependency */,
+				5B9A00860788367FA869F1CF07204631 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
@@ -506,55 +506,27 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3C7D6ED13EBAFE81A5601B18ADDD7F42 /* PBXTargetDependency */ = {
+		3A44CB19890552A2D719807EF7AC758A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RSContactGrid;
 			target = 8949C5CF8B60FBCE08502C20785CB1B6 /* RSContactGrid */;
-			targetProxy = 47D516509D26EA95CA31203BAC6A4437 /* PBXContainerItemProxy */;
+			targetProxy = 8F08670E997A5AF18ED7745CDD2AEBB1 /* PBXContainerItemProxy */;
 		};
-		5969A3CD589AD9959E583F5E4E9E21DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RSScene;
-			target = 5258C32BFA7B6C7372C9136E288E1455 /* RSScene */;
-			targetProxy = 80686BE6082DD351FCAB531A672161B9 /* PBXContainerItemProxy */;
-		};
-		90DD7C1A4589317593099B7E4C010AC0 /* PBXTargetDependency */ = {
+		53AFC4550B09BAA8B094B6116EC8581E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RSClipperWrapper;
 			target = 177ACB571E8CBEABB78BD7752761C0DF /* RSClipperWrapper */;
-			targetProxy = D75508710504BA94528CA4937719AA4B /* PBXContainerItemProxy */;
+			targetProxy = D5279FA21D9EDE42F61DC9E08F53A7C7 /* PBXContainerItemProxy */;
+		};
+		5B9A00860788367FA869F1CF07204631 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSScene;
+			target = 5258C32BFA7B6C7372C9136E288E1455 /* RSScene */;
+			targetProxy = 7E5E3EEF98FDA5580E891A6EC674E509 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		15B88EB45C478B1F528005D9D9C8368A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71FF1218C8D114B3409446469C160AD5 /* RSClipperWrapper-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RSClipperWrapper/RSClipperWrapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RSClipperWrapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RSClipperWrapper/RSClipperWrapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = RSClipperWrapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -621,12 +593,12 @@
 			};
 			name = Release;
 		};
-		67E5F18E6536A8B029294AD1EDD0BA11 /* Debug */ = {
+		6E0F10A22C5BE726FC7504753C2D61ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47E011DC4A29273CE6F53D086691FD7A /* RSContactGrid-Private.xcconfig */;
+			baseConfigurationReference = 56F1A0CCBCD558FB1756528AE2DCFD85 /* RSContactGrid-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
@@ -638,16 +610,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/RSContactGrid/RSContactGrid.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = RSContactGrid;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -683,6 +654,34 @@
 			};
 			name = Release;
 		};
+		7D71E9E6E945F370A549FC671FE5F045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56F1A0CCBCD558FB1756528AE2DCFD85 /* RSContactGrid-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSContactGrid/RSContactGrid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSContactGrid/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSContactGrid/RSContactGrid.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RSContactGrid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		AA70763D114CD599BB2983C62DACFEED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A0AD20CFAD1B720133D291AB9FC2A6E8 /* Pods.debug.xcconfig */;
@@ -713,25 +712,25 @@
 			};
 			name = Debug;
 		};
-		B8D860DE77D98D081D5E9D36AB82B955 /* Release */ = {
+		C095A2838231D4EC4F8E165CE4A932EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47E011DC4A29273CE6F53D086691FD7A /* RSContactGrid-Private.xcconfig */;
+			baseConfigurationReference = 34623AAD904DA5CA28283BF7F3FBF412 /* RSClipperWrapper-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RSContactGrid/RSContactGrid-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RSContactGrid/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/RSClipperWrapper/RSClipperWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSClipperWrapper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RSContactGrid/RSContactGrid.modulemap";
+				MODULEMAP_FILE = "Target Support Files/RSClipperWrapper/RSClipperWrapper.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RSContactGrid;
+				PRODUCT_NAME = RSClipperWrapper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -769,12 +768,12 @@
 			};
 			name = Release;
 		};
-		DDECC2A1713F62A0004E0A3129F23C42 /* Release */ = {
+		E0E76396D59341CD6365A00F5AF2C27C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71FF1218C8D114B3409446469C160AD5 /* RSClipperWrapper-Private.xcconfig */;
+			baseConfigurationReference = 34623AAD904DA5CA28283BF7F3FBF412 /* RSClipperWrapper-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
@@ -786,15 +785,16 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/RSClipperWrapper/RSClipperWrapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = RSClipperWrapper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		E3675AA759F31D31E2F30BF843A6F7E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -839,8 +839,8 @@
 		7733E76A11202DBD00CB2103B86F9149 /* Build configuration list for PBXNativeTarget "RSContactGrid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				67E5F18E6536A8B029294AD1EDD0BA11 /* Debug */,
-				B8D860DE77D98D081D5E9D36AB82B955 /* Release */,
+				7D71E9E6E945F370A549FC671FE5F045 /* Debug */,
+				6E0F10A22C5BE726FC7504753C2D61ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -857,8 +857,8 @@
 		BC4B757701607439738AFCF08CE9C052 /* Build configuration list for PBXNativeTarget "RSClipperWrapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				15B88EB45C478B1F528005D9D9C8368A /* Debug */,
-				DDECC2A1713F62A0004E0A3129F23C42 /* Release */,
+				E0E76396D59341CD6365A00F5AF2C27C /* Debug */,
+				C095A2838231D4EC4F8E165CE4A932EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

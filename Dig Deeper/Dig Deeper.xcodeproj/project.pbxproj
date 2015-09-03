@@ -11,8 +11,15 @@
 		613DF0891B73EC5B0003F595 /* ContactNodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DF0881B73EC5B0003F595 /* ContactNodeType.swift */; };
 		613DF08B1B73EDFF0003F595 /* MaterialNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DF08A1B73EDFF0003F595 /* MaterialNode.swift */; };
 		6144E5F21B8B917A00B71D60 /* PathNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6144E5F11B8B917A00B71D60 /* PathNode.swift */; };
-		615201C41B6BA29200358E7D /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615201C31B6BA29200358E7D /* PlayerNode.swift */; };
-		615201C61B6BA2B300358E7D /* MovingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615201C51B6BA2B300358E7D /* MovingNode.swift */; };
+		6148C9241B9724BD004A4428 /* BaseEnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148C9231B9724BD004A4428 /* BaseEnemyNode.swift */; };
+		6148C9271B972887004A4428 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148C9261B972887004A4428 /* Particle.swift */; };
+		6148C92A1B972F76004A4428 /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6148C9281B972F76004A4428 /* Smoke.sks */; };
+		6148C92B1B972F76004A4428 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 6148C9291B972F76004A4428 /* smoke.png */; };
+		6148C92D1B9844EC004A4428 /* MovingNodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148C92C1B9844EC004A4428 /* MovingNodeType.swift */; };
+		6148C9301B98494B004A4428 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148C92F1B98494B004A4428 /* Item.swift */; };
+		6148C9341B9849E2004A4428 /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148C9331B9849E2004A4428 /* PlayerNode.swift */; };
+		615201C41B6BA29200358E7D /* BasePlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615201C31B6BA29200358E7D /* BasePlayerNode.swift */; };
+		615201C61B6BA2B300358E7D /* BaseMovingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615201C51B6BA2B300358E7D /* BaseMovingNode.swift */; };
 		615201CD1B6D1C7200358E7D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615201CC1B6D1C7200358E7D /* Extensions.swift */; };
 		616F289F1B67D6BF0070215F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F289E1B67D6BF0070215F /* AppDelegate.swift */; };
 		616F28A11B67D6BF0070215F /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F28A01B67D6BF0070215F /* GameController.swift */; };
@@ -21,7 +28,10 @@
 		616F28A91B67D6BF0070215F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616F28A81B67D6BF0070215F /* Assets.xcassets */; };
 		616F28B71B67D6BF0070215F /* Dig_DeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F28B61B67D6BF0070215F /* Dig_DeeperTests.swift */; };
 		616F28C21B67D6BF0070215F /* Dig_DeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F28C11B67D6BF0070215F /* Dig_DeeperUITests.swift */; };
+		61975B711B94761F004B9DC8 /* FirstLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61975B701B94761F004B9DC8 /* FirstLevelScene.swift */; };
 		61E1D4C81B6B9CEF009C14CD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E1D4C71B6B9CEF009C14CD /* GameScene.swift */; };
+		61F4D70C1B8F09160011F7AC /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 61F4D70B1B8F09160011F7AC /* earth.png */; };
+		61F4D70F1B8F0DD70011F7AC /* Earth.sks in Resources */ = {isa = PBXBuildFile; fileRef = 61F4D70D1B8F0DD70011F7AC /* Earth.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +57,15 @@
 		613DF0881B73EC5B0003F595 /* ContactNodeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactNodeType.swift; sourceTree = "<group>"; };
 		613DF08A1B73EDFF0003F595 /* MaterialNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialNode.swift; sourceTree = "<group>"; };
 		6144E5F11B8B917A00B71D60 /* PathNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathNode.swift; sourceTree = "<group>"; };
-		615201C31B6BA29200358E7D /* PlayerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
-		615201C51B6BA2B300358E7D /* MovingNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingNode.swift; sourceTree = "<group>"; };
+		6148C9231B9724BD004A4428 /* BaseEnemyNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEnemyNode.swift; sourceTree = "<group>"; };
+		6148C9261B972887004A4428 /* Particle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		6148C9281B972F76004A4428 /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Smoke.sks; sourceTree = "<group>"; };
+		6148C9291B972F76004A4428 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
+		6148C92C1B9844EC004A4428 /* MovingNodeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingNodeType.swift; sourceTree = "<group>"; };
+		6148C92F1B98494B004A4428 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		6148C9331B9849E2004A4428 /* PlayerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
+		615201C31B6BA29200358E7D /* BasePlayerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePlayerNode.swift; sourceTree = "<group>"; };
+		615201C51B6BA2B300358E7D /* BaseMovingNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMovingNode.swift; sourceTree = "<group>"; };
 		615201CC1B6D1C7200358E7D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		616F289B1B67D6BF0070215F /* Dig Deeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dig Deeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		616F289E1B67D6BF0070215F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +80,10 @@
 		616F28BD1B67D6BF0070215F /* Dig DeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dig DeeperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		616F28C11B67D6BF0070215F /* Dig_DeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dig_DeeperUITests.swift; sourceTree = "<group>"; };
 		616F28C31B67D6BF0070215F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61975B701B94761F004B9DC8 /* FirstLevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLevelScene.swift; sourceTree = "<group>"; };
 		61E1D4C71B6B9CEF009C14CD /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		61F4D70B1B8F09160011F7AC /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
+		61F4D70D1B8F0DD70011F7AC /* Earth.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Earth.sks; sourceTree = "<group>"; };
 		C2D97A93AF05C13031AF2F6A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,12 +113,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		615201CB1B6D147C00358E7D /* Nodes */ = {
+		6148C9251B9724C5004A4428 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				6148C9261B972887004A4428 /* Particle.swift */,
+				61F4D70D1B8F0DD70011F7AC /* Earth.sks */,
+				61F4D70B1B8F09160011F7AC /* earth.png */,
+				6148C9281B972F76004A4428 /* Smoke.sks */,
+				6148C9291B972F76004A4428 /* smoke.png */,
+			);
+			name = Particles;
+			sourceTree = "<group>";
+		};
+		6148C92E1B98493C004A4428 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6148C92F1B98494B004A4428 /* Item.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6148C9311B9849BB004A4428 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				613DF0881B73EC5B0003F595 /* ContactNodeType.swift */,
-				615201C51B6BA2B300358E7D /* MovingNode.swift */,
-				615201C31B6BA29200358E7D /* PlayerNode.swift */,
+				6148C92C1B9844EC004A4428 /* MovingNodeType.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		6148C9321B9849C1004A4428 /* Abstracts */ = {
+			isa = PBXGroup;
+			children = (
+				615201C51B6BA2B300358E7D /* BaseMovingNode.swift */,
+				615201C31B6BA29200358E7D /* BasePlayerNode.swift */,
+				6148C9231B9724BD004A4428 /* BaseEnemyNode.swift */,
+			);
+			name = Abstracts;
+			sourceTree = "<group>";
+		};
+		615201CB1B6D147C00358E7D /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				6148C9311B9849BB004A4428 /* Protocols */,
+				6148C9321B9849C1004A4428 /* Abstracts */,
+				6148C9331B9849E2004A4428 /* PlayerNode.swift */,
 				613DF08A1B73EDFF0003F595 /* MaterialNode.swift */,
 				6144E5F11B8B917A00B71D60 /* PathNode.swift */,
 			);
@@ -133,6 +192,9 @@
 				616F289E1B67D6BF0070215F /* AppDelegate.swift */,
 				616F28A01B67D6BF0070215F /* GameController.swift */,
 				61E1D4C71B6B9CEF009C14CD /* GameScene.swift */,
+				61975B701B94761F004B9DC8 /* FirstLevelScene.swift */,
+				6148C92E1B98493C004A4428 /* Model */,
+				6148C9251B9724C5004A4428 /* Particles */,
 				615201CB1B6D147C00358E7D /* Nodes */,
 				615201CC1B6D1C7200358E7D /* Extensions.swift */,
 				616F28A21B67D6BF0070215F /* Main.storyboard */,
@@ -285,8 +347,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F4D70C1B8F09160011F7AC /* earth.png in Resources */,
+				6148C92B1B972F76004A4428 /* smoke.png in Resources */,
 				616F28A91B67D6BF0070215F /* Assets.xcassets in Resources */,
 				616F28A41B67D6BF0070215F /* Main.storyboard in Resources */,
+				6148C92A1B972F76004A4428 /* Smoke.sks in Resources */,
+				61F4D70F1B8F0DD70011F7AC /* Earth.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,15 +425,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6148C9271B972887004A4428 /* Particle.swift in Sources */,
+				61975B711B94761F004B9DC8 /* FirstLevelScene.swift in Sources */,
 				616F28A11B67D6BF0070215F /* GameController.swift in Sources */,
 				613DF0891B73EC5B0003F595 /* ContactNodeType.swift in Sources */,
 				616F28A71B67D6BF0070215F /* Dig_Deeper.xcdatamodeld in Sources */,
 				61E1D4C81B6B9CEF009C14CD /* GameScene.swift in Sources */,
 				616F289F1B67D6BF0070215F /* AppDelegate.swift in Sources */,
-				615201C41B6BA29200358E7D /* PlayerNode.swift in Sources */,
-				615201C61B6BA2B300358E7D /* MovingNode.swift in Sources */,
+				615201C41B6BA29200358E7D /* BasePlayerNode.swift in Sources */,
+				615201C61B6BA2B300358E7D /* BaseMovingNode.swift in Sources */,
+				6148C92D1B9844EC004A4428 /* MovingNodeType.swift in Sources */,
+				6148C9301B98494B004A4428 /* Item.swift in Sources */,
 				613DF08B1B73EDFF0003F595 /* MaterialNode.swift in Sources */,
 				6144E5F21B8B917A00B71D60 /* PathNode.swift in Sources */,
+				6148C9241B9724BD004A4428 /* BaseEnemyNode.swift in Sources */,
+				6148C9341B9849E2004A4428 /* PlayerNode.swift in Sources */,
 				615201CD1B6D1C7200358E7D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -108,10 +108,11 @@ extension GridType {
         }
         
         // get the frame of the polygon
-        var minX = CGFloat.max
-        var maxX = CGFloat.min
-        var minY = CGFloat.max
-        var maxY = CGFloat.min
+        let firstPoint = polygon.first!
+        var minX = firstPoint.x
+        var maxX = firstPoint.x
+        var minY = firstPoint.y
+        var maxY = firstPoint.y
         
         for point in polygon {
             minX = min(minX, point.x)
@@ -119,6 +120,7 @@ extension GridType {
             minY = min(minY, point.y)
             maxY = max(maxY, point.y)
         }
+        
         let polygonFrame = CGRect(x: minX, y: minY, width: maxX-minX, height: maxY-minY)
         
         // calculate remaining elements that may be contacted by the polygon
@@ -153,7 +155,7 @@ extension GridType {
         for element in remainingElements {
             if point(element.center, inPolygon: polygon) { contactedElements.insert(element) }
         }
-        
+
         // iterate through contacted elements and resolve contacts
         delegate?.didBeginResolveContacts()
         for element in contactedElements {
