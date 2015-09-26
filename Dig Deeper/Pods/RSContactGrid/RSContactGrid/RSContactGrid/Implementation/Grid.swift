@@ -6,7 +6,7 @@
 //  Copyright © 2015 Matthias Fey. All rights reserved.
 //
 
-public struct Grid<T : GridElementType> : GridType {
+public struct Grid<T : TileType> : GridType {
     
     // MARK: Associated types
     
@@ -15,8 +15,6 @@ public struct Grid<T : GridElementType> : GridType {
     // MARK: Instance variables
     
     private var elements: Set<ElementType>
-    
-    public var delegate: GridDelegate?
 }
 
 // MARK: Initializers
@@ -78,7 +76,7 @@ extension Grid {
 // MARK: Equatable
 
 extension Grid {}
-public func == <T: GridElementType>(lhs: Grid<T>, rhs: Grid<T>) -> Bool {
+public func == <T: TileType>(lhs: Grid<T>, rhs: Grid<T>) -> Bool {
     return lhs.elements == rhs.elements
 }
 

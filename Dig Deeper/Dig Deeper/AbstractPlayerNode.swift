@@ -1,5 +1,5 @@
 //
-//  BasePlayerNode.swift
+//  AbstractPlayerNode.swift
 //  Dig Deeper
 //
 //  Created by Matthias Fey on 31.07.15.
@@ -8,27 +8,27 @@
 
 import SpriteKit
 
-class BasePlayerNode : BaseMovingNode {
+class AbstractPlayerNode : AbstractMovingNode {
     
     // MARK: Initializers
     
-    init(vertices: [CGPoint], maxSpeed: CGFloat, maxDegree: CGFloat) {
-        super.init(vertices: vertices, maxSpeed: maxSpeed)
+    init(vertices: [CGPoint], defaultSpeed: CGFloat, maxSpeed: CGFloat, maxDegree: CGFloat) {
+        super.init(vertices: vertices, defaultSpeed: defaultSpeed, maxSpeed: maxSpeed)
         self.maxDegree = maxDegree
         
         name = "player"
     
-        physicsBody = SKPhysicsBody(polygonFromPath: CGPath.pathOfVertices(vertices)!)
+        /*physicsBody = SKPhysicsBody(polygonFromPath: CGPath.pathOfVertices(vertices)!)
         physicsBody?.categoryBitMask = GameScene.BitMask.player
         physicsBody?.contactTestBitMask = GameScene.BitMask.enemy
-        physicsBody?.collisionBitMask = GameScene.BitMask.material
+        physicsBody?.collisionBitMask = GameScene.BitMask.nothing
         
         physicsBody?.allowsRotation = false
         physicsBody?.mass = 1
         physicsBody?.friction = 0
         physicsBody?.restitution = 2
         physicsBody?.angularDamping = 0
-        physicsBody?.linearDamping = 1
+        physicsBody?.linearDamping = 1*/
     }
 
     required init?(coder aDecoder: NSCoder) {

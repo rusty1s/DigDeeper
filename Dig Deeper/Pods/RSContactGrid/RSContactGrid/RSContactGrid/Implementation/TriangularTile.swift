@@ -1,33 +1,30 @@
 //
-//  TriangularElement.swift
+//  TriangularTile.swift
 //  RSContactGrid
 //
 //  Created by Matthias Fey on 16.07.15.
 //  Copyright © 2015 Matthias Fey. All rights reserved.
 //
 
-private struct TriangularElementData {
+private struct TriangularTileData {
     
     private static var width: CGFloat = 20
 
     private static var height: CGFloat = 20
 }
 
-public struct TriangularElement<T, S> : GridElementType {
+public struct TriangularTile<T, S> : TileType {
+    
+    // MARK: Associated typed
+    
+    public typealias DataType = Data<T, S>
     
     // MARK: Initializers
     
     public init(x: Int, y: Int) {
         self.x = x
         self.y = y
-    }
-    
-    /// Create a `TriangularElement` at x- and y-coordinates with specific
-    /// content and contact.
-    public init(x: Int, y: Int, content: T?, contact: S?) {
-        self.init(x: x, y: y)
-        self.content = content
-        self.contact = contact
+        self.data = DataType()
     }
     
     // MARK: Instance variables
@@ -36,47 +33,44 @@ public struct TriangularElement<T, S> : GridElementType {
     
     public let y: Int
     
-    /// The content stored by the element.
-    public var content: T?
-    
-    /// The contact stored by the element.
-    public var contact: S?
+    public let data: DataType
     
     // MARK: Static variables
     
-    // The width of the element.  The width has a minimum value of 1.
+    /// The width of the tile.  The width has a minimum value of 1.
     public static var width: CGFloat {
-        set { TriangularElementData.width = max(1, newValue) }
-        get { return TriangularElementData.width }
+        set { TriangularTileData.width = max(1, newValue) }
+        get { return TriangularTileData.width }
     }
     
-    // The height of the element.  The height has a minimum value of 1.
+    /// The height of the tile.  The height has a minimum value of 1.
+    /// The default value is 20.0.
     public static var height: CGFloat {
-        set { TriangularElementData.height = max(1, newValue) }
-        get { return TriangularElementData.height }
+        set { TriangularTileData.height = max(1, newValue) }
+        get { return TriangularTileData.height }
     }
 }
 
 // MARK: Instance variables
 
-extension TriangularElement {
+extension TriangularTile {
     
     public var frame: CGRect {
         let originX: CGFloat
         
         // apex of the triangle is on the top
         if (x+y)%2 == 0 {
-            originX = y%2 == 0 ? TriangularElement<T, S>.width * CGFloat(x/2) : TriangularElement<T, S>.width * (CGFloat((x+1)/2)-0.5)
+            originX = y%2 == 0 ? TriangularTile<T, S>.width * CGFloat(x/2) : TriangularTile<T, S>.width * (CGFloat((x+1)/2)-0.5)
         }
         // apex of the triangle is at the bottom
         else {
-            originX = y%2 == 0 ? TriangularElement<T, S>.width * (CGFloat((x+1)/2) - 0.5) : TriangularElement<T, S>.width * CGFloat(x/2)
+            originX = y%2 == 0 ? TriangularTile<T, S>.width * (CGFloat((x+1)/2) - 0.5) : TriangularTile<T, S>.width * CGFloat(x/2)
         }
         
         return CGRect(x: originX,
-            y: CGFloat(y)*TriangularElement<T, S>.height,
-            width: TriangularElement<T, S>.width,
-            height: TriangularElement<T, S>.height)
+            y: CGFloat(y)*TriangularTile<T, S>.height,
+            width: TriangularTile<T, S>.width,
+            height: TriangularTile<T, S>.height)
     }
     
     public var vertices: [CGPoint] {
@@ -99,7 +93,7 @@ extension TriangularElement {
 
 // MARK: Instance functions
 
-extension TriangularElement {
+extension TriangularTile {
     
     public func intersectsRelativeLineSegment(point1 point1: RelativeRectPoint, point2: RelativeRectPoint) -> Bool {
         // apex of the triangle is on the top
@@ -123,19 +117,19 @@ extension TriangularElement {
 
 // MARK: Static functions
 
-extension TriangularElement {
+extension TriangularTile {
     
-    public static func elementsInRect<T, S>(rect: CGRect) -> Set<TriangularElement<T, S>> {
+    public static func tilesInRect<T, S>(rect: CGRect) -> Set<TriangularTile<T, S>> {
         
         let startX = segmentXOfCoordinate(rect.origin.x)
         let startY = segmentYOfCoordinate(rect.origin.y)
         let endX = segmentXOfCoordinate(rect.origin.x+rect.size.width)+1
         let endY = segmentYOfCoordinate(rect.origin.y+rect.size.height)
         
-        var elements = Set<TriangularElement<T, S>>(minimumCapacity: (1+endX-startX)*(1+endY-startY))
+        var elements = Set<TriangularTile<T, S>>(minimumCapacity: (1+endX-startX)*(1+endY-startY))
         for x in startX...endX {
             for y in startY...endY {
-                elements.insert(TriangularElement<T, S>(x: x, y: y))
+                elements.insert(TriangularTile<T, S>(x: x, y: y))
             }
         }
         return elements
@@ -152,17 +146,17 @@ extension TriangularElement {
 
 // MARK: Comparable
 
-extension TriangularElement {}
-public func == <T, S>(lhs: TriangularElement<T, S>, rhs: TriangularElement<T, S>) -> Bool {
+extension TriangularTile {}
+public func == <T, S>(lhs: TriangularTile<T, S>, rhs: TriangularTile<T, S>) -> Bool {
     return lhs.x == rhs.x && lhs.y == rhs.y
 }
-public func < <T, S>(lhs: TriangularElement<T, S>, rhs: TriangularElement<T, S>) -> Bool {
+public func < <T, S>(lhs: TriangularTile<T, S>, rhs: TriangularTile<T, S>) -> Bool {
     return lhs.y < rhs.y || (lhs.y == rhs.y && lhs.x < rhs.x)
 }
 
 // MARK: CustomDebugStringConvertible
 
-extension TriangularElement {
+extension TriangularTile {
     
-    public var debugDescription: String { return "TriangularElement(\(self)" }
+    public var debugDescription: String { return "TriangularTile(\(self)" }
 }

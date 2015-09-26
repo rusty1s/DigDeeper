@@ -13,17 +13,16 @@ class FirstLevelScene : GameScene {
     override func didMoveToView(view: SKView) {
         super.didMoveToView(view)
     
-        addMaterial(MaterialNode(item: Item(), vertices: [CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], destroyable: true), atPosition: CGPoint(x: -20, y: -200))
-        addMaterial(MaterialNode(item: Item(), vertices: [CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], destroyable: true), atPosition: CGPoint(x: -20, y: -600))
-        addMaterial(MaterialNode(item: Item(), vertices: [CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], destroyable: true), atPosition: CGPoint(x: -20, y: -1000))
-        addMaterial(MaterialNode(item: Item(), vertices: [CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], destroyable: true), atPosition: CGPoint(x: -20, y: -1400))
-        addMaterial(MaterialNode(item: Item(), vertices: [CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], destroyable: true), atPosition: CGPoint(x: -20, y: -1800))
-        addMaterial(MaterialNode(item: Item(), vertices: [CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], destroyable: true), atPosition: CGPoint(x: -20, y: -2200))
-        addMaterial(MaterialNode(item: Item(), vertices: [CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], destroyable: true), atPosition: CGPoint(x: -20, y: -2600))
-        addMaterial(MaterialNode(item: Item(), vertices: [CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], destroyable: true), atPosition: CGPoint(x: -20, y: -3000))
-        addMaterial(MaterialNode(item: Item(), vertices: [CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], destroyable: true), atPosition: CGPoint(x: -20, y: -3400))
-        addMaterial(MaterialNode(item: Item(), vertices: [CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], destroyable: true), atPosition: CGPoint(x: -20, y: -3800))
-        addMaterial(MaterialNode(item: Item(), vertices: [CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], destroyable: true), atPosition: CGPoint(x: -20, y: -4200))
-        addMaterial(MaterialNode(item: Item(), vertices: [CGPoint(x: 0, y: 0), CGPoint(x: 100, y: 0), CGPoint(x: 50, y: -100)], destroyable: true), atPosition: CGPoint(x: -20, y: -4600))
+        addEnemyNode(EnemyNode(), atPosition: CGPoint(x: 100, y: 100))
+        
+        addMineralNode(MineralNode(item: Item(), size: CGSize(width: 50, height: 70), numberOfVertices: 20, destroyable: true), atPosition: CGPoint(x: -60, y: -500))
+        
+        addMineralNode(MineralNode(item: Item(), size: CGSize(width: 50, height: 50), numberOfVertices: 20, destroyable: true), atPosition: CGPoint(x: 30, y: -1000))
+        
+        addMineralNode(MineralNode(item: Item(), size: CGSize(width: 70, height: 70), numberOfVertices: 20, destroyable: true), atPosition: CGPoint(x: -50, y: -1500))
+        
+        addMineralNode(MineralNode(item: Item(), size: CGSize(width: 100, height: 100), numberOfVertices: 20, destroyable: true), atPosition: CGPoint(x: 10, y: -2000))
+        
+        addMineralNode(MineralNode(item: Item(), size: CGSize(width: 80, height: 100), numberOfVertices: 20, destroyable: true), atPosition: CGPoint(x: -20, y: -2500))
     }
 }

@@ -1,14 +1,14 @@
 {
   "name": "RSContactGrid",
-  "version": "1.0.1",
-  "summary": "A triangular/square/rotated square/hexagonal grid datastructure with contact detection for any polygon",
-  "description": "RSContactGrid is a grid datastructure for holding elements that can be addressed by coordinates implemented in Swift 2.0. Actual there are four different grid types to choose from (triangular, square, rotated square and hexagonal).\n\nRSContactGrid also implements a contact detection for all four different grid types, that means the framework detects the elements in the grid which are overlayed by any polygon defined over a finite sequence of CGPoint.",
+  "version": "1.1",
+  "summary": "A triangular/square/rotated square/hexagonal grid tile map with contact detection for any path",
+  "description": "RSContactGrid is a grid tile map for holding tiles that can be addressed by coordinates implemented in Swift 2.0. Actual there are four different tile types to choose from (triangular, square, rotated square and hexagonal).\n\nRSContactGrid also implements a contact detection for all four different tile types. The framework detects the tiles in the grid which are overlayed by a given path defined over a finite sequence of CGPoint.",
   "homepage": "https://github.com/rusty1s/RSContactGrid",
   "screenshots": [
-    "https://raw.githubusercontent.com/rusty1s/RSContactGrid/master/triangular-grid.png",
-    "https://raw.githubusercontent.com/rusty1s/RSContactGrid/master/square-grid.png",
-    "https://raw.githubusercontent.com/rusty1s/RSContactGrid/master/rotated-square-grid.png",
-    "https://raw.githubusercontent.com/rusty1s/RSContactGrid/master/hexagonal-grid.png"
+    "https://raw.githubusercontent.com/rusty1s/RSContactGrid/master/triangular-tile-grid.png",
+    "https://raw.githubusercontent.com/rusty1s/RSContactGrid/master/square-tile-grid.png",
+    "https://raw.githubusercontent.com/rusty1s/RSContactGrid/master/rotated-square-tile-grid.png",
+    "https://raw.githubusercontent.com/rusty1s/RSContactGrid/master/hexagonal-tile-grid.png"
   ],
   "license": {
     "type": "MIT",
@@ -23,5 +23,8 @@
   "source": {
     "git": "https://github.com/rusty1s/RSContactGrid.git"
   },
-  "source_files": "RSContactGrid/RSContactGrid/*/*.swift"
+  "source_files": [
+    "RSContactGrid/RSContactGrid/*.swift",
+    "RSContactGrid/RSContactGrid/*/*.swift"
+  ]
 }

@@ -1,0 +1,6 @@
+framework module RSShapeNode {
+  umbrella header "RSShapeNode-umbrella.h"
+
+  export *
+  module * { export * }
+}

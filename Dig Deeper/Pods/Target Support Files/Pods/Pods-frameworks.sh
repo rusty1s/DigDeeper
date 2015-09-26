@@ -54,10 +54,14 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods/RSClipperWrapper.framework'
   install_framework 'Pods/RSContactGrid.framework'
+  install_framework 'Pods/RSRandomPolygon.framework'
   install_framework 'Pods/RSScene.framework'
+  install_framework 'Pods/RSShapeNode.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods/RSClipperWrapper.framework'
   install_framework 'Pods/RSContactGrid.framework'
+  install_framework 'Pods/RSRandomPolygon.framework'
   install_framework 'Pods/RSScene.framework'
+  install_framework 'Pods/RSShapeNode.framework'
 fi

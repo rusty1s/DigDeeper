@@ -16,7 +16,7 @@ enum AccelerometerDirection : CGFloat {
     case Inverted = -1
 }
 
-typealias GridElementType = RotatedSquareElement<SKNode, SKNode>
+typealias GridTileType = SquareTile<SKNode, SKNode>
 
 class GameScene : RSScene, SKPhysicsContactDelegate {
     
@@ -35,12 +35,10 @@ class GameScene : RSScene, SKPhysicsContactDelegate {
         super.init(size: size)
         
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        tps = 20
+        tps = 60
         
-        GridElementType.height = 30
-        GridElementType.width = 30
-        
-        maxGridElements = (GridElementType.elementsInRect(CGRect(origin: CGPointZero, size: size)) as Set<GridElementType>).count*2
+        GridTileType.height = 30
+        GridTileType.width = 30
         
         physicsWorld.gravity = CGVector(dx: 0, dy: 0)
         physicsWorld.contactDelegate = self
@@ -63,7 +61,8 @@ class GameScene : RSScene, SKPhysicsContactDelegate {
     private let playerNode = PlayerNode()
     private let pathNode = PathNode()
     
-    private var enemyNodes: [BaseEnemyNode] = []
+    private var movingNodes: [AbstractMovingNode] = []
+    private var enemyNodes: [AbstractEnemyNode] = []
     
     // MARK: Setup
     
@@ -76,6 +75,7 @@ class GameScene : RSScene, SKPhysicsContactDelegate {
         // player
         addChild(pathNode)
         addChild(playerNode)
+        movingNodes.append(playerNode)
     }
         
     // MARK: Presenting a scene
@@ -109,41 +109,35 @@ class GameScene : RSScene, SKPhysicsContactDelegate {
     
     // MARK: Executing the Game Logic Loop
     
-    private var grid = Grid<GridElementType>()
-    
-    private var maxGridElements = 0
+    private var grid = Grid<GridTileType>()
     
     override func updateGameLogic(currentTime: NSTimeInterval) {
-
-        grid.addPolygon(playerNode.currentVertices) {
-            var element = $0
-       
-            if element.contact == nil {
-                element.contact = playerNode
-                let vertices = element.randomVertices
-                
-                pathNode.addElement(element, withVertices: vertices)
-                
-                dispatch_async(dispatch_get_main_queue()) {
-                    Particle.runEarthAtPosition(element.center, withAngle: self.playerNode.zPosition, inView: self)
-                }
-                
-                if let content = element.content as? MaterialNode {
-                    if content.destroyable {
-                        content.subtractElement(element, withVertices: vertices)
-                    }
-                    else {
-                        element.contact = nil
+        
+        var detectedMineralNodes = Set<MineralNode>()
+        
+        for movingNode in movingNodes {
+            grid.detectContactedTilesOfPath(movingNode.currentVertices, closedPath: false, allowInsertingTiles: true) {
+                if $0.data.contact == nil {
+                    $0.data.contact = playerNode
+                    let vertices = $0.randomVertices
+                    
+                    pathNode.addPolygonToClip(vertices)
+                    
+                    if let content = $0.data.content as? MineralNode {
+                        if movingNode != playerNode || content.destroyable {
+                            detectedMineralNodes.insert(content)
+                            content.addPolygonToClip(vertices)
+                        }
+                        else {
+                            $0.data.contact = nil
+                        }
                     }
                 }
             }
-            
-            return element
         }
         
-        if grid.count > maxGridElements {
-            grid = Grid(grid.filter { $0.center.y <= playerNode.position.y+size.height })
-        }
+        pathNode.applyClipping()
+        for mineralNode in detectedMineralNodes { mineralNode.applyClipping() }
     }
 
     // MARK: Executing the Rendering Loop
@@ -152,25 +146,17 @@ class GameScene : RSScene, SKPhysicsContactDelegate {
     private var currentPlayerSpeed: CGVector { return CGVector(dx: sin(currentPlayerDegree)*playerNode.currentSpeed, dy: -cos(currentPlayerDegree)*playerNode.currentSpeed) }
 
     override func update(currentTime: NSTimeInterval) {
-        super.update(currentTime)
-        
         if let accelerometerData = motionManager.accelerometerData {
             accelX = (CGFloat(accelerometerData.acceleration.x) + calibration) * direction.rawValue * highPassFilterFactor + accelX * (1.0 - highPassFilterFactor)
         }
         
-        playerNode.physicsBody?.applyImpulse(currentPlayerSpeed)
+        playerNode.position += currentPlayerSpeed
         playerNode.zRotation = currentPlayerDegree
-
-        camera?.runAction(SKAction.moveTo(CGPoint(x: playerNode.position.x, y: playerNode.position.y-playerNode.size.height/2), duration: 5/60))
-    }
-    
-    override func didSimulatePhysics() {
-        var velocity = playerNode.physicsBody!.velocity
-        if currentPlayerSpeed.dx >= 0 { velocity.dx = min(velocity.dx, currentPlayerSpeed.dx) }
-        if currentPlayerSpeed.dx <= 0 { velocity.dx = max(velocity.dx, currentPlayerSpeed.dx) }
-        if currentPlayerSpeed.dy >= 0 { velocity.dy = min(velocity.dy, currentPlayerSpeed.dy) }
-        if currentPlayerSpeed.dy <= 0 { velocity.dy = max(velocity.dy, currentPlayerSpeed.dy) }
-        playerNode.physicsBody?.velocity = velocity
+        camera?.position = playerNode.position
+        
+        for enemyNode in enemyNodes { enemyNode.attackPlayer(playerNode) }
+        
+        super.update(currentTime)
     }
     
     // MARK: Physics contact delegate
@@ -178,23 +164,22 @@ class GameScene : RSScene, SKPhysicsContactDelegate {
     func didBeginContact(contact: SKPhysicsContact) {
     }
     
-    // MARK: Adding material
+    // MARK: Adding minerals
     
-    func addMaterial(material: MaterialNode, atPosition position: CGPoint) {
-        material.position = position
-        addChild(material)
+    func addMineralNode(mineralNode: MineralNode, atPosition position: CGPoint) {
+        mineralNode.position = position
+        addChild(mineralNode)
         
-        grid.addPolygon(material.currentVertices) {
-            var element = $0
-            element.content = material
-            return element
+        grid.detectContactedTilesOfPath(mineralNode.currentVertices, closedPath: true, allowInsertingTiles: true) { $0.data.content = mineralNode
         }
     }
     
     // MARK: Adding enemies
     
-    func addEnemy(enemy: BaseEnemyNode, atPosition position: CGPoint) {
-        enemy.position = position
-        addChild(enemy)
+    func addEnemyNode(enemyNode: AbstractEnemyNode, atPosition position: CGPoint) {
+        enemyNode.position = position
+        addChild(enemyNode)
+        movingNodes.append(enemyNode)
+        enemyNodes.append(enemyNode)
     }
 }

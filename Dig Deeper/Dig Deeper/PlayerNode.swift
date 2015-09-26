@@ -8,22 +8,19 @@
 
 import SpriteKit
 
-class PlayerNode : BasePlayerNode {
+class PlayerNode : AbstractPlayerNode {
     
     // MARK: Initializers
     
     init() {
-        let vertices = [CGPoint(x: -35, y: -20), CGPoint(x: -25, y: 20), CGPoint(x: 25, y: 20), CGPoint(x: 35, y: -20)]
+        super.init(vertices: [CGPoint(x: -20, y: -40), CGPoint(x: 20, y: -40)], defaultSpeed: 0.7, maxSpeed: CGFloat.max, maxDegree: 0.25*CGFloat.π)
         
-        super.init(vertices: vertices, maxSpeed: CGFloat.max, maxDegree: 0.25*CGFloat.π)
-        currentSpeed = 150
-        
-        let drillNode = SKShapeNode(path: CGPath.pathOfVertices(vertices)!)
+        let drillNode = SKShapeNode(rect: CGRect(x: -20, y: -40, width: 40, height: 20))
         drillNode.lineWidth = 0
-        drillNode.fillColor = SKColor.blueColor()
+        drillNode.fillColor = SKColor.grayColor()
         addChild(drillNode)
         
-        let bodyNode = SKShapeNode(rect: CGRect(x: -25, y: 20, width: 50, height: 60))
+        let bodyNode = SKShapeNode(rect: CGRect(x: -20, y: -20, width: 40, height: 60))
         bodyNode.lineWidth = 0
         bodyNode.fillColor = SKColor.redColor()
         addChild(bodyNode)

@@ -1,0 +1,22 @@
+{
+  "name": "RSShapeNode",
+  "version": "1.0",
+  "summary": "A RSShapeNode object draws a shape by rendering a Core Graphics path offscreen using a disconnected CAShapeLayer and snapshots the image to a SKSpriteNode",
+  "description": "A RSShapeNode object draws a shape by rendering a Core Graphics path offscreen using a disconnected CAShapeLayer.  The CAShapeLayer is then snapshoted into an image and used as a texture of a SKSpriteNode, which is added as a child to the RSShapeNode. This technique fixes the insane amount of unfixable bugs and memory leaks of SKShapeNode.\n\nRSShapeNode has nearly the complete functionality of a SKShapeNode plus additional functionality that is missing in SKShapeNode, e.g. repeated textures, shadows, line dash patterns and fill rules.",
+  "homepage": "https://github.com/rusty1s/RSShapeNode",
+  "screenshots": "https://raw.githubusercontent.com/rusty1s/RSShapeNode/master/example.png",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Rusty1s": "matthias.fey@tu-dortmund.de"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/rusty1s/RSShapeNode.git"
+  },
+  "source_files": "RSShapeNode/RSShapeNode/*.swift"
+}

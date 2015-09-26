@@ -1,35 +1,51 @@
 PODS:
   - RSClipperWrapper (1.1)
-  - RSContactGrid (1.0.1)
+  - RSContactGrid (1.1)
+  - RSRandomPolygon (0.1)
   - RSScene (1.0)
+  - RSShapeNode (1.0)
 
 DEPENDENCIES:
   - RSClipperWrapper (from `https://github.com/rusty1s/RSClipperWrapper.git`)
   - RSContactGrid (from `https://github.com/rusty1s/RSContactGrid.git`)
+  - RSRandomPolygon (from `https://github.com/rusty1s/RSRandomPolygon.git`)
   - RSScene (from `https://github.com/rusty1s/RSScene.git`)
+  - RSShapeNode (from `https://github.com/rusty1s/RSShapeNode.git`)
 
 EXTERNAL SOURCES:
   RSClipperWrapper:
     :git: https://github.com/rusty1s/RSClipperWrapper.git
   RSContactGrid:
     :git: https://github.com/rusty1s/RSContactGrid.git
+  RSRandomPolygon:
+    :git: https://github.com/rusty1s/RSRandomPolygon.git
   RSScene:
     :git: https://github.com/rusty1s/RSScene.git
+  RSShapeNode:
+    :git: https://github.com/rusty1s/RSShapeNode.git
 
 CHECKOUT OPTIONS:
   RSClipperWrapper:
     :commit: 1e7edf7529bd7cd169fcdae11908cde1b529b360
     :git: https://github.com/rusty1s/RSClipperWrapper.git
   RSContactGrid:
-    :commit: 7c57ac7ec1be9360e0e7e82307fc27ce575a52aa
+    :commit: 6d18c08701df28e460291dcfa291c67aa837e261
     :git: https://github.com/rusty1s/RSContactGrid.git
+  RSRandomPolygon:
+    :commit: 5cbd8d53df0021003547b811e8a2b5bba0251c60
+    :git: https://github.com/rusty1s/RSRandomPolygon.git
   RSScene:
     :commit: 53672817e236c6b15e18dc990da6dde73358fd6d
     :git: https://github.com/rusty1s/RSScene.git
+  RSShapeNode:
+    :commit: 5c086e7958868c56235cdd5a7bc66291ac2ac8c8
+    :git: https://github.com/rusty1s/RSShapeNode.git
 
 SPEC CHECKSUMS:
   RSClipperWrapper: 2ca0ac5541d74f93ff710ecdd2a9a4d96bb178ac
-  RSContactGrid: d5cdfd25276cdadb6b71b818f254ee63b235e570
+  RSContactGrid: d0aa7dc61b324940e3a178a9b4d0e91aa7181c50
+  RSRandomPolygon: 6944279892524bec770c704dea54aede69af9cbb
   RSScene: 4d4a274a220c6b2b59f1936bd98a2b8cbbde4084
+  RSShapeNode: c643345e9d36d240ca1131eda0f0e8d8177aa332
 
 COCOAPODS: 0.38.2

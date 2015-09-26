@@ -7,53 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A9A5EAE7A01C2E0C4D51B6C5A918874 /* TriangularElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7881DE9A4A9E5F129003FDA89B118BE /* TriangularElement.swift */; };
-		21631AFB96B7AD44474E266C91682195 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E76A16CD4DC3E9D7E8EAC1B421B9E71 /* Foundation.framework */; };
-		34335D4EEC9221A3A9AB86FA2D198F9A /* RSContactGrid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4428D3FAC22B152E3E18B862D1542AFF /* RSContactGrid-dummy.m */; };
+		1205FBE09F91F0E35E857EE4A645D0D2 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E92CA3A3FAEEF2FCC185E0F443AEAA8 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13FB41F4365EDF6B78AD36804ECA8174 /* RSShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308EB864D6F759BF043A1267EC425FC8 /* RSShapeNode.swift */; };
+		21631AFB96B7AD44474E266C91682195 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A5A65F4D6A231F3049517B7579E565 /* Foundation.framework */; };
 		3BF6792C3A76EAD697A5AB49EFCF872C /* RSClipperWrapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8344B78251EB12A0E9C33F601B552F42 /* RSClipperWrapper-dummy.m */; };
-		3D7705911111D2C747AA1E2201202C9D /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0097F274F2B4234DCD8866868304981B /* Grid.swift */; };
-		4406670E0A46BB8ADC92F3CB87EA7ECA /* RotatedSquareElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147E197416625DC2036A7E0EB1A4272 /* RotatedSquareElement.swift */; };
 		452DD3A9473EB0CA512C794A5E412B1A /* RSSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D04BE4F478F2F4488714F3067154F5 /* RSSceneDelegate.swift */; };
-		50DEC60F005F536B0FA46F8019427525 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E76A16CD4DC3E9D7E8EAC1B421B9E71 /* Foundation.framework */; };
-		50E990E36F575C0DC342D75702A2EAB6 /* SquareElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD135C07815FBFA27CE99D6B595CAB0 /* SquareElement.swift */; };
+		4915834B6517B0DC53A51E8643CE1355 /* RSShapeNode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160EE0BAE8A71FA07CE26884DB0D303 /* RSShapeNode-dummy.m */; };
+		4AFE56124D80DA854F5E206000A5B6AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A5A65F4D6A231F3049517B7579E565 /* Foundation.framework */; };
+		525563A8A7511B8548DA26847B170711 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418969A85C4F9D0D19D01CA65978D8D8 /* Helper.swift */; };
 		539AFCF2BF30BD90CA21E2BEFE1FD323 /* _Clipper.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5C693B420FDB48D9ABDD701726CEBA /* _Clipper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59825D264A7A4D2AE6606A51EDD8C128 /* RSClipperWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D90B7E6AE4E4583B767D0A29D627287 /* RSClipperWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59E8096D91EAE8FFAF18D4B1FA2D1CAA /* RSScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117EE957F7E04CD435A296CDBE5F1CDF /* RSScene.swift */; };
-		5F68D8BEA6E57C4EF9DA7425038ED8F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E76A16CD4DC3E9D7E8EAC1B421B9E71 /* Foundation.framework */; };
+		5F68D8BEA6E57C4EF9DA7425038ED8F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A5A65F4D6A231F3049517B7579E565 /* Foundation.framework */; };
+		606607EE6590913AF7D4DA41582B303A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A5A65F4D6A231F3049517B7579E565 /* Foundation.framework */; };
 		6476E07388496ACB2468C3F488EF0E79 /* clipper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4B2501DE40E79D0AE792CB539C7C1D0 /* clipper.cpp */; };
+		6D36AA0D47AABB0557F14CE9254763FE /* HexagonalTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5D3F089B83E969D38743D18C3A9C17 /* HexagonalTile.swift */; };
+		6DA9ED01C32EDCF9444F6BD7379F2125 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B4FE241A64B58AA6DFF558FCB3159 /* Data.swift */; };
 		6FEE8657E5598DA44F4952E2121BBB22 /* Clipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB55D119912C1568A5CE34E2305FDD1 /* Clipper.swift */; };
 		71243E76EA5F3D18066DA01FE2BEBB99 /* RSScene-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB9C1374AA96E4DBB73C0BAEEF76AE5 /* RSScene-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71C8C40A065C407E1CFF3DFCD095ABFB /* RSScene-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7626C30EAD03E85F83164E4714291202 /* RSScene-dummy.m */; };
-		7F89EA30F94CC572597EB2665B19B1B7 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32732197737D7360C5936C7D0DCDBD39 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A8D85C0FC11318AC67C0C83BF89782C /* GridElementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE837D89EA69BAC36A8389B61A24A3DD /* GridElementType.swift */; };
+		720059FC24E0C1C1D77EB6BF4FA62E7E /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FC85E01873D789CC7A60D09C181FDF /* Grid.swift */; };
+		873ABBCC16FAA03863ACA48BAD5ED1D4 /* RSContactGrid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9045462799BFCC3F31BDD6FF4013466 /* RSContactGrid-dummy.m */; };
 		91BAD55B6A1ED7777E655B6AD6022CE9 /* RSClipperWrapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 028A7618C47CB9487F3A88CC00740A68 /* RSClipperWrapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		948B07C55D1FD8291D7008B6D71CE40A /* RandomPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89A0F722D8E8EAADB3E670D73A65481 /* RandomPolygon.swift */; };
 		9761369F972C08755EE8CD02962E2F87 /* clipper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B92C38FE8B5E15CFAB23077C5C6061E0 /* clipper.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
-		97FB2D6C85AF1D2F21531BE503AFDCDB /* GridContactDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0C1967184F7D670342B69105A652E /* GridContactDetection.swift */; };
-		AC2934924110D63910499BA19CC23333 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A76CE910ACF5C3B49E86BC966C2DCD9B /* Pods-dummy.m */; };
-		AF4501963FB75007E1B273235967A022 /* GridDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F5893C20FC1080FACAAD2B6FC0195 /* GridDelegate.swift */; };
-		B99E3FC1BE688ECEF8DD30D505198EA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E76A16CD4DC3E9D7E8EAC1B421B9E71 /* Foundation.framework */; };
-		C0F6BE1BB3F337CA91A902EE4569E081 /* HexagonalElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970615B21BF50D76AADFEB53FF576864 /* HexagonalElement.swift */; };
+		99F78DBDDED622F2A4E8DE9B1179A0CD /* SquareTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D698910D437930575827C84F6CA9CB /* SquareTile.swift */; };
+		9AD45C7D736C79A977C2B72A2188B09C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A5A65F4D6A231F3049517B7579E565 /* Foundation.framework */; };
+		A823FF814C568080E647D5A4C35CDEA7 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD062FDFF3FE3E6AFD6C350974A40FC /* Pods-dummy.m */; };
+		AD366CF6AE23A8DEF29BC6078E2FE321 /* RSRandomPolygon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA53F220587F235AF03DC345D3DFFD0 /* RSRandomPolygon-dummy.m */; };
+		B868FF298316C87E3B04C502EB0C9728 /* RSRandomPolygon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9AA9C7A9B77EAF64622EB96CAE46CD3 /* RSRandomPolygon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B99E3FC1BE688ECEF8DD30D505198EA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A5A65F4D6A231F3049517B7579E565 /* Foundation.framework */; };
+		C2A9EC2109E3894887BCC7B768BFACF0 /* RotatedSquareTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C195DA93DC0F6DBC97888D28AD94D731 /* RotatedSquareTile.swift */; };
+		C5C495B6204B7C22FACAEB4BA877DA12 /* TriangularTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEFBAA48F14AD4D22D2B32070BBA98A /* TriangularTile.swift */; };
+		C7A21F9CEA4321AE202E4F58CABAAB4D /* GridType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0B06736E64C6208709EFAE5F42435 /* GridType.swift */; };
 		CA49E2ECC6FAD3D8DD46FA1689F50776 /* RSContactGrid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0927034E0BFD5B857158AFE016BF82 /* RSContactGrid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D506328AE175F7D25FCDCFB4784D32E8 /* GridType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066AE25B6AD3B3C8C23E8859825EAD1 /* GridType.swift */; };
+		CE94543610FBD0BB71A5690DD2FCC1EC /* TileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0D6027FE1F77F681F7917211F8317 /* TileType.swift */; };
+		D5E5B132BD4DC46916B47F6FBF95BA81 /* RSShapeNode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 391D6D471F363ACF94739AEE35905FD3 /* RSShapeNode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7956B3A67C32C939CC1DA3021B1E1CC /* _Clipper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C265CCF231DB5B403036124B14FFA2D7 /* _Clipper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7E5E3EEF98FDA5580E891A6EC674E509 /* PBXContainerItemProxy */ = {
+		19B3CBAC33085A0D677758BA8F55847C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5258C32BFA7B6C7372C9136E288E1455;
-			remoteInfo = RSScene;
+			remoteGlobalIDString = F25F9D8FCD5A2531911CD0A6721A043F;
+			remoteInfo = RSShapeNode;
 		};
-		8F08670E997A5AF18ED7745CDD2AEBB1 /* PBXContainerItemProxy */ = {
+		4966677967A0BB3D1BE1C9D942585908 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CCCF77DF4CCF2F8EC8541006218AA3E;
+			remoteInfo = RSRandomPolygon;
+		};
+		5886BF0508F1228ED79935CE7AC43FB0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8949C5CF8B60FBCE08502C20785CB1B6;
 			remoteInfo = RSContactGrid;
 		};
-		D5279FA21D9EDE42F61DC9E08F53A7C7 /* PBXContainerItemProxy */ = {
+		E74E492A80B0C2D355B6BF10A631E4C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5258C32BFA7B6C7372C9136E288E1455;
+			remoteInfo = RSScene;
+		};
+		E976EDE2E1F5056AE40064DEB277A439 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -63,68 +85,86 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0097F274F2B4234DCD8866868304981B /* Grid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = RSContactGrid/RSContactGrid/Implementation/Grid.swift; sourceTree = "<group>"; };
+		011B4FE241A64B58AA6DFF558FCB3159 /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = RSContactGrid/RSContactGrid/Implementation/Data.swift; sourceTree = "<group>"; };
+		0160EE0BAE8A71FA07CE26884DB0D303 /* RSShapeNode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSShapeNode-dummy.m"; sourceTree = "<group>"; };
 		028A7618C47CB9487F3A88CC00740A68 /* RSClipperWrapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSClipperWrapper-umbrella.h"; sourceTree = "<group>"; };
+		02BEF8C561F966E8045260F4F7D55634 /* RSShapeNode.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSShapeNode.xcconfig; sourceTree = "<group>"; };
+		0335FD31BEF252A9A60487C04F61F553 /* RSRandomPolygon-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RSRandomPolygon-Private.xcconfig"; sourceTree = "<group>"; };
+		0428813A63515AF8052C146CD235C36C /* RSScene-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSScene-prefix.pch"; sourceTree = "<group>"; };
+		044C18003B616B84CDB1F6AB07AA3B92 /* RSRandomPolygon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSRandomPolygon.modulemap; sourceTree = "<group>"; };
 		0529DCDE18A11CFED453194B5E809DFB /* RSContactGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSContactGrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		117EE957F7E04CD435A296CDBE5F1CDF /* RSScene.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSScene.swift; path = RSScene/RSScene/RSScene.swift; sourceTree = "<group>"; };
-		1243A9D3BDCCDF314BE3494A515E3C30 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D90B7E6AE4E4583B767D0A29D627287 /* RSClipperWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSClipperWrapper.h; path = RSClipperWrapper/RSClipperWrapper/RSClipperWrapper.h; sourceTree = "<group>"; };
-		3147E197416625DC2036A7E0EB1A4272 /* RotatedSquareElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotatedSquareElement.swift; path = RSContactGrid/RSContactGrid/Implementation/RotatedSquareElement.swift; sourceTree = "<group>"; };
-		32732197737D7360C5936C7D0DCDBD39 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		1E92CA3A3FAEEF2FCC185E0F443AEAA8 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		1ED79C82F3E1770802C2B9602CCBA067 /* RSContactGrid-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSContactGrid-prefix.pch"; sourceTree = "<group>"; };
+		2CD558835D7DA3ABAA1510C2AE62BD85 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		2EA0D6027FE1F77F681F7917211F8317 /* TileType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TileType.swift; path = RSContactGrid/RSContactGrid/Protocols/TileType.swift; sourceTree = "<group>"; };
+		2FEFD4C739278593A8D3C2D34C3D52E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		308EB864D6F759BF043A1267EC425FC8 /* RSShapeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSShapeNode.swift; path = RSShapeNode/RSShapeNode/RSShapeNode.swift; sourceTree = "<group>"; };
+		333A7DB8BB45BE620598139EE8488F85 /* RSRandomPolygon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSRandomPolygon.xcconfig; sourceTree = "<group>"; };
 		34623AAD904DA5CA28283BF7F3FBF412 /* RSClipperWrapper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RSClipperWrapper-Private.xcconfig"; sourceTree = "<group>"; };
-		38E3F3D912924CF8C9205B1126F06FAB /* RSScene-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSScene-prefix.pch"; sourceTree = "<group>"; };
+		391D6D471F363ACF94739AEE35905FD3 /* RSShapeNode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSShapeNode-umbrella.h"; sourceTree = "<group>"; };
+		3B7317A82969414A5CF9B62A224FF79D /* RSContactGrid-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RSContactGrid-Private.xcconfig"; sourceTree = "<group>"; };
 		3BB55D119912C1568A5CE34E2305FDD1 /* Clipper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Clipper.swift; path = RSClipperWrapper/RSClipperWrapper/Clipper.swift; sourceTree = "<group>"; };
-		3E7FF5659F112983CDB3BAD147A28A97 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418969A85C4F9D0D19D01CA65978D8D8 /* Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = RSContactGrid/RSContactGrid/Helper.swift; sourceTree = "<group>"; };
 		41D04BE4F478F2F4488714F3067154F5 /* RSSceneDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSceneDelegate.swift; path = RSScene/RSScene/RSSceneDelegate.swift; sourceTree = "<group>"; };
-		4428D3FAC22B152E3E18B862D1542AFF /* RSContactGrid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSContactGrid-dummy.m"; sourceTree = "<group>"; };
-		49A8B48E0C11779669D573A0DC1E4D2D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		56F1A0CCBCD558FB1756528AE2DCFD85 /* RSContactGrid-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RSContactGrid-Private.xcconfig"; sourceTree = "<group>"; };
-		5D8F273B4DBD1BA18499283F510CDB29 /* RSClipperWrapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSClipperWrapper.modulemap; sourceTree = "<group>"; };
-		648EAA6C6FC733CC1E17F204E1252470 /* RSContactGrid.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSContactGrid.xcconfig; sourceTree = "<group>"; };
-		6DEDBB449E330F941BFB218FA6871E23 /* RSClipperWrapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSClipperWrapper.xcconfig; sourceTree = "<group>"; };
-		711A47AA83E0A7F55411680B86CE3D09 /* RSClipperWrapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSClipperWrapper-prefix.pch"; sourceTree = "<group>"; };
-		7422977B0B1F2F8E98CC3E3B40A8C83A /* RSContactGrid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSContactGrid.modulemap; sourceTree = "<group>"; };
+		47EB51E6090A0C0F3F40714EF0591538 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59FC85E01873D789CC7A60D09C181FDF /* Grid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = RSContactGrid/RSContactGrid/Implementation/Grid.swift; sourceTree = "<group>"; };
+		5EF0B06736E64C6208709EFAE5F42435 /* GridType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridType.swift; path = RSContactGrid/RSContactGrid/Protocols/GridType.swift; sourceTree = "<group>"; };
+		6059089A09E3EF7164635A37D8747026 /* RSShapeNode-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RSShapeNode-Private.xcconfig"; sourceTree = "<group>"; };
+		62C0A432B9CC979C334CC083752B1C13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DEFBAA48F14AD4D22D2B32070BBA98A /* TriangularTile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TriangularTile.swift; path = RSContactGrid/RSContactGrid/Implementation/TriangularTile.swift; sourceTree = "<group>"; };
 		7626C30EAD03E85F83164E4714291202 /* RSScene-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSScene-dummy.m"; sourceTree = "<group>"; };
+		7761E3482FDA81FA7AD031D8AEB6C98E /* RSShapeNode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSShapeNode.modulemap; sourceTree = "<group>"; };
+		77BB3C5D0198CC8579CDFC366B3E6149 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		7BA7350B879061F11ED15939E0B49888 /* RSScene.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSScene.modulemap; sourceTree = "<group>"; };
-		827A4C66FF78C0B8222040521231EC8A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		829B1524D9DA852CB2FF68444E342265 /* RSContactGrid-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSContactGrid-prefix.pch"; sourceTree = "<group>"; };
+		7CC6ECC5F289F23EA189CE4B31CB5FCA /* RSShapeNode-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSShapeNode-prefix.pch"; sourceTree = "<group>"; };
+		81A5A65F4D6A231F3049517B7579E565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8344B78251EB12A0E9C33F601B552F42 /* RSClipperWrapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSClipperWrapper-dummy.m"; sourceTree = "<group>"; };
+		86A6C400899FDA70F4DA2336ACCD8887 /* RSShapeNode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSShapeNode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		8D94412032C110450BD97F55FF2B1E30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E76A16CD4DC3E9D7E8EAC1B421B9E71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		970615B21BF50D76AADFEB53FF576864 /* HexagonalElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalElement.swift; path = RSContactGrid/RSContactGrid/Implementation/HexagonalElement.swift; sourceTree = "<group>"; };
-		A066AE25B6AD3B3C8C23E8859825EAD1 /* GridType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridType.swift; path = RSContactGrid/RSContactGrid/Protocols/GridType.swift; sourceTree = "<group>"; };
-		A0AD20CFAD1B720133D291AB9FC2A6E8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		A586AD2D454F4F9388EC809773E176A9 /* RSScene.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSScene.xcconfig; sourceTree = "<group>"; };
-		A76CE910ACF5C3B49E86BC966C2DCD9B /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		89B7866551FF3452BB8270ECC7CEF621 /* RSClipperWrapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSClipperWrapper.modulemap; sourceTree = "<group>"; };
+		8B5D3F089B83E969D38743D18C3A9C17 /* HexagonalTile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalTile.swift; path = RSContactGrid/RSContactGrid/Implementation/HexagonalTile.swift; sourceTree = "<group>"; };
+		8EA53F220587F235AF03DC345D3DFFD0 /* RSRandomPolygon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSRandomPolygon-dummy.m"; sourceTree = "<group>"; };
+		9148C9457D286A03D31D6FE88333DAD8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3C6445F9D77986D2586C8DC2A9E6885 /* RSContactGrid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSContactGrid.modulemap; sourceTree = "<group>"; };
+		A7D698910D437930575827C84F6CA9CB /* SquareTile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SquareTile.swift; path = RSContactGrid/RSContactGrid/Implementation/SquareTile.swift; sourceTree = "<group>"; };
 		AB5C693B420FDB48D9ABDD701726CEBA /* _Clipper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _Clipper.h; path = RSClipperWrapper/RSClipperWrapper/_Clipper.h; sourceTree = "<group>"; };
-		ABD135C07815FBFA27CE99D6B595CAB0 /* SquareElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SquareElement.swift; path = RSContactGrid/RSContactGrid/Implementation/SquareElement.swift; sourceTree = "<group>"; };
+		ADE0A60D08DEA57BEA6652AC89ADBABB /* RSRandomPolygon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSRandomPolygon-prefix.pch"; sourceTree = "<group>"; };
+		AEC5C6FB789E42B5BAE561AB322CABBC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		AF91C5411627459E978A2ECDA6F283EE /* RSScene.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSScene.modulemap; sourceTree = "<group>"; };
 		B1F3AF0A5B30CC7C3BC2B9AB939BA5DC /* RSScene.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSScene.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2267C8CEFE58B6A4EB07D1D9E28946D /* RSScene-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RSScene-Private.xcconfig"; sourceTree = "<group>"; };
+		B2A94F25FB339343E81E27A2968B1909 /* RSContactGrid.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSContactGrid.xcconfig; sourceTree = "<group>"; };
 		B4B2501DE40E79D0AE792CB539C7C1D0 /* clipper.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = clipper.cpp; path = "RSClipperWrapper/RSClipperWrapper/Clipper 6.2.1/clipper.cpp"; sourceTree = "<group>"; };
+		B8AB97497AB7F0B91166E2F9EA0F9492 /* RSScene.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSScene.xcconfig; sourceTree = "<group>"; };
 		B92C38FE8B5E15CFAB23077C5C6061E0 /* clipper.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = clipper.hpp; path = "RSClipperWrapper/RSClipperWrapper/Clipper 6.2.1/clipper.hpp"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BDD062FDFF3FE3E6AFD6C350974A40FC /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		C195DA93DC0F6DBC97888D28AD94D731 /* RotatedSquareTile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotatedSquareTile.swift; path = RSContactGrid/RSContactGrid/Implementation/RotatedSquareTile.swift; sourceTree = "<group>"; };
+		C1F80330F2A9D457BFFDFC795EC97A6A /* RSClipperWrapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSClipperWrapper-prefix.pch"; sourceTree = "<group>"; };
 		C265CCF231DB5B403036124B14FFA2D7 /* _Clipper.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = _Clipper.mm; path = RSClipperWrapper/RSClipperWrapper/_Clipper.mm; sourceTree = "<group>"; };
 		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D7881DE9A4A9E5F129003FDA89B118BE /* TriangularElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TriangularElement.swift; path = RSContactGrid/RSContactGrid/Implementation/TriangularElement.swift; sourceTree = "<group>"; };
-		D87F5893C20FC1080FACAAD2B6FC0195 /* GridDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridDelegate.swift; path = RSContactGrid/RSContactGrid/Protocols/GridDelegate.swift; sourceTree = "<group>"; };
-		DE837D89EA69BAC36A8389B61A24A3DD /* GridElementType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridElementType.swift; path = RSContactGrid/RSContactGrid/Protocols/GridElementType.swift; sourceTree = "<group>"; };
 		E78AE613A78DFF60048D722ABC6D6D21 /* RSClipperWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSClipperWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
 		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEB9C1374AA96E4DBB73C0BAEEF76AE5 /* RSScene-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSScene-umbrella.h"; sourceTree = "<group>"; };
-		F5B0C1967184F7D670342B69105A652E /* GridContactDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridContactDetection.swift; path = RSContactGrid/RSContactGrid/Protocols/GridContactDetection.swift; sourceTree = "<group>"; };
+		F2EDA7041083BF9511BBF150D0072027 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F89A0F722D8E8EAADB3E670D73A65481 /* RandomPolygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomPolygon.swift; path = RSRandomPolygon/RSRandomPolygon/RandomPolygon.swift; sourceTree = "<group>"; };
+		F9045462799BFCC3F31BDD6FF4013466 /* RSContactGrid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSContactGrid-dummy.m"; sourceTree = "<group>"; };
+		F9AA9C7A9B77EAF64622EB96CAE46CD3 /* RSRandomPolygon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSRandomPolygon-umbrella.h"; sourceTree = "<group>"; };
 		FA0927034E0BFD5B857158AFE016BF82 /* RSContactGrid-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSContactGrid-umbrella.h"; sourceTree = "<group>"; };
+		FA3DB8C0AD35EF6F8F1352EB243492AA /* RSRandomPolygon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSRandomPolygon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7847F061204B713DECEDC37D260E5F /* RSClipperWrapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSClipperWrapper.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5A5B2894CD3315B96C99D29CC48B5A38 /* Frameworks */ = {
+		4828A9B09928641469C41EFB9FC701A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50DEC60F005F536B0FA46F8019427525 /* Foundation.framework in Frameworks */,
+				4AFE56124D80DA854F5E206000A5B6AC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,62 +192,99 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7594A49344D8880B14DBAEF9783539A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD45C7D736C79A977C2B72A2188B09C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80C08822EFBFFBEE4A4BE5FB1C398E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606607EE6590913AF7D4DA41582B303A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1336C33C76A4E35D9B49FF366D69745F /* RSContactGrid */ = {
+		03578DF2813B7482374CA50D37A284EB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0097F274F2B4234DCD8866868304981B /* Grid.swift */,
-				F5B0C1967184F7D670342B69105A652E /* GridContactDetection.swift */,
-				D87F5893C20FC1080FACAAD2B6FC0195 /* GridDelegate.swift */,
-				DE837D89EA69BAC36A8389B61A24A3DD /* GridElementType.swift */,
-				A066AE25B6AD3B3C8C23E8859825EAD1 /* GridType.swift */,
-				970615B21BF50D76AADFEB53FF576864 /* HexagonalElement.swift */,
-				3147E197416625DC2036A7E0EB1A4272 /* RotatedSquareElement.swift */,
-				ABD135C07815FBFA27CE99D6B595CAB0 /* SquareElement.swift */,
-				D7881DE9A4A9E5F129003FDA89B118BE /* TriangularElement.swift */,
-				18E8303DC47CE64B7FBB6D64AA9CEB8D /* Support Files */,
-			);
-			path = RSContactGrid;
-			sourceTree = "<group>";
-		};
-		18E8303DC47CE64B7FBB6D64AA9CEB8D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3E7FF5659F112983CDB3BAD147A28A97 /* Info.plist */,
-				7422977B0B1F2F8E98CC3E3B40A8C83A /* RSContactGrid.modulemap */,
-				648EAA6C6FC733CC1E17F204E1252470 /* RSContactGrid.xcconfig */,
-				56F1A0CCBCD558FB1756528AE2DCFD85 /* RSContactGrid-Private.xcconfig */,
-				4428D3FAC22B152E3E18B862D1542AFF /* RSContactGrid-dummy.m */,
-				829B1524D9DA852CB2FF68444E342265 /* RSContactGrid-prefix.pch */,
-				FA0927034E0BFD5B857158AFE016BF82 /* RSContactGrid-umbrella.h */,
+				77BB3C5D0198CC8579CDFC366B3E6149 /* Info.plist */,
+				7761E3482FDA81FA7AD031D8AEB6C98E /* RSShapeNode.modulemap */,
+				02BEF8C561F966E8045260F4F7D55634 /* RSShapeNode.xcconfig */,
+				6059089A09E3EF7164635A37D8747026 /* RSShapeNode-Private.xcconfig */,
+				0160EE0BAE8A71FA07CE26884DB0D303 /* RSShapeNode-dummy.m */,
+				7CC6ECC5F289F23EA189CE4B31CB5FCA /* RSShapeNode-prefix.pch */,
+				391D6D471F363ACF94739AEE35905FD3 /* RSShapeNode-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/RSContactGrid";
+			path = "../Target Support Files/RSShapeNode";
 			sourceTree = "<group>";
 		};
-		3960EB91FB467D5F6441CCD1E9625C5C /* Support Files */ = {
+		09F4CEA91F2BA30FFD4E2CE12777EE5D /* RSRandomPolygon */ = {
 			isa = PBXGroup;
 			children = (
-				827A4C66FF78C0B8222040521231EC8A /* Info.plist */,
-				7BA7350B879061F11ED15939E0B49888 /* RSScene.modulemap */,
-				A586AD2D454F4F9388EC809773E176A9 /* RSScene.xcconfig */,
-				B2267C8CEFE58B6A4EB07D1D9E28946D /* RSScene-Private.xcconfig */,
-				7626C30EAD03E85F83164E4714291202 /* RSScene-dummy.m */,
-				38E3F3D912924CF8C9205B1126F06FAB /* RSScene-prefix.pch */,
-				EEB9C1374AA96E4DBB73C0BAEEF76AE5 /* RSScene-umbrella.h */,
+				F89A0F722D8E8EAADB3E670D73A65481 /* RandomPolygon.swift */,
+				F3980E2308C4A1D48B9489E410FBE2CE /* Support Files */,
+			);
+			path = RSRandomPolygon;
+			sourceTree = "<group>";
+		};
+		22C129050A9F61BC1CAD8BDC12F5F827 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F406EC8DE1DDB2ACFFBED560C1F6F360 /* RSClipperWrapper */,
+				547CAC2179E37D585150F36046DFAD47 /* RSContactGrid */,
+				09F4CEA91F2BA30FFD4E2CE12777EE5D /* RSRandomPolygon */,
+				8669D5D1B93C7C1464AE552160822B5B /* RSScene */,
+				AA43AC09BB9449EE85AB824F93F93133 /* RSShapeNode */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		404E50C8E9FD500ACEA5B008CF833ABD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				62C0A432B9CC979C334CC083752B1C13 /* Info.plist */,
+				89B7866551FF3452BB8270ECC7CEF621 /* RSClipperWrapper.modulemap */,
+				FF7847F061204B713DECEDC37D260E5F /* RSClipperWrapper.xcconfig */,
+				34623AAD904DA5CA28283BF7F3FBF412 /* RSClipperWrapper-Private.xcconfig */,
+				8344B78251EB12A0E9C33F601B552F42 /* RSClipperWrapper-dummy.m */,
+				C1F80330F2A9D457BFFDFC795EC97A6A /* RSClipperWrapper-prefix.pch */,
+				028A7618C47CB9487F3A88CC00740A68 /* RSClipperWrapper-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/RSScene";
+			path = "../Target Support Files/RSClipperWrapper";
 			sourceTree = "<group>";
 		};
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				8E76A16CD4DC3E9D7E8EAC1B421B9E71 /* Foundation.framework */,
+				81A5A65F4D6A231F3049517B7579E565 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		547CAC2179E37D585150F36046DFAD47 /* RSContactGrid */ = {
+			isa = PBXGroup;
+			children = (
+				011B4FE241A64B58AA6DFF558FCB3159 /* Data.swift */,
+				59FC85E01873D789CC7A60D09C181FDF /* Grid.swift */,
+				5EF0B06736E64C6208709EFAE5F42435 /* GridType.swift */,
+				418969A85C4F9D0D19D01CA65978D8D8 /* Helper.swift */,
+				8B5D3F089B83E969D38743D18C3A9C17 /* HexagonalTile.swift */,
+				C195DA93DC0F6DBC97888D28AD94D731 /* RotatedSquareTile.swift */,
+				A7D698910D437930575827C84F6CA9CB /* SquareTile.swift */,
+				2EA0D6027FE1F77F681F7917211F8317 /* TileType.swift */,
+				6DEFBAA48F14AD4D22D2B32070BBA98A /* TriangularTile.swift */,
+				FEE1E7C6DAA929D0A5910BEC6725A00C /* Support Files */,
+			);
+			path = RSContactGrid;
 			sourceTree = "<group>";
 		};
 		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
@@ -217,12 +294,12 @@
 				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
 				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
 				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
-				A76CE910ACF5C3B49E86BC966C2DCD9B /* Pods-dummy.m */,
+				BDD062FDFF3FE3E6AFD6C350974A40FC /* Pods-dummy.m */,
 				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
 				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
-				32732197737D7360C5936C7D0DCDBD39 /* Pods-umbrella.h */,
-				A0AD20CFAD1B720133D291AB9FC2A6E8 /* Pods.debug.xcconfig */,
-				49A8B48E0C11779669D573A0DC1E4D2D /* Pods.release.xcconfig */,
+				1E92CA3A3FAEEF2FCC185E0F443AEAA8 /* Pods-umbrella.h */,
+				AEC5C6FB789E42B5BAE561AB322CABBC /* Pods.debug.xcconfig */,
+				2CD558835D7DA3ABAA1510C2AE62BD85 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
@@ -233,10 +310,29 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				DB184C32B9F2F331496E281FC3624145 /* Pods */,
+				22C129050A9F61BC1CAD8BDC12F5F827 /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8669D5D1B93C7C1464AE552160822B5B /* RSScene */ = {
+			isa = PBXGroup;
+			children = (
+				117EE957F7E04CD435A296CDBE5F1CDF /* RSScene.swift */,
+				41D04BE4F478F2F4488714F3067154F5 /* RSSceneDelegate.swift */,
+				BD55BD07DC959838280AFB40357CA8E0 /* Support Files */,
+			);
+			path = RSScene;
+			sourceTree = "<group>";
+		};
+		AA43AC09BB9449EE85AB824F93F93133 /* RSShapeNode */ = {
+			isa = PBXGroup;
+			children = (
+				308EB864D6F759BF043A1267EC425FC8 /* RSShapeNode.swift */,
+				03578DF2813B7482374CA50D37A284EB /* Support Files */,
+			);
+			path = RSShapeNode;
 			sourceTree = "<group>";
 		};
 		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
@@ -247,16 +343,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BAF748D15143BAAB6D9A928478FF0043 /* RSScene */ = {
-			isa = PBXGroup;
-			children = (
-				117EE957F7E04CD435A296CDBE5F1CDF /* RSScene.swift */,
-				41D04BE4F478F2F4488714F3067154F5 /* RSSceneDelegate.swift */,
-				3960EB91FB467D5F6441CCD1E9625C5C /* Support Files */,
-			);
-			path = RSScene;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,28 +351,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD55BD07DC959838280AFB40357CA8E0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2EDA7041083BF9511BBF150D0072027 /* Info.plist */,
+				AF91C5411627459E978A2ECDA6F283EE /* RSScene.modulemap */,
+				B8AB97497AB7F0B91166E2F9EA0F9492 /* RSScene.xcconfig */,
+				B2267C8CEFE58B6A4EB07D1D9E28946D /* RSScene-Private.xcconfig */,
+				7626C30EAD03E85F83164E4714291202 /* RSScene-dummy.m */,
+				0428813A63515AF8052C146CD235C36C /* RSScene-prefix.pch */,
+				EEB9C1374AA96E4DBB73C0BAEEF76AE5 /* RSScene-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RSScene";
+			sourceTree = "<group>";
+		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1243A9D3BDCCDF314BE3494A515E3C30 /* Pods.framework */,
+				9148C9457D286A03D31D6FE88333DAD8 /* Pods.framework */,
 				E78AE613A78DFF60048D722ABC6D6D21 /* RSClipperWrapper.framework */,
 				0529DCDE18A11CFED453194B5E809DFB /* RSContactGrid.framework */,
+				FA3DB8C0AD35EF6F8F1352EB243492AA /* RSRandomPolygon.framework */,
 				B1F3AF0A5B30CC7C3BC2B9AB939BA5DC /* RSScene.framework */,
+				86A6C400899FDA70F4DA2336ACCD8887 /* RSShapeNode.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DB184C32B9F2F331496E281FC3624145 /* Pods */ = {
+		F3980E2308C4A1D48B9489E410FBE2CE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EE07C4D22CD511108725F5103F28991A /* RSClipperWrapper */,
-				1336C33C76A4E35D9B49FF366D69745F /* RSContactGrid */,
-				BAF748D15143BAAB6D9A928478FF0043 /* RSScene */,
+				2FEFD4C739278593A8D3C2D34C3D52E4 /* Info.plist */,
+				044C18003B616B84CDB1F6AB07AA3B92 /* RSRandomPolygon.modulemap */,
+				333A7DB8BB45BE620598139EE8488F85 /* RSRandomPolygon.xcconfig */,
+				0335FD31BEF252A9A60487C04F61F553 /* RSRandomPolygon-Private.xcconfig */,
+				8EA53F220587F235AF03DC345D3DFFD0 /* RSRandomPolygon-dummy.m */,
+				ADE0A60D08DEA57BEA6652AC89ADBABB /* RSRandomPolygon-prefix.pch */,
+				F9AA9C7A9B77EAF64622EB96CAE46CD3 /* RSRandomPolygon-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/RSRandomPolygon";
 			sourceTree = "<group>";
 		};
-		EE07C4D22CD511108725F5103F28991A /* RSClipperWrapper */ = {
+		F406EC8DE1DDB2ACFFBED560C1F6F360 /* RSClipperWrapper */ = {
 			isa = PBXGroup;
 			children = (
 				3BB55D119912C1568A5CE34E2305FDD1 /* Clipper.swift */,
@@ -295,24 +403,24 @@
 				C265CCF231DB5B403036124B14FFA2D7 /* _Clipper.mm */,
 				B4B2501DE40E79D0AE792CB539C7C1D0 /* clipper.cpp */,
 				B92C38FE8B5E15CFAB23077C5C6061E0 /* clipper.hpp */,
-				F34E9153E3FB26D055306023E0A97239 /* Support Files */,
+				404E50C8E9FD500ACEA5B008CF833ABD /* Support Files */,
 			);
 			path = RSClipperWrapper;
 			sourceTree = "<group>";
 		};
-		F34E9153E3FB26D055306023E0A97239 /* Support Files */ = {
+		FEE1E7C6DAA929D0A5910BEC6725A00C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8D94412032C110450BD97F55FF2B1E30 /* Info.plist */,
-				5D8F273B4DBD1BA18499283F510CDB29 /* RSClipperWrapper.modulemap */,
-				6DEDBB449E330F941BFB218FA6871E23 /* RSClipperWrapper.xcconfig */,
-				34623AAD904DA5CA28283BF7F3FBF412 /* RSClipperWrapper-Private.xcconfig */,
-				8344B78251EB12A0E9C33F601B552F42 /* RSClipperWrapper-dummy.m */,
-				711A47AA83E0A7F55411680B86CE3D09 /* RSClipperWrapper-prefix.pch */,
-				028A7618C47CB9487F3A88CC00740A68 /* RSClipperWrapper-umbrella.h */,
+				47EB51E6090A0C0F3F40714EF0591538 /* Info.plist */,
+				A3C6445F9D77986D2586C8DC2A9E6885 /* RSContactGrid.modulemap */,
+				B2A94F25FB339343E81E27A2968B1909 /* RSContactGrid.xcconfig */,
+				3B7317A82969414A5CF9B62A224FF79D /* RSContactGrid-Private.xcconfig */,
+				F9045462799BFCC3F31BDD6FF4013466 /* RSContactGrid-dummy.m */,
+				1ED79C82F3E1770802C2B9602CCBA067 /* RSContactGrid-prefix.pch */,
+				FA0927034E0BFD5B857158AFE016BF82 /* RSContactGrid-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/RSClipperWrapper";
+			path = "../Target Support Files/RSContactGrid";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,11 +437,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F3A5F701EEF9576C76D52323CAD0AC0 /* Headers */ = {
+		1AE632D64F40E57259DD12F57E442E05 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F89EA30F94CC572597EB2665B19B1B7 /* Pods-umbrella.h in Headers */,
+				D5E5B132BD4DC46916B47F6FBF95BA81 /* RSShapeNode-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58EE89AF08C029F3C772F33BEB8E0938 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1205FBE09F91F0E35E857EE4A645D0D2 /* Pods-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +458,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA49E2ECC6FAD3D8DD46FA1689F50776 /* RSContactGrid-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C8782F9FE4F75712E8F5A1F6F0844A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B868FF298316C87E3B04C502EB0C9728 /* RSRandomPolygon-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,24 +497,26 @@
 			productReference = E78AE613A78DFF60048D722ABC6D6D21 /* RSClipperWrapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		253EDAC1DFD3FA7B417820B836A57558 /* Pods */ = {
+		1F7A978772C1FC387E56CA54F690D3ED /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC5A29A098E6078FA9F2B1D0D9A94ADC /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 4D6819BFBA09FB4AF43D55067AADA5AC /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				B687566854B9CFFC52B0C55AA7CADD4C /* Sources */,
-				5A5B2894CD3315B96C99D29CC48B5A38 /* Frameworks */,
-				4F3A5F701EEF9576C76D52323CAD0AC0 /* Headers */,
+				44FD3E7216829E5213864C0A25FCC7D2 /* Sources */,
+				7594A49344D8880B14DBAEF9783539A0 /* Frameworks */,
+				58EE89AF08C029F3C772F33BEB8E0938 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				53AFC4550B09BAA8B094B6116EC8581E /* PBXTargetDependency */,
-				3A44CB19890552A2D719807EF7AC758A /* PBXTargetDependency */,
-				5B9A00860788367FA869F1CF07204631 /* PBXTargetDependency */,
+				97CBFF1D5721AE34F25EC9A34A314A0C /* PBXTargetDependency */,
+				D7310207659AFA2046BD12FDC881B7B1 /* PBXTargetDependency */,
+				DF515DD3BE42213EDF8EE502BCC635F3 /* PBXTargetDependency */,
+				3402DE78519B0C97E6E8E828F31FAA48 /* PBXTargetDependency */,
+				5772F6A6FD4768FCBC894C373FCB04EB /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 1243A9D3BDCCDF314BE3494A515E3C30 /* Pods.framework */;
+			productReference = 9148C9457D286A03D31D6FE88333DAD8 /* Pods.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5258C32BFA7B6C7372C9136E288E1455 /* RSScene */ = {
@@ -414,7 +540,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7733E76A11202DBD00CB2103B86F9149 /* Build configuration list for PBXNativeTarget "RSContactGrid" */;
 			buildPhases = (
-				05D5FE2E8B68D296D9EA2434A07354B2 /* Sources */,
+				7EE51766474527946D77C8CCDB990DAF /* Sources */,
 				5ADC668CCC17D1B91DCFBB03C65E7BE3 /* Frameworks */,
 				972412B48B60608E7BEA9923453C6C3F /* Headers */,
 			);
@@ -425,6 +551,40 @@
 			name = RSContactGrid;
 			productName = RSContactGrid;
 			productReference = 0529DCDE18A11CFED453194B5E809DFB /* RSContactGrid.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8CCCF77DF4CCF2F8EC8541006218AA3E /* RSRandomPolygon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0011FE6EF12829DFBAAF7E96E1AD4BD /* Build configuration list for PBXNativeTarget "RSRandomPolygon" */;
+			buildPhases = (
+				A227CD9393E36DF91CCD855CE07F5212 /* Sources */,
+				F80C08822EFBFFBEE4A4BE5FB1C398E0 /* Frameworks */,
+				9C8782F9FE4F75712E8F5A1F6F0844A3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSRandomPolygon;
+			productName = RSRandomPolygon;
+			productReference = FA3DB8C0AD35EF6F8F1352EB243492AA /* RSRandomPolygon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F25F9D8FCD5A2531911CD0A6721A043F /* RSShapeNode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE55D0689D89A35C22920F16D862AC1 /* Build configuration list for PBXNativeTarget "RSShapeNode" */;
+			buildPhases = (
+				B55D4A45B8D82743E6CA8B988DCEB091 /* Sources */,
+				4828A9B09928641469C41EFB9FC701A1 /* Frameworks */,
+				1AE632D64F40E57259DD12F57E442E05 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSShapeNode;
+			productName = RSShapeNode;
+			productReference = 86A6C400899FDA70F4DA2336ACCD8887 /* RSShapeNode.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -448,10 +608,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				253EDAC1DFD3FA7B417820B836A57558 /* Pods */,
+				1F7A978772C1FC387E56CA54F690D3ED /* Pods */,
 				177ACB571E8CBEABB78BD7752761C0DF /* RSClipperWrapper */,
 				8949C5CF8B60FBCE08502C20785CB1B6 /* RSContactGrid */,
+				8CCCF77DF4CCF2F8EC8541006218AA3E /* RSRandomPolygon */,
 				5258C32BFA7B6C7372C9136E288E1455 /* RSScene */,
+				F25F9D8FCD5A2531911CD0A6721A043F /* RSShapeNode */,
 			);
 		};
 /* End PBXProject section */
@@ -467,28 +629,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		05D5FE2E8B68D296D9EA2434A07354B2 /* Sources */ = {
+		44FD3E7216829E5213864C0A25FCC7D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D7705911111D2C747AA1E2201202C9D /* Grid.swift in Sources */,
-				97FB2D6C85AF1D2F21531BE503AFDCDB /* GridContactDetection.swift in Sources */,
-				AF4501963FB75007E1B273235967A022 /* GridDelegate.swift in Sources */,
-				8A8D85C0FC11318AC67C0C83BF89782C /* GridElementType.swift in Sources */,
-				D506328AE175F7D25FCDCFB4784D32E8 /* GridType.swift in Sources */,
-				C0F6BE1BB3F337CA91A902EE4569E081 /* HexagonalElement.swift in Sources */,
-				34335D4EEC9221A3A9AB86FA2D198F9A /* RSContactGrid-dummy.m in Sources */,
-				4406670E0A46BB8ADC92F3CB87EA7ECA /* RotatedSquareElement.swift in Sources */,
-				50E990E36F575C0DC342D75702A2EAB6 /* SquareElement.swift in Sources */,
-				0A9A5EAE7A01C2E0C4D51B6C5A918874 /* TriangularElement.swift in Sources */,
+				A823FF814C568080E647D5A4C35CDEA7 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B687566854B9CFFC52B0C55AA7CADD4C /* Sources */ = {
+		7EE51766474527946D77C8CCDB990DAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC2934924110D63910499BA19CC23333 /* Pods-dummy.m in Sources */,
+				6DA9ED01C32EDCF9444F6BD7379F2125 /* Data.swift in Sources */,
+				720059FC24E0C1C1D77EB6BF4FA62E7E /* Grid.swift in Sources */,
+				C7A21F9CEA4321AE202E4F58CABAAB4D /* GridType.swift in Sources */,
+				525563A8A7511B8548DA26847B170711 /* Helper.swift in Sources */,
+				6D36AA0D47AABB0557F14CE9254763FE /* HexagonalTile.swift in Sources */,
+				873ABBCC16FAA03863ACA48BAD5ED1D4 /* RSContactGrid-dummy.m in Sources */,
+				C2A9EC2109E3894887BCC7B768BFACF0 /* RotatedSquareTile.swift in Sources */,
+				99F78DBDDED622F2A4E8DE9B1179A0CD /* SquareTile.swift in Sources */,
+				CE94543610FBD0BB71A5690DD2FCC1EC /* TileType.swift in Sources */,
+				C5C495B6204B7C22FACAEB4BA877DA12 /* TriangularTile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A227CD9393E36DF91CCD855CE07F5212 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD366CF6AE23A8DEF29BC6078E2FE321 /* RSRandomPolygon-dummy.m in Sources */,
+				948B07C55D1FD8291D7008B6D71CE40A /* RandomPolygon.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55D4A45B8D82743E6CA8B988DCEB091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4915834B6517B0DC53A51E8643CE1355 /* RSShapeNode-dummy.m in Sources */,
+				13FB41F4365EDF6B78AD36804ECA8174 /* RSShapeNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,27 +686,93 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3A44CB19890552A2D719807EF7AC758A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RSContactGrid;
-			target = 8949C5CF8B60FBCE08502C20785CB1B6 /* RSContactGrid */;
-			targetProxy = 8F08670E997A5AF18ED7745CDD2AEBB1 /* PBXContainerItemProxy */;
-		};
-		53AFC4550B09BAA8B094B6116EC8581E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RSClipperWrapper;
-			target = 177ACB571E8CBEABB78BD7752761C0DF /* RSClipperWrapper */;
-			targetProxy = D5279FA21D9EDE42F61DC9E08F53A7C7 /* PBXContainerItemProxy */;
-		};
-		5B9A00860788367FA869F1CF07204631 /* PBXTargetDependency */ = {
+		3402DE78519B0C97E6E8E828F31FAA48 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RSScene;
 			target = 5258C32BFA7B6C7372C9136E288E1455 /* RSScene */;
-			targetProxy = 7E5E3EEF98FDA5580E891A6EC674E509 /* PBXContainerItemProxy */;
+			targetProxy = E74E492A80B0C2D355B6BF10A631E4C6 /* PBXContainerItemProxy */;
+		};
+		5772F6A6FD4768FCBC894C373FCB04EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSShapeNode;
+			target = F25F9D8FCD5A2531911CD0A6721A043F /* RSShapeNode */;
+			targetProxy = 19B3CBAC33085A0D677758BA8F55847C /* PBXContainerItemProxy */;
+		};
+		97CBFF1D5721AE34F25EC9A34A314A0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSClipperWrapper;
+			target = 177ACB571E8CBEABB78BD7752761C0DF /* RSClipperWrapper */;
+			targetProxy = E976EDE2E1F5056AE40064DEB277A439 /* PBXContainerItemProxy */;
+		};
+		D7310207659AFA2046BD12FDC881B7B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSContactGrid;
+			target = 8949C5CF8B60FBCE08502C20785CB1B6 /* RSContactGrid */;
+			targetProxy = 5886BF0508F1228ED79935CE7AC43FB0 /* PBXContainerItemProxy */;
+		};
+		DF515DD3BE42213EDF8EE502BCC635F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSRandomPolygon;
+			target = 8CCCF77DF4CCF2F8EC8541006218AA3E /* RSRandomPolygon */;
+			targetProxy = 4966677967A0BB3D1BE1C9D942585908 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		35F65728230F60821475D02094FD2D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0335FD31BEF252A9A60487C04F61F553 /* RSRandomPolygon-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSRandomPolygon/RSRandomPolygon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSRandomPolygon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSRandomPolygon/RSRandomPolygon.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RSRandomPolygon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4C88D41EA9E5E346BDA17D4D5EB9508A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B7317A82969414A5CF9B62A224FF79D /* RSContactGrid-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSContactGrid/RSContactGrid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSContactGrid/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSContactGrid/RSContactGrid.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RSContactGrid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -593,25 +839,25 @@
 			};
 			name = Release;
 		};
-		6E0F10A22C5BE726FC7504753C2D61ED /* Release */ = {
+		68793C6C0E05EA63BDEE8FE0ABB783B2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56F1A0CCBCD558FB1756528AE2DCFD85 /* RSContactGrid-Private.xcconfig */;
+			baseConfigurationReference = 6059089A09E3EF7164635A37D8747026 /* RSShapeNode-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RSContactGrid/RSContactGrid-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RSContactGrid/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/RSShapeNode/RSShapeNode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSShapeNode/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RSContactGrid/RSContactGrid.modulemap";
+				MODULEMAP_FILE = "Target Support Files/RSShapeNode/RSShapeNode.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RSContactGrid;
+				PRODUCT_NAME = RSShapeNode;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -654,37 +900,9 @@
 			};
 			name = Release;
 		};
-		7D71E9E6E945F370A549FC671FE5F045 /* Debug */ = {
+		7B39A74387D8DE1F1B01F0DFF7F82AB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56F1A0CCBCD558FB1756528AE2DCFD85 /* RSContactGrid-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RSContactGrid/RSContactGrid-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RSContactGrid/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RSContactGrid/RSContactGrid.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = RSContactGrid;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AA70763D114CD599BB2983C62DACFEED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0AD20CFAD1B720133D291AB9FC2A6E8 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = AEC5C6FB789E42B5BAE561AB322CABBC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -711,6 +929,35 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		A3BCD6067ADA36A344841CA78107EB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CD558835D7DA3ABAA1510C2AE62BD85 /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		C095A2838231D4EC4F8E165CE4A932EE /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -739,34 +986,61 @@
 			};
 			name = Release;
 		};
-		C869F5F356ACB40A86BDFE02A7A4FA84 /* Release */ = {
+		C6CF0C19C8728160D812CC57BC62D010 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49A8B48E0C11779669D573A0DC1E4D2D /* Pods.release.xcconfig */;
+			baseConfigurationReference = 6059089A09E3EF7164635A37D8747026 /* RSShapeNode-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/RSShapeNode/RSShapeNode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSShapeNode/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
+				MODULEMAP_FILE = "Target Support Files/RSShapeNode/RSShapeNode.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RSShapeNode;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		D7DB73FE30AFE0CD8061651B2D926F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0335FD31BEF252A9A60487C04F61F553 /* RSRandomPolygon-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSRandomPolygon/RSRandomPolygon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSRandomPolygon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSRandomPolygon/RSRandomPolygon.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RSRandomPolygon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		E0E76396D59341CD6365A00F5AF2C27C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -824,6 +1098,34 @@
 			};
 			name = Debug;
 		};
+		E600DB41D6D57772AF10363366D9F1A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B7317A82969414A5CF9B62A224FF79D /* RSContactGrid-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSContactGrid/RSContactGrid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSContactGrid/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSContactGrid/RSContactGrid.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RSContactGrid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -836,11 +1138,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4D6819BFBA09FB4AF43D55067AADA5AC /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B39A74387D8DE1F1B01F0DFF7F82AB8 /* Debug */,
+				A3BCD6067ADA36A344841CA78107EB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7733E76A11202DBD00CB2103B86F9149 /* Build configuration list for PBXNativeTarget "RSContactGrid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D71E9E6E945F370A549FC671FE5F045 /* Debug */,
-				6E0F10A22C5BE726FC7504753C2D61ED /* Release */,
+				E600DB41D6D57772AF10363366D9F1A7 /* Debug */,
+				4C88D41EA9E5E346BDA17D4D5EB9508A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -863,11 +1174,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC5A29A098E6078FA9F2B1D0D9A94ADC /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		EAE55D0689D89A35C22920F16D862AC1 /* Build configuration list for PBXNativeTarget "RSShapeNode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA70763D114CD599BB2983C62DACFEED /* Debug */,
-				C869F5F356ACB40A86BDFE02A7A4FA84 /* Release */,
+				C6CF0C19C8728160D812CC57BC62D010 /* Debug */,
+				68793C6C0E05EA63BDEE8FE0ABB783B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0011FE6EF12829DFBAAF7E96E1AD4BD /* Build configuration list for PBXNativeTarget "RSRandomPolygon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DB73FE30AFE0CD8061651B2D926F45 /* Debug */,
+				35F65728230F60821475D02094FD2D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

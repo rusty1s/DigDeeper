@@ -1,33 +1,30 @@
 //
-//  RotatedSquareElement.swift
+//  RotatedSquareTile.swift
 //  RSContactGrid
 //
 //  Created by Matthias Fey on 18.07.15.
 //  Copyright © 2015 Matthias Fey. All rights reserved.
 //
 
-private struct RotatedSquareElementData {
+private struct RotatedSquareTileData {
     
     private static var width: CGFloat = 20
     
     private static var height: CGFloat = 20
 }
 
-public struct RotatedSquareElement<T, S> : GridElementType {
+public struct RotatedSquareTile<T, S> : TileType {
+    
+    // MARK: Associated typed
+    
+    public typealias DataType = Data<T, S>
     
     // MARK: Initializers
     
     public init(x: Int, y: Int) {
         self.x = x
         self.y = y
-    }
-    
-    /// Create a `RotatedSquareElement` at x- and y-coordinates with specific
-    /// content and contact.
-    public init(x: Int, y: Int, content: T?, contact: S?) {
-        self.init(x: x, y: y)
-        self.content = content
-        self.contact = contact
+        self.data = DataType()
     }
     
     // MARK: Instance variables
@@ -36,36 +33,34 @@ public struct RotatedSquareElement<T, S> : GridElementType {
     
     public let y: Int
     
-    /// The content stored by the element.
-    public var content: T?
-    
-    /// The contact stored by the element.
-    public var contact: S?
+    public let data: DataType
     
     // MARK: Static variables
     
-    // The width of the element.  The width has a minimum value of 1.
+    /// The width of the tile.  The width has a minimum value of 1.
+    /// The default value is 20.0.
     public static var width: CGFloat {
-        set { RotatedSquareElementData.width = max(1, newValue) }
-        get { return RotatedSquareElementData.width }
+        set { RotatedSquareTileData.width = max(1, newValue) }
+        get { return RotatedSquareTileData.width }
     }
     
-    // The height of the element.  The height has a minimum value of 1.
+    /// The height of the tile.  The height has a minimum value of 1.
+    /// The default value is 20.0.
     public static var height: CGFloat {
-        set { RotatedSquareElementData.height = max(1, newValue) }
-        get { return RotatedSquareElementData.height }
+        set { RotatedSquareTileData.height = max(1, newValue) }
+        get { return RotatedSquareTileData.height }
     }
 }
 
 // MARK: Instance variables
 
-extension RotatedSquareElement {
+extension RotatedSquareTile {
     
     public var frame: CGRect {
-        return CGRect(x: CGFloat(x)*RotatedSquareElement<T, S>.width + (abs(y)%2 == 1 ? RotatedSquareElement<T, S>.width/2 : 0),
-            y: y%2 == 0 ? CGFloat(y/2)*RotatedSquareElement<T, S>.height : (CGFloat((y+1)/2)-0.5)*RotatedSquareElement<T, S>.height,
-            width: RotatedSquareElement<T, S>.width,
-            height: RotatedSquareElement<T, S>.height)
+        return CGRect(x: CGFloat(x)*RotatedSquareTile<T, S>.width + (abs(y)%2 == 1 ? RotatedSquareTile<T, S>.width/2 : 0),
+            y: y%2 == 0 ? CGFloat(y/2)*RotatedSquareTile<T, S>.height : (CGFloat((y+1)/2)-0.5)*RotatedSquareTile<T, S>.height,
+            width: RotatedSquareTile<T, S>.width,
+            height: RotatedSquareTile<T, S>.height)
     }
     
     public var vertices: [CGPoint] {
@@ -80,7 +75,7 @@ extension RotatedSquareElement {
 
 // MARK: Instance functions
 
-extension RotatedSquareElement {
+extension RotatedSquareTile {
     
     public func intersectsRelativeLineSegment(point1 point1: RelativeRectPoint, point2: RelativeRectPoint) -> Bool {
         // bottom left
@@ -98,9 +93,9 @@ extension RotatedSquareElement {
 
 // MARK: Static functions
 
-extension RotatedSquareElement {
+extension RotatedSquareTile {
     
-    public static func elementsInRect<T, S>(rect: CGRect) -> Set<RotatedSquareElement<T, S>> {
+    public static func tilesInRect<T, S>(rect: CGRect) -> Set<RotatedSquareTile<T, S>> {
         
         let evenStartX = evenSegmentXOfCoordinate(rect.origin.x)
         let evenStartY = evenSegmentYOfCoordinate(rect.origin.y)
@@ -112,17 +107,17 @@ extension RotatedSquareElement {
         let oddEndX = oddSegmentXOfCoordinate(rect.origin.x+rect.size.width)
         let oddEndY = oddSegmentYOfCoordinate(rect.origin.y+rect.size.height)
         
-        var elements = Set<RotatedSquareElement<T, S>>(minimumCapacity: (1+evenEndX-evenStartX)*(1+(evenEndY-evenStartY)/2)+(1+oddEndX-oddStartX)*(1+(oddEndY-oddStartY)/2))
+        var elements = Set<RotatedSquareTile<T, S>>(minimumCapacity: (1+evenEndX-evenStartX)*(1+(evenEndY-evenStartY)/2)+(1+oddEndX-oddStartX)*(1+(oddEndY-oddStartY)/2))
         
         for x in evenStartX...evenEndX {
             for var y = evenStartY; y <= evenEndY; y+=2 {
-                elements.insert(RotatedSquareElement<T, S>(x: x, y: y))
+                elements.insert(RotatedSquareTile<T, S>(x: x, y: y))
             }
         }
         
         for x in oddStartX...oddEndX {
             for var y = oddStartY; y <= oddEndY; y+=2 {
-                elements.insert(RotatedSquareElement<T, S>(x: x, y: y))
+                elements.insert(RotatedSquareTile<T, S>(x: x, y: y))
             }
         }
         
@@ -148,17 +143,17 @@ extension RotatedSquareElement {
 
 // MARK: Comparable
 
-extension RotatedSquareElement {}
-public func == <T, S>(lhs: RotatedSquareElement<T, S>, rhs: RotatedSquareElement<T, S>) -> Bool {
+extension RotatedSquareTile {}
+public func == <T, S>(lhs: RotatedSquareTile<T, S>, rhs: RotatedSquareTile<T, S>) -> Bool {
     return lhs.x == rhs.x && lhs.y == rhs.y
 }
-public func < <T, S>(lhs: RotatedSquareElement<T, S>, rhs: RotatedSquareElement<T, S>) -> Bool {
+public func < <T, S>(lhs: RotatedSquareTile<T, S>, rhs: RotatedSquareTile<T, S>) -> Bool {
     return lhs.y < rhs.y || (lhs.y == rhs.y && lhs.x < rhs.x)
 }
 
 // MARK: CustomDebugStringConvertible
 
-extension RotatedSquareElement {
+extension RotatedSquareTile {
     
-    public var debugDescription: String { return "RotatedSquareElement(\(self)" }
+    public var debugDescription: String { return "RotatedSquareTile(\(self)" }
 }

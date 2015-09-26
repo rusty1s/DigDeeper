@@ -1,5 +1,9 @@
 use_frameworks!
 
 pod 'RSScene', :git => 'https://github.com/rusty1s/RSScene.git'
+pod 'RSShapeNode', :git => 'https://github.com/rusty1s/RSShapeNode.git'
+
 pod 'RSContactGrid', :git => 'https://github.com/rusty1s/RSContactGrid.git'
+
 pod 'RSClipperWrapper', :git => 'https://github.com/rusty1s/RSClipperWrapper.git'
+pod 'RSRandomPolygon', :git => 'https://github.com/rusty1s/RSRandomPolygon.git'

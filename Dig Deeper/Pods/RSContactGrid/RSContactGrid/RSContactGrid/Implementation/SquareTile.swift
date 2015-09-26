@@ -1,33 +1,30 @@
 //
-//  SquareElement.swift
+//  SquareTile.swift
 //  RSContactGrid
 //
 //  Created by Matthias Fey on 24.06.15.
 //  Copyright © 2015 Matthias Fey. All rights reserved.
 //
 
-private struct SquareElementData {
+private struct SquareTileData {
     
     private static var width: CGFloat = 20
     
     private static var height: CGFloat = 20
 }
 
-public struct SquareElement<T, S> : GridElementType {
+public struct SquareTile<T, S> : TileType {
+    
+    // MARK: Associated typed
+    
+    public typealias DataType = Data<T, S>
     
     // MARK: Initializers
     
     public init(x: Int, y: Int) {
         self.x = x
         self.y = y
-    }
-    
-    /// Create a `SquareElement` at x- and y-coordinates with specific
-    /// content and contact.
-    public init(x: Int, y: Int, content: T?, contact: S?) {
-        self.init(x: x, y: y)
-        self.content = content
-        self.contact = contact
+        self.data = DataType()
     }
     
     // MARK: Instance variables
@@ -36,36 +33,34 @@ public struct SquareElement<T, S> : GridElementType {
     
     public let y: Int
     
-    /// The content stored by the element.
-    public var content: T?
-    
-    /// The contact stored by the element.
-    public var contact: S?
+    public let data: DataType
     
     // MARK: Static variables
     
-    // The width of the element.  The width has a minimum value of 1.
+    /// The width of the tile.  The width has a minimum value of 1.
+    /// The default value is 20.0.
     public static var width: CGFloat {
-        set { SquareElementData.width = max(1, newValue) }
-        get { return SquareElementData.width }
+        set { SquareTileData.width = max(1, newValue) }
+        get { return SquareTileData.width }
     }
     
-    // The height of the element.  The height has a minimum value of 1.
+    /// The height of the tile.  The height has a minimum value of 1.
+    /// The default value is 20.0.
     public static var height: CGFloat {
-        set { SquareElementData.height = max(1, newValue) }
-        get { return SquareElementData.height }
+        set { SquareTileData.height = max(1, newValue) }
+        get { return SquareTileData.height }
     }
 }
 
 // MARK: Instance variables
 
-extension SquareElement {
+extension SquareTile {
     
     public var frame: CGRect {
-        return CGRect(x: CGFloat(x)*SquareElement<T, S>.width,
-            y: CGFloat(y)*SquareElement<T, S>.height,
-            width: SquareElement<T, S>.width,
-            height: SquareElement<T, S>.height)
+        return CGRect(x: CGFloat(x)*SquareTile<T, S>.width,
+            y: CGFloat(y)*SquareTile<T, S>.height,
+            width: SquareTile<T, S>.width,
+            height: SquareTile<T, S>.height)
     }
 
     public var vertices: [CGPoint] {
@@ -80,7 +75,7 @@ extension SquareElement {
 
 // MARK: Instance functions
 
-extension SquareElement {
+extension SquareTile {
     
     public func intersectsRelativeLineSegment(point1 point1: RelativeRectPoint, point2: RelativeRectPoint) -> Bool {
         return true
@@ -89,19 +84,19 @@ extension SquareElement {
 
 // MARK: Static functions
 
-extension SquareElement {
+extension SquareTile {
 
-    public static func elementsInRect<T, S>(rect: CGRect) -> Set<SquareElement<T, S>> {
+    public static func tilesInRect<T, S>(rect: CGRect) -> Set<SquareTile<T, S>> {
         
         let startX = segmentXOfCoordinate(rect.origin.x)
         let startY = segmentYOfCoordinate(rect.origin.y)
         let endX = segmentXOfCoordinate(rect.origin.x+rect.size.width)
         let endY = segmentYOfCoordinate(rect.origin.y+rect.size.height)
         
-        var elements = Set<SquareElement<T, S>>(minimumCapacity: (1+endX-startX)*(1+endY-startY))
+        var elements = Set<SquareTile<T, S>>(minimumCapacity: (1+endX-startX)*(1+endY-startY))
         for x in startX...endX {
             for y in startY...endY {
-                elements.insert(SquareElement<T, S>(x: x, y: y))
+                elements.insert(SquareTile<T, S>(x: x, y: y))
             }
         }
         return elements
@@ -118,17 +113,17 @@ extension SquareElement {
 
 // MARK: Comparable
 
-extension SquareElement {}
-public func == <T, S>(lhs: SquareElement<T, S>, rhs: SquareElement<T, S>) -> Bool {
+extension SquareTile {}
+public func == <T, S>(lhs: SquareTile<T, S>, rhs: SquareTile<T, S>) -> Bool {
     return lhs.x == rhs.x && lhs.y == rhs.y
 }
-public func < <T, S>(lhs: SquareElement<T, S>, rhs: SquareElement<T, S>) -> Bool {
+public func < <T, S>(lhs: SquareTile<T, S>, rhs: SquareTile<T, S>) -> Bool {
     return lhs.y < rhs.y || (lhs.y == rhs.y && lhs.x < rhs.x)
 }
 
 // MARK: CustomDebugStringConvertible
 
-extension SquareElement {
+extension SquareTile {
 
-    public var debugDescription: String { return "SquareElement(\(self)" }
+    public var debugDescription: String { return "SquareTile(\(self)" }
 }

@@ -1,0 +1,6 @@
+framework module RSRandomPolygon {
+  umbrella header "RSRandomPolygon-umbrella.h"
+
+  export *
+  module * { export * }
+}

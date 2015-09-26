@@ -7,9 +7,10 @@
 //
 
 import SpriteKit
+import RSShapeNode
 import RSClipperWrapper
 
-class PathNode : SKNode {
+class PathNode : SKNode, PolygonType {
     
     // MARK: Initializers
     
@@ -21,32 +22,46 @@ class PathNode : SKNode {
         fatalError("init(coder:) has not been implemented")
     }
 
-    // MARK: Instance variables
+    // MARK: Polygon type
     
-    private var polygons: [[CGPoint]] = []
+    private var unusedPathNodes: [RSShapeNode] = []
     
-    // MARK: Instance functions
+    private var polygonsToClip: [[CGPoint]] = []
     
-    func addElement(element: GridElementType, withVertices vertices: [CGPoint]) {
-        
-        polygons = Clipper.unionPolygons(polygons, subjFillType: .Positive, withPolygons: [vertices], clipFillType: .EvenOdd)
-        
-        if let position = scene?.camera?.position {
-            polygons = Clipper.differencePolygons(polygons, subjFillType: .Positive, fromPolygons: [[CGPoint(x: position.x-1000, y: position.y+350), CGPoint(x: position.x-1000, y: position.y+1000), CGPoint(x: position.x+1000, y: position.y+1000), CGPoint(x: position.x+1000, y: position.y+350)]], clipFillType: .EvenOdd)
-        }
-        
-        dispatch_async(dispatch_get_main_queue()) {
-            for child in self.children { (child as? SKShapeNode)?.path = nil }
-            self.removeAllChildren()
-            for polygon in self.polygons { self.addChildWithVertices(polygon) }
-        }
+    func addPolygonToClip(polygon: [CGPoint]) {
+        polygonsToClip.append(polygon)
     }
     
-    private func addChildWithVertices(vertices: [CGPoint]) {
-        let node = SKShapeNode()
-        node.lineWidth = 1
-        node.strokeColor = SKColor.redColor()
-        node.path = CGPath.pathOfVertices(vertices)
-        addChild(node)
+    func applyClipping() {
+        if !polygonsToClip.isEmpty {
+            if let position = scene?.camera?.position, let size = scene?.size {
+                
+                if !children.isEmpty {
+                    for child in children as! [RSShapeNode] {
+                        if child.position.y > position.y+size.height {
+                            child.removeFromParent()
+                            unusedPathNodes.append(child)
+                        }
+                    }
+                }
+                
+                let polygons = Clipper.unionPolygons(polygonsToClip.map { $0.map { CGPoint(x: $0.x-position.x, y: $0.y-position.y) } }, subjFillType: .NonZero, withPolygons: [], clipFillType: .NonZero)
+                
+                let pathNode: RSShapeNode
+                if unusedPathNodes.isEmpty {
+                    pathNode = RSShapeNode()
+                    pathNode.lineWidth = 0
+                    pathNode.blendMode = .Add
+                    pathNode.fillColor = SKColor.blackColor()
+                    
+                }
+                else { pathNode = unusedPathNodes.removeFirst() }
+                
+                pathNode.path = CGPath.pathOfPolygons(polygons, closed: true)
+                pathNode.position = position
+                addChild(pathNode)
+            }
+            polygonsToClip.removeAll(keepCapacity: true)
+        }
     }
 }
